@@ -1,0 +1,51 @@
+config,model,id,source,correct,steps,tool_calls,calls,prompt_tokens,completion_tokens,cost,seconds,answer,gold
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-0,fresh,True,3,2,3,1436,68,0.0002562,7.4,United States,United States
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-1,fresh,False,3,2,3,1237,76,0.00023115,6.7,"The Group F game between Tunisia and Japan was the 1,000th m","1,000th World Cup match"
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-2,fresh,True,3,3,3,2347,125,0.00042705,9.5,16 years,16
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-3,fresh,True,4,3,4,2202,99,0.0003897,7.6,Tomáš Souček.,Tomas Soucek
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-4,fresh,True,6,6,6,4972,201,0.00078,18.8,Mexico became the first team to qualify for the newly introd,round of 32
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-5,fresh,True,5,5,5,4201,150,0.00063375,17.6,6,sixth
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-6,fresh,False,7,6,7,4493,161,0.00077055,19.1,Round of 32.,knockout stages
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-7,fresh,False,9,7,9,14051,188,0.0016924499999999999,25.0,unknown,Toronto
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-8,fresh,True,6,6,6,5550,170,0.0008289,13.3,Miro Muheim.,Miro Muheim
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-9,fresh,False,9,7,9,15413,240,0.00222555,24.1,unknown,90+7'
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-10,fresh,False,9,7,9,9356,254,0.0014694,18.1,unknown.,Geoff Hurst
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-11,fresh,True,3,2,3,1388,55,0.0002412,5.2,Mexico,Mexico
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-12,fresh,False,9,7,9,9671,247,0.00151245,21.2,unknown,Mahmud Abunada
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-13,fresh,False,9,7,9,9670,218,0.0012837000000000002,20.0,unknown,12
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-14,fresh,False,9,7,9,10663,201,0.00144165,20.8,1998.,1990
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-15,fresh,True,5,4,5,4099,119,0.0005998500000000001,12.2,2',2
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-16,fresh,True,4,3,4,2402,85,0.00041129999999999997,7.4,2 consecutive matches.,two
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-17,fresh,True,3,2,3,1546,60,0.00026789999999999995,5.2,"64,478","64,478"
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-18,fresh,False,9,7,9,13068,241,0.0017208000000000002,27.6,unknown,Yassine Bounou
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-19,fresh,True,4,3,4,2925,80,0.00048675,8.5,4 goals,Four
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-20,fresh,False,9,7,9,8832,221,0.0014574000000000002,19.7,unknown,dominate the game
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-21,fresh,False,3,2,3,1529,62,0.00026655,5.3,Burgess,Cameron Burgess
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-22,fresh,False,9,7,9,8733,220,0.0013651499999999999,28.9,unknown,Miguel Almirón
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-23,fresh,True,3,2,3,1564,63,0.0002724,5.5,90+8,90+8'
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-24,fresh,True,3,2,3,1575,68,0.00027705,5.0,Clément Turpin (France),Clément Turpin
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-25,fresh,True,3,3,3,1600,106,0.0003036,9.9,Curaçao,Curaçao
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-26,fresh,False,9,7,9,8242,190,0.0012735,18.3,unknown,90th minute
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-27,fresh,False,9,7,9,9309,214,0.00136155,24.2,unknown,Toronto
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-28,fresh,False,3,2,3,1328,76,0.0002448,4.4,Curaçao appeared in the FIFA World Cup for the first time in,earned a point
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-29,fresh,True,3,2,3,1554,58,0.0002679,5.6,Lincoln Financial Field,Lincoln Financial Field
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-30,fresh,True,7,6,7,8874,137,0.0010581,18.5,1994 FIFA World Cup,1994 FIFA World Cup
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-31,fresh,False,4,2,4,2632,77,0.000441,10.5,unknown,"69,285"
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-32,fresh,False,9,7,9,7350,222,0.0011589,25.8,unknown.,Sabri Lamouchi
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-33,fresh,False,9,7,9,6824,195,0.0011405999999999999,27.5,unknown,fourteen
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-34,fresh,False,7,6,7,8110,164,0.0011421,25.0,unknown,"70,137"
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-35,fresh,False,9,7,9,12973,190,0.00187755,19.2,unknown,Ellyes Skhiri
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-36,fresh,False,9,7,9,8893,216,0.00127155,21.9,unknown,Mohamed Hany
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-37,fresh,True,4,3,4,2725,93,0.00046455,10.3,"70,108","70,108"
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-38,fresh,False,9,7,9,11615,187,0.0016240500000000001,17.7,unknown,Nathan Ngoy
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-39,fresh,False,6,7,6,7675,207,0.00103545,19.4,8 years.,44 years
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-40,fresh,False,9,7,9,13090,199,0.0018525,20.5,unknown.,107.4 million
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-41,fresh,False,9,7,9,8064,217,0.0011766,28.8,unknown,"52,497"
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-42,fresh,True,2,1,2,729,37,0.00013155,2.9,Cape Verde was making their first FIFA World Cup appearance.,Cape Verde
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-43,fresh,True,3,2,3,1458,66,0.0002583,5.1,"62,764","62,764"
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-44,fresh,False,9,7,9,11653,202,0.0016291499999999998,21.8,unknown,Hassan Al-Tambakti
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-45,fresh,False,7,7,7,7034,200,0.0009351,19.7,unknown,30 yards
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-46,fresh,True,4,3,4,1974,95,0.0003531,9.0,Slovakia,Slovakia
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-47,fresh,False,9,7,9,12039,194,0.00174945,17.3,unknown,Zapopan
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-48,fresh,True,5,4,5,4650,144,0.0006879,12.9,58.,58
+"LangGraph, поиск и чтение страницы",gpt-4o-mini,fresh-49,fresh,True,3,2,3,1314,52,0.0002283,5.1,1986,1986

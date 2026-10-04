@@ -1,0 +1,52 @@
+{
+ "task": {
+  "id": "fresh-16",
+  "source": "fresh",
+  "question": "In their group stage match against Brazil, Haiti became the first team eliminated from the 2026 World Cup after losing how many consecutive matches?",
+  "answer": "two",
+  "evidence": "With this result, Haiti became the first team eliminated from the tournament after losing two consecutive matches.",
+  "page": "2026 FIFA World Cup Group C",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C#Brazil_vs_Haiti"
+ },
+ "answer": "Haiti became the first team eliminated from the 2026 World Cup after losing two consecutive matches. \n\nFINAL: 2",
+ "correct": true,
+ "cost": 0.00014264999999999417,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы про чемпионат мира 2026 года.Если нужно найти факт, вызывай инструменты, а не угадывай. Добавляй в поисковые запросы уточнение, что запрос про чемпионат мира 2026 годаКогда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза."
+  },
+  {
+   "role": "user",
+   "content": "In their group stage match against Brazil, Haiti became the first team eliminated from the 2026 World Cup after losing how many consecutive matches?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_KEgXH7G8AlcL1lJ3Fqg30h7x",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Haiti eliminated from 2026 World Cup matches against Brazil\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_KEgXH7G8AlcL1lJ3Fqg30h7x",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup Group D, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "content": "Haiti became the first team eliminated from the 2026 World Cup after losing two consecutive matches. \n\nFINAL: 2",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "task": {
+  "id": "fresh-27",
+  "source": "fresh",
+  "question": "In which city did Germany defeat Ivory Coast in the Group Stage on June 20, 2026?",
+  "answer": "Toronto",
+  "evidence": "BMO Field , Toronto",
+  "page": "2026 FIFA World Cup Group E",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E#Germany_vs_Ivory_Coast"
+ },
+ "answer": "I'll search for information about this match.",
+ "correct": false,
+ "cost": 0.0007169999999999954,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы про чемпионат мира 2026 года.Если нужно найти факт, вызывай инструменты, а не угадывай. Добавляй в поисковые запросы уточнение, что запрос про чемпионат мира 2026 годаКогда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза."
+  },
+  {
+   "role": "user",
+   "content": "In which city did Germany defeat Ivory Coast in the Group Stage on June 20, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "I'll search for information about this match.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

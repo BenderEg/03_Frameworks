@@ -1,0 +1,320 @@
+{
+ "task": {
+  "id": "fresh-30",
+  "source": "fresh",
+  "question": "The Ecuador vs Germany group stage match on June 25, 2026, at MetLife Stadium marked when the 2026 World Cup surpassed which previous World Cup's attendance record?",
+  "answer": "1994 FIFA World Cup",
+  "evidence": "This surpassed the previous record of 3,587,538, which had been held for 32 years by the 1994 FIFA World Cup, also hosted in the United States.",
+  "page": "2026 FIFA World Cup Group E",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E#Ecuador_vs_Germany"
+ },
+ "answer": "FINAL: 1994 FIFA World Cup.",
+ "correct": true,
+ "cost": 0.0013747499999999999,
+ "votes": "surpassed the 1994 edition. | 1994 FIFA World Cup. | 1994 FIFA World Cup",
+ "agreement": 0.67,
+ "escalated": false,
+ "budget_hit": false,
+ "vote_runs": [
+  {
+   "i": 0,
+   "answer": "FINAL: surpassed the 1994 edition.",
+   "steps": 3,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "The Ecuador vs Germany group stage match on June 25, 2026, at MetLife Stadium marked when the 2026 World Cup surpassed which previous World Cup's attendance record?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_SBScI8soiDoM95yJ5m97rFVG",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup attendance record surpassed\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_SBScI8soiDoM95yJ5m97rFVG",
+     "content": "[2026 FIFA World Cup Group E] Group E of the 2026 FIFA World Cup took place from June 14 to 25, 2026. The group consisted of Germany, Curaçao, Ivory Coast, and Ecuador. Four-time world champions Germany finally secured their place in the round of 32 after failing to progress past the group stage in the last two tournaments, 2018 and 2022. Ivory Coast finished as runners-up, progressing to the knockout stage for the first time. In an upset victory, Ecuador defeated Germany in their last group game, finishing third and advancing as one of the eight best third-place teams. However, the three teams performed poorly in the round of 32 and were eliminated from the World Cup. World Cup debutants Curaçao finished last with a single point and were eliminated. | other articles: 2026 FIFA World Cup, 2026 FIFA World Cup Group J"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_dZhcJyTO4H4eYb9xyNFq7OOH",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"attendance record\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_dZhcJyTO4H4eYb9xyNFq7OOH",
+     "content": "Nearly 7 million people attended matches during the tournament, surpassing the 1994 edition to set a new record for the highest attendance in World Cup history.\nThe tournament set the record for the highest cumulative attendance in World Cup history, with a total of 6,810,966 spectators.\nAcross the first 60 matches, venues operated at an average occupancy rate of 99.7%. Additionally, a single-day World Cup attendance record was established on June 16, 2026, when 281,223 fans attended four group stage matches.\nAttendance 6,810,966 (65,490 per match)\nThe 2026 World Cup reportedly generated a record $15 billion in revenue.\nThe 2026 World Cup featured six female match officials, equalling the record for the highest number of female officials appointed to a men's World Cup."
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: surpassed the 1994 edition."
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "answer": "FINAL: 1994 FIFA World Cup.",
+   "steps": 4,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "The Ecuador vs Germany group stage match on June 25, 2026, at MetLife Stadium marked when the 2026 World Cup surpassed which previous World Cup's attendance record?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_FXPZOfKJP1Q37q1mlFCeHE6Y",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup attendance record\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_FXPZOfKJP1Q37q1mlFCeHE6Y",
+     "content": "[2026 FIFA U-20 Women's World Cup] 2026 FIFA U-20 Women's World Cup Mistrzostwa Świata FIFA U-20 Kobiet Polska 2026 Nowe gwiazdy na horyzoncie (Stars in the making) Tournament details Host country Poland Dates 5–27 September Teams 24 (from 6 confederations) Venues 4 (in 4 host cities) Final positions Champions Spain (2nd title) Runners-up North Korea Third place Colombia Fourth place Italy Tournament statistics Matches played 52 Goals scored 181 (3.48 per match) Attendance 37,307 (717 per match) Top scorer(s) Pau Comendador (6 goals) Best player Rosalía Domínguez Best goalkeeper Laia López Fair play award United States ← 2024 2028 → The 2026 FIFA U-20 Women's World Cup (Polish: Mistrzostwa Świata FIFA U-20 Kobiet Polska 2026) was the 12th edition of the FIFA U-20 Women's World Cup, the biennial international women's youth football championship contested by the under-20 national teams of the member associations of FIFA. It was hosted by Poland. It was the second time that Poland had hosted a FIFA tournament, having hosted the men's FIFA U-20 World Cup in 2019. It was the first time that Poland had hosted a FIFA women's tournament. Spain were crowned champions, their second title in this tournament. North Korea were the defending champions, having won a joint-record third title in 2024, but lost to Spain in the final. Colombia defeated Italy in the bronze medal match to claim their first medal at the tournament. [citation needed] | other articles: 2026 FIFA World Cup Group E, 2026 FIFA World Cup Group J"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_84HyVivfkz0P8HD2Nve1xjdu",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup attendance record surpassed previous World Cup\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_84HyVivfkz0P8HD2Nve1xjdu",
+     "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: 2026 FIFA World Cup Group J, 2026 FIFA World Cup Group D"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_GKvG2jtLxXkAACcYNvUNePe8",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"attendance record\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_GKvG2jtLxXkAACcYNvUNePe8",
+     "content": "Nearly 7 million people attended matches during the tournament, surpassing the 1994 edition to set a new record for the highest attendance in World Cup history.\nThe tournament set the record for the highest cumulative attendance in World Cup history, with a total of 6,810,966 spectators.\nAcross the first 60 matches, venues operated at an average occupancy rate of 99.7%. Additionally, a single-day World Cup attendance record was established on June 16, 2026, when 281,223 fans attended four group stage matches.\nAttendance 6,810,966 (65,490 per match)\nThe 2026 World Cup reportedly generated a record $15 billion in revenue.\nThe 2026 World Cup featured six female match officials, equalling the record for the highest number of female officials appointed to a men's World Cup."
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: 1994 FIFA World Cup."
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "answer": "FINAL: 1994 FIFA World Cup",
+   "steps": 5,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "The Ecuador vs Germany group stage match on June 25, 2026, at MetLife Stadium marked when the 2026 World Cup surpassed which previous World Cup's attendance record?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_0ZyVIQbQGF4y5RRtR6As2gQT",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup attendance record\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_0ZyVIQbQGF4y5RRtR6As2gQT",
+     "content": "[2026 FIFA U-20 Women's World Cup] 2026 FIFA U-20 Women's World Cup Mistrzostwa Świata FIFA U-20 Kobiet Polska 2026 Nowe gwiazdy na horyzoncie (Stars in the making) Tournament details Host country Poland Dates 5–27 September Teams 24 (from 6 confederations) Venues 4 (in 4 host cities) Final positions Champions Spain (2nd title) Runners-up North Korea Third place Colombia Fourth place Italy Tournament statistics Matches played 52 Goals scored 181 (3.48 per match) Attendance 37,307 (717 per match) Top scorer(s) Pau Comendador (6 goals) Best player Rosalía Domínguez Best goalkeeper Laia López Fair play award United States ← 2024 2028 → The 2026 FIFA U-20 Women's World Cup (Polish: Mistrzostwa Świata FIFA U-20 Kobiet Polska 2026) was the 12th edition of the FIFA U-20 Women's World Cup, the biennial international women's youth football championship contested by the under-20 national teams of the member associations of FIFA. It was hosted by Poland. It was the second time that Poland had hosted a FIFA tournament, having hosted the men's FIFA U-20 World Cup in 2019. It was the first time that Poland had hosted a FIFA women's tournament. Spain were crowned champions, their second title in this tournament. North Korea were the defending champions, having won a joint-record third title in 2024, but lost to Spain in the final. Colombia defeated Italy in the bronze medal match to claim their first medal at the tournament. [citation needed] | other articles: 2026 FIFA World Cup Group E, 2026 FIFA World Cup Group J"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_ZWqV6gUQLlw31TmJPXTNJDTg",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup attendance record previous World Cup\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_ZWqV6gUQLlw31TmJPXTNJDTg",
+     "content": "[2026 FIFA U-20 Women's World Cup] 2026 FIFA U-20 Women's World Cup Mistrzostwa Świata FIFA U-20 Kobiet Polska 2026 Nowe gwiazdy na horyzoncie (Stars in the making) Tournament details Host country Poland Dates 5–27 September Teams 24 (from 6 confederations) Venues 4 (in 4 host cities) Final positions Champions Spain (2nd title) Runners-up North Korea Third place Colombia Fourth place Italy Tournament statistics Matches played 52 Goals scored 181 (3.48 per match) Attendance 37,307 (717 per match) Top scorer(s) Pau Comendador (6 goals) Best player Rosalía Domínguez Best goalkeeper Laia López Fair play award United States ← 2024 2028 → The 2026 FIFA U-20 Women's World Cup (Polish: Mistrzostwa Świata FIFA U-20 Kobiet Polska 2026) was the 12th edition of the FIFA U-20 Women's World Cup, the biennial international women's youth football championship contested by the under-20 national teams of the member associations of FIFA. It was hosted by Poland. It was the second time that Poland had hosted a FIFA tournament, having hosted the men's FIFA U-20 World Cup in 2019. It was the first time that Poland had hosted a FIFA women's tournament. Spain were crowned champions, their second title in this tournament. North Korea were the defending champions, having won a joint-record third title in 2024, but lost to Spain in the final. Colombia defeated Italy in the bronze medal match to claim their first medal at the tournament. [citation needed] | other articles: 2026 FIFA World Cup, 2026 FIFA World Cup Group I"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_fyivqzI0elccNXeNsjf5DyWW",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup attendance record compared to previous World Cups\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_fyivqzI0elccNXeNsjf5DyWW",
+     "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: 2010 FIFA World Cup, 1994 FIFA World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_aMHa8w119jhyAwsgQsnOCTuw",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"attendance record previous World Cup\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_aMHa8w119jhyAwsgQsnOCTuw",
+     "content": "Nearly 7 million people attended matches during the tournament, surpassing the 1994 edition to set a new record for the highest attendance in World Cup history.\nThe tournament set the record for the highest cumulative attendance in World Cup history, with a total of 6,810,966 spectators.\nThis surpassed the previous record of 3,587,538, which had been held for 32 years by the 1994 FIFA World Cup, also hosted in the United States.\nAcross the first 60 matches, venues operated at an average occupancy rate of 99.7%. Additionally, a single-day World Cup attendance record was established on June 16, 2026, when 281,223 fans attended four group stage matches.\nThe tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format.\nThe United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament."
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: 1994 FIFA World Cup"
+    }
+   ]
+  }
+ ],
+ "escalation": {},
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "The Ecuador vs Germany group stage match on June 25, 2026, at MetLife Stadium marked when the 2026 World Cup surpassed which previous World Cup's attendance record?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_FXPZOfKJP1Q37q1mlFCeHE6Y",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 FIFA World Cup attendance record\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_FXPZOfKJP1Q37q1mlFCeHE6Y",
+   "content": "[2026 FIFA U-20 Women's World Cup] 2026 FIFA U-20 Women's World Cup Mistrzostwa Świata FIFA U-20 Kobiet Polska 2026 Nowe gwiazdy na horyzoncie (Stars in the making) Tournament details Host country Poland Dates 5–27 September Teams 24 (from 6 confederations) Venues 4 (in 4 host cities) Final positions Champions Spain (2nd title) Runners-up North Korea Third place Colombia Fourth place Italy Tournament statistics Matches played 52 Goals scored 181 (3.48 per match) Attendance 37,307 (717 per match) Top scorer(s) Pau Comendador (6 goals) Best player Rosalía Domínguez Best goalkeeper Laia López Fair play award United States ← 2024 2028 → The 2026 FIFA U-20 Women's World Cup (Polish: Mistrzostwa Świata FIFA U-20 Kobiet Polska 2026) was the 12th edition of the FIFA U-20 Women's World Cup, the biennial international women's youth football championship contested by the under-20 national teams of the member associations of FIFA. It was hosted by Poland. It was the second time that Poland had hosted a FIFA tournament, having hosted the men's FIFA U-20 World Cup in 2019. It was the first time that Poland had hosted a FIFA women's tournament. Spain were crowned champions, their second title in this tournament. North Korea were the defending champions, having won a joint-record third title in 2024, but lost to Spain in the final. Colombia defeated Italy in the bronze medal match to claim their first medal at the tournament. [citation needed] | other articles: 2026 FIFA World Cup Group E, 2026 FIFA World Cup Group J"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_84HyVivfkz0P8HD2Nve1xjdu",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 FIFA World Cup attendance record surpassed previous World Cup\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_84HyVivfkz0P8HD2Nve1xjdu",
+   "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: 2026 FIFA World Cup Group J, 2026 FIFA World Cup Group D"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_GKvG2jtLxXkAACcYNvUNePe8",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"attendance record\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_GKvG2jtLxXkAACcYNvUNePe8",
+   "content": "Nearly 7 million people attended matches during the tournament, surpassing the 1994 edition to set a new record for the highest attendance in World Cup history.\nThe tournament set the record for the highest cumulative attendance in World Cup history, with a total of 6,810,966 spectators.\nAcross the first 60 matches, venues operated at an average occupancy rate of 99.7%. Additionally, a single-day World Cup attendance record was established on June 16, 2026, when 281,223 fans attended four group stage matches.\nAttendance 6,810,966 (65,490 per match)\nThe 2026 World Cup reportedly generated a record $15 billion in revenue.\nThe 2026 World Cup featured six female match officials, equalling the record for the highest number of female officials appointed to a men's World Cup."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 1994 FIFA World Cup."
+  }
+ ]
+}

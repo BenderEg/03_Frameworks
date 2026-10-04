@@ -1,0 +1,66 @@
+{
+ "task": {
+  "id": "fresh-0",
+  "source": "fresh",
+  "question": "In the Czech Republic vs South Africa group stage match, referees Tori Penso, Brooke Mayo, and Kathryn Nesbitt became the first all-female on-field refereeing trio from which country at a men's FIFA World Cup?",
+  "answer": "United States",
+  "evidence": "By officiating this match, referees Tori Penso, Brooke Mayo, and Kathryn Nesbitt became the second all-female on-field refereeing trio, and the first from the United States, to take charge of a match at a men's FIFA World Cup.",
+  "page": "2026 FIFA World Cup Group A",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A#Czech_Republic_vs_South_Africa"
+ },
+ "answer": "FINAL: United States",
+ "correct": true,
+ "cost": 0.0002562,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "In the Czech Republic vs South Africa group stage match, referees Tori Penso, Brooke Mayo, and Kathryn Nesbitt became the first all-female on-field refereeing trio from which country at a men's FIFA World Cup?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_NBmH1MBePeov70QaiW8x41LI",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 FIFA World Cup Tori Penso Brooke Mayo Kathryn Nesbitt all-female refereeing trio\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_NBmH1MBePeov70QaiW8x41LI",
+   "content": "[Tori Penso] Tori Penso Penso at the 2026 FIFA World Cup Full name Mary Victoria Penso Born Mary Victoria Hancock July 8, 1986 (age 40) Stuart, Florida, U.S. Other occupation Digital marketer Domestic Years League Role 2015– National Women's Soccer League Referee 2019– USL Championship Referee 2020– Major League Soccer Referee International Years League Role 2021– FIFA listed Referee Mary Victoria Penso (née Hancock; born July 8, 1986) is an American association football referee. Penso was the referee for the 2023 FIFA Women's World Cup final, and was later appointed to the 2026 FIFA World Cup, the first American woman to be a referee at the event. She is currently a member of the Professional Referee Organization and primarily referees in Major League Soccer. | other articles: 2026 FIFA World Cup Group A, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_vPt7LhfoB3H2xMwSJHe1luxP",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"refereeing trio Czech Republic South Africa\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vPt7LhfoB3H2xMwSJHe1luxP",
+   "content": "Tori Penso, Brooke Mayo, and Kathryn Nesbitt became the second all-female on-field refereeing trio at a men's World Cup, officiating the Group A match between Czech Republic and South Africa at Atlanta Stadium.\nGroup A vs Czech Republic (matchday 2; June 18) Group A vs South Korea (matchday 3; June 24) Round of 32 vs Canada (June 28)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: United States"
+  }
+ ]
+}

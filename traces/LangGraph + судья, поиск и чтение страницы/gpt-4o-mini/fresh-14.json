@@ -1,0 +1,595 @@
+{
+ "task": {
+  "id": "fresh-14",
+  "source": "fresh",
+  "question": "Scotland defeated Haiti 1-0 in their group stage match. In what year had Scotland previously won a World Cup match before this victory?",
+  "answer": "1990",
+  "evidence": "The match marked the first time Scotland won a World Cup match since 1990, when the team defeated Sweden 2–1.",
+  "page": "2026 FIFA World Cup Group C",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C#Haiti_vs_Scotland"
+ },
+ "answer": "Scotland previously won a World Cup match in 1978. FINAL: 1978",
+ "correct": false,
+ "cost": 0.004013849999999999,
+ "answer_initial": "1990",
+ "correct_initial": true,
+ "rounds": 2,
+ "rejections": 1,
+ "first_verdict": false,
+ "budget_hit": false,
+ "verdicts": [
+  {
+   "round": 1,
+   "answer": "1990",
+   "supported": false,
+   "issue": "The proposed answer states that Scotland last won a World Cup match in 1990, but the evidence does not provide confirmation of any such win. It indicates that Scotland participated in World Cups, including 1990, but does not state they won any match that year. The passage mentions Scotland had victories, like in 1978, but no win in 1990 or subsequent tournaments is confirmed."
+  },
+  {
+   "round": 2,
+   "answer": "1978",
+   "supported": true,
+   "issue": ""
+  }
+ ],
+ "history": [
+  {
+   "node": "answer",
+   "round": 1,
+   "answer": "FINAL: 1990",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "Scotland defeated Haiti 1-0 in their group stage match. In what year had Scotland previously won a World Cup match before this victory?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_Zm24GpucvrrZbCMZPWwl9xSn",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Scotland World Cup history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_Zm24GpucvrrZbCMZPWwl9xSn",
+     "content": "[Scotland at the FIFA World Cup] The Scotland national football team has appeared nine times at the FIFA World Cup, including five consecutive tournaments from 1974 to 1990. The team has never advanced beyond the first round of the finals competition. They have missed out on progressing to the second round three times on goal difference: in 1974, when Brazil edged them out; in 1978, when the Netherlands progressed; and in 1982, when the Soviets qualified. Although never qualifying for the next round, they have still caused some big upsets, for example their 3–2 win over the Netherlands in 1978. A 4–2 victory against Denmark clinched a spot at the 2026 FIFA World Cup, which was their first appearance in the finals since 1998. | other articles: Scotland national football team, Scottish Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_u9Uv9V7JGWpWu3ri69DZCArk",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Scotland at the FIFA World Cup\", \"keywords\": \"World Cup match victory\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_u9Uv9V7JGWpWu3ri69DZCArk",
+     "content": "A 4–2 victory against Denmark clinched a spot at the 2026 FIFA World Cup, which was their first appearance in the finals since 1998.\nOrmond lost his first match in charge 5–0 to England, but recovered to steer Scotland to the 1974 World Cup finals in West Germany.\nThe victory was not sufficient to secure a place in the second round, however, as Scotland were eliminated on goal difference for the second successive World Cup.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nPoor results in friendly matches and a bad start to 2006 FIFA World Cup qualification caused the team to drop to a record low of 77th in the FIFA World Rankings.\nHe was criticised by the media after the team lost their first 2010 FIFA World Cup qualification match against Macedonia."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_m5WkXPA7nGQvAvEz7g1SbQ9b",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Scotland at the FIFA World Cup\", \"keywords\": \"last World Cup win\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_m5WkXPA7nGQvAvEz7g1SbQ9b",
+     "content": "Scotland finished by winning three of their last four matches, including two victories against Croatia, placing fourth in the group when fifth or sixth looked likely (they thus maintained a record of never having finished in the lowest two places of any World Cup qualification group).\nSportswriter Brian Glanville later described the SFA as showing \"baffling insularity and pique\" in their refusal to send a team to the World Cup.\nDespite the Dutch taking the lead, Scotland fought back to win 3–2 with a goal from Kenny Dalglish and two from Archie Gemmill, the second of which is considered one of the greatest World Cup goals ever; Gemmill beat three Dutch defenders before lifting the ball over goalkeeper Jan Jongbloed into the net.\nCraig Levein replaced Burley, but he left following a poor start to 2014 FIFA World Cup qualification, having taken just two points from four games.\nScotland then beat Denmark 4–2 at home in the last match of the section, clinching their ninth World Cup finals appearance, and their first since 1998.\nIn Scotland's opening game in group C of the 2026 FIFA World Cup on 12 June 2026, they won 1-0 against Haiti to record a first win at a World Cup finals's since the win against Sweden in 1990."
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: 1990"
+    }
+   ]
+  },
+  {
+   "node": "judge",
+   "round": 1,
+   "report": "The proposed answer states that Scotland last won a World Cup match in 1990. However, the findings from the Wikipedia article \"Scotland at the FIFA World Cup\" do not provide specific information about Scotland winning a match in 1990 or any evidence supporting that victory.\n\nFrom the search results, it is confirmed that Scotland participated in the World Cups up to 1990 but did not advance past the group stage in any of those tournaments. Specifically, they have had historical wins, like a notable 3–2 victory against the Netherlands in 1978, and they clinched a spot in the 2026 World Cup with a victory against Denmark recently. However, there was no mention of a win by Scotland in the 1990 World Cup or any other match in the subsequent tournaments reaching a win. \n\nThus, the passage does not support the proposed answer. The answer is likely incorrect, as Scotland's victory before the one mentioned in the question was not in 1990, but rather in a previous year.",
+   "supported": false,
+   "issue": "The proposed answer states that Scotland last won a World Cup match in 1990, but the evidence does not provide confirmation of any such win. It indicates that Scotland participated in World Cups, including 1990, but does not state they won any match that year. The passage mentions Scotland had victories, like in 1978, but no win in 1990 or subsequent tournaments is confirmed.",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You fact-check a proposed answer to a question about the 2026 FIFA World Cup. Do not trust the proposed answer or your memory: use the tools to find the Wikipedia passage that confirms or contradicts it. Mention the 2026 FIFA World Cup in your search queries. Finish with a short report: quote the passage you found and say whether it supports the answer."
+    },
+    {
+     "role": "user",
+     "content": "Question: Scotland defeated Haiti 1-0 in their group stage match. In what year had Scotland previously won a World Cup match before this victory?\nProposed answer: 1990\n\nEvidence the answering agent retrieved:\n[Scotland at the FIFA World Cup] The Scotland national football team has appeared nine times at the FIFA World Cup, including five consecutive tournaments from 1974 to 1990. The team has never advanced beyond the first round of the finals competition. They have missed out on progressing to the second round three times on goal difference: in 1974, when Brazil edged them out; in 1978, when the Netherlands progressed; and in 1982, when the Soviets qualified. Although never qualifying for the next round, they have still caused some big upsets, for example their 3–2 win over the Netherlands in 1978. A 4–2 victory against Denmark clinched a spot at the 2026 FIFA World Cup, which was their first appearance in the finals since 1998. | other articles: Scotland national football team, Scottish Cup\nA 4–2 victory against Denmark clinched a spot at the 2026 FIFA World Cup, which was their first appearance in the finals since 1998.\nOrmond lost his first match in charge 5–0 to England, but recovered to steer Scotland to the 1974 World Cup finals in West Germany.\nThe victory was not sufficient to secure a place in the second round, however, as Scotland were eliminated on goal difference for the second successive World Cup.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nPoor results in friendly matches and a bad start to 2006 FIFA World Cup qualification caused the team to drop to a record low of 77th in the FIFA Worl\nScotland finished by winning three of their last four matches, including two victories against Croatia, placing fourth in the group when fifth or sixth looked likely (they thus maintained a record of never having finished in the lowest two places of any World Cup qualification group).\nSportswriter Brian Glanville later described the SFA as showing \"baffling insularity and pique\" in their refusal to send a team to the World Cup.\nDespite the Dutch taking the lead, Scotland fought back to win 3–2 with a goal from Kenny Dalglish and two from Archie Gemmill, the second of which is considered one of the greatest World Cup goals ever; Gemmill beat three Dutch defenders before lifting the ball over goalkeeper Jan Jongbloed into the net.\nCraig Levein replaced Burley, but he left following a poor st"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_6Oz5t7XTJhOpkMZc4NxwbGlx",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Scotland at the FIFA World Cup\", \"keywords\": \"World Cup match 1990\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_6Oz5t7XTJhOpkMZc4NxwbGlx",
+     "content": "The Scotland national football team has appeared nine times at the FIFA World Cup, including five consecutive tournaments from 1974 to 1990.\nOrmond lost his first match in charge 5–0 to England, but recovered to steer Scotland to the 1974 World Cup finals in West Germany.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nNow managed by Andy Roxburgh, Scotland qualified for their fifth consecutive World Cup in 1990 by finishing second in their qualifying group behind Yugoslavia and ahead of France.\nPoor results in friendly matches and a bad start to 2006 FIFA World Cup qualification caused the team to drop to a record low of 77th in the FIFA World Rankings.\nHe was criticised by the media after the team lost their first 2010 FIFA World Cup qualification match against Macedonia."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_39ZObraHZcpPp02ScjldovgG",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Scotland at the FIFA World Cup\", \"keywords\": \"Scotland victory World Cup match history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_39ZObraHZcpPp02ScjldovgG",
+     "content": "Ormond lost his first match in charge 5–0 to England, but recovered to steer Scotland to the 1974 World Cup finals in West Germany.\nThe victory was not sufficient to secure a place in the second round, however, as Scotland were eliminated on goal difference for the second successive World Cup.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nGordon Strachan was appointed manager in January 2013, but defeats in his first two competitive matches meant that Scotland were the first UEFA team to be mathematically eliminated from the 2014 World Cup.\nScotland finished by winning three of their last four matches, including two victories against Croatia, placing fourth in the group when fifth or sixth looked likely (they thus maintained a record of never having finished in the lowest two places of any World Cup qualification group).\nScotland then beat Denmark 4–2 at home in the last match of the section, clinching their ninth World Cup finals appearance, and their first since 1998."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_RcFyag9kZAFgVt8zB0Ca9Sch",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Scotland at the FIFA World Cup\", \"keywords\": \"previous World Cup match Scotland victory\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_RcFyag9kZAFgVt8zB0Ca9Sch",
+     "content": "Ormond lost his first match in charge 5–0 to England, but recovered to steer Scotland to the 1974 World Cup finals in West Germany.\nThe victory was not sufficient to secure a place in the second round, however, as Scotland were eliminated on goal difference for the second successive World Cup.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nGordon Strachan was appointed manager in January 2013, but defeats in his first two competitive matches meant that Scotland were the first UEFA team to be mathematically eliminated from the 2014 World Cup.\nScotland finished by winning three of their last four matches, including two victories against Croatia, placing fourth in the group when fifth or sixth looked likely (they thus maintained a record of never having finished in the lowest two places of any World Cup qualification group).\nScotland then beat Denmark 4–2 at home in the last match of the section, clinching their ninth World Cup finals appearance, and their first since 1998."
+    },
+    {
+     "role": "assistant",
+     "content": "The proposed answer states that Scotland last won a World Cup match in 1990. However, the findings from the Wikipedia article \"Scotland at the FIFA World Cup\" do not provide specific information about Scotland winning a match in 1990 or any evidence supporting that victory.\n\nFrom the search results, it is confirmed that Scotland participated in the World Cups up to 1990 but did not advance past the group stage in any of those tournaments. Specifically, they have had historical wins, like a notable 3–2 victory against the Netherlands in 1978, and they clinched a spot in the 2026 World Cup with a victory against Denmark recently. However, there was no mention of a win by Scotland in the 1990 World Cup or any other match in the subsequent tournaments reaching a win. \n\nThus, the passage does not support the proposed answer. The answer is likely incorrect, as Scotland's victory before the one mentioned in the question was not in 1990, but rather in a previous year."
+    }
+   ]
+  },
+  {
+   "node": "answer",
+   "round": 2,
+   "answer": "Scotland previously won a World Cup match in 1978. FINAL: 1978",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "Scotland defeated Haiti 1-0 in their group stage match. In what year had Scotland previously won a World Cup match before this victory?\n\nA reviewer rejected your previous answer '1990': The proposed answer states that Scotland last won a World Cup match in 1990, but the evidence does not provide confirmation of any such win. It indicates that Scotland participated in World Cups, including 1990, but does not state they won any match that year. The passage mentions Scotland had victories, like in 1978, but no win in 1990 or subsequent tournaments is confirmed. Search again and correct it."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_a9Os3PiBYe2u0EzLfG2dyzVu",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Scotland World Cup match wins history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_a9Os3PiBYe2u0EzLfG2dyzVu",
+     "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: 1990 FIFA World Cup, 2026 Men's T20 World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_RagtuCOGvgBFPwlnfTvd8F2V",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Scotland FIFA World Cup match wins history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_RagtuCOGvgBFPwlnfTvd8F2V",
+     "content": "[1950 FIFA World Cup] 1950 FIFA World Cup IV Campeonato Mundial de Futebol Brasil 1950 (Brazilian Portuguese) Official poster Tournament details Host country Brazil Dates 24 June – 16 July Teams 13 (from 3 confederations) Venues 6 (in 6 host cities) Final positions Champions Uruguay (2nd title) Runners-up Brazil Third place Sweden Fourth place Spain Tournament statistics Matches played 22 Goals scored 88 (4 per match) Attendance 1,045,246 (47,511 per match) Top scorer Ademir (9 goals) ← 1938 1954 → The 1950 FIFA World Cup was the fourth edition of the FIFA World Cup, the quadrennial international football championship for senior men's national teams. It was held in Brazil from 24 June to 16 July 1950. It was the first World Cup tournament in 12 years, as the 1942 and 1946 World Cups were cancelled due to World War II. It was also the first World Cup tournament held during the Cold War. Italy, the two-time defending champions, were eliminated in the first round for the first time in history. Uruguay, who had won the inaugural competition in 1930, defeated the host nation, Brazil, in the deciding match of the four-team group of the final round, causing what is sometimes known as one of the biggest upsets in football history, occasionally called the Maracanaço. This was the only tournament not decided by a one-match final. It was also the inaugural tournament where the trophy was referred to as the Jules Rimet Cup, to mark the 25th anniversary of Jules Rimet 's presidency of FIFA. Cite error: There a | other articles: 2026 FIFA World Cup, 1930 FIFA World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_i4fK54FISDYvkhfETwIzGdGB",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Scotland World Cup 1974 1978 results\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_i4fK54FISDYvkhfETwIzGdGB",
+     "content": "[1978 FIFA World Cup] This article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. Find sources: \"1978 FIFA World Cup\" – news · newspapers · books · scholar · JSTOR (October 2025) (Learn how and when to remove this message) 1978 FIFA World Cup Copa Mundial de Fútbol Argentina '78 (Spanish) Tournament details Host country Argentina Dates 1–25 June Teams 16 (from 5 confederations) Venues 6 (in 5 host cities) Final positions Champions Argentina (1st title) Runners-up Netherlands Third place Brazil Fourth place Italy Tournament statistics Matches played 38 Goals scored 102 (2.68 per match) Attendance 1,545,791 (40,679 per match) Top scorer Mario Kempes (6 goals) Best player Mario Kempes Best young player Antonio Cabrini Fair play award Argentina ← 1974 1982 → The 1978 FIFA World Cup was the 11th edition of the FIFA World Cup, the quadrennial international football world championship tournament among the men's senior national teams. It was held in Argentina between 1 and 25 June. The tournament was won by the host nation, Argentina, who defeated the Netherlands 3–1 in the final, after extra time. The final was held at River Plate 's home stadium, Estadio Monumental, in the Argentine capital of Buenos Aires. This win was the first World Cup title for Argentina, who became the fifth team (after Uruguay, Italy, England, and West Germany) to be both hosts and world champions and the third South American team t | other articles: Scotland national football team, 1974 FIFA World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_61KvxF7DidjdLu4PXGW20cx8",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Scotland national football team\", \"keywords\": \"World Cup match wins\"}"
+       }
+      },
+      {
+       "type": "function",
+       "id": "call_ElNg4ML5MDnFWUPJdOEoskUz",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"1978 FIFA World Cup\", \"keywords\": \"Scotland win\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_61KvxF7DidjdLu4PXGW20cx8",
+     "content": "Ormond lost his first match in charge 5–0 to England, but recovered to steer Scotland to their first World Cup finals in 16 years in 1974.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nPoor results in friendly matches and a bad start to the 2006 World Cup qualification caused the team to drop to a record low of 77th in the FIFA World Rankings.\nGordon Strachan was appointed Scotland manager in January 2013, but defeats in his first two competitive matches meant that Scotland were the first UEFA team to be eliminated from the 2014 World Cup qualification.\nSix consecutive wins later that year meant that Scotland finished second in Group F of 2022 FIFA World Cup qualification.\nOn 18 November 2025, they beat Denmark 4–2 at home in the last match of the section to qualify for their ninth World Cup finals, and their first since 1998."
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_ElNg4ML5MDnFWUPJdOEoskUz",
+     "content": "Teófilo Cubillas was outstanding for Peru, scoring twice against Scotland in Peru's 3–1 win and hitting a hat-trick in their 4–1 victory over newcomers Iran.\nThis win was the first World Cup title for Argentina, who became the fifth team (after Uruguay, Italy, England, and West Germany) to be both hosts and world champions and the third South American team to win the World Cup.\nThe following 16 teams qualified for the final tournament:\nScotland\nEach group played a round-robin with two points for a win and one for a draw, and goal difference used to separate teams level on points.\nThe winners of each group played each other in the final, and the second-place finishers in the match for third place."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_claLkd4C756FlGh4TxIp5dth",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"1974 FIFA World Cup\", \"keywords\": \"Scotland 1st win\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_claLkd4C756FlGh4TxIp5dth",
+     "content": "With Brazil, Yugoslavia and Scotland drawing all their games against each other, it was decided by the number of goals these three teams scored when defeating Zaire."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_2l390GyXaxJT8k2z7SDRZ0Yl",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"1978 FIFA World Cup\", \"keywords\": \"Scotland win match\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_2l390GyXaxJT8k2z7SDRZ0Yl",
+     "content": "The winners of each group played each other in the final, and the second-place finishers in the match for third place.\nTeófilo Cubillas was outstanding for Peru, scoring twice against Scotland in Peru's 3–1 win and hitting a hat-trick in their 4–1 victory over newcomers Iran.\nAs previously noted, rumours suggested that Peru might have been bribed or threatened into allowing Argentina to win the match by such a large margin.\nBrazil took third place from an enterprising Italian side with Nelinho scoring a memorable goal, and were dubbed \"moral champions\" by coach Cláudio Coutinho, because they did not win the tournament, but did not lose a single match.\nArgentina won 5 games but became the first team to win the World Cup after failing to win two matches, where they had lost to Italy in the first round and drawn with Brazil in the second round.\nPer statistical convention in football, matches decided in extra time are counted as wins and losses."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_sJsbYNa0TDO3jphu6eMBMEgq",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Scotland national football team World Cup results\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_sJsbYNa0TDO3jphu6eMBMEgq",
+     "content": "[Scotland national football team] Scotland Nickname The Tartan Army (supporters) Association Scottish Football Association (SFA) Confederation UEFA (Europe) Head coach Sébastien Pocognoli Captain Andy Robertson Most caps Kenny Dalglish (102) Top scorer Kenny Dalglish Denis Law (30) Home stadium Hampden Park FIFA code SCO First colours Second colours FIFA ranking Current 42 (20 July 2026) Highest 13 (October 2007) Lowest 88 (March 2005) First international Scotland 0–0 England (Partick, Scotland; 30 November 1872) (The first ever international football match) Biggest win Scotland 11–0 Ireland (Glasgow, Scotland; 23 February 1901) Biggest defeat Uruguay 7–0 Scotland (Basel, Switzerland; 19 June 1954) World Cup Appearances 9 (first in 1954) Best result Group stage (1954, 1958, 1974, 1978, 1982, 1986, 1990, 1998, 2026) European Championship Appearances 4 (first in 1992) Best result Group stage (1992, 1996, 2020, 2024) Website scottishfa.co.uk The Scotland national football team represents Scotland in men's international football and is controlled by the Scottish Football Association. They compete in three major professional tournaments: the FIFA World Cup, UEFA Nations League, and the UEFA European Championship. Scotland, as a country of the United Kingdom, are not a member of the International Olympic Committee (as Scottish athletes compete for Great Britain), and therefore the national team does not compete in the Olympic Games. The majority of Scotland's home matches are played at the national stadium, Hampden | other articles: Scotland national football team results (1872–1914), Scotland national football team results (1960–1979)"
+    },
+    {
+     "role": "user",
+     "content": "Tools are no longer available. Answer from what you already know; write the last line as FINAL: <answer> in English."
+    },
+    {
+     "role": "assistant",
+     "content": "Scotland previously won a World Cup match in 1978. FINAL: 1978"
+    }
+   ]
+  },
+  {
+   "node": "judge",
+   "round": 2,
+   "report": "Based on my research regarding Scotland's World Cup match history, I can confirm the following:\n\nThe proposed answer that Scotland previously won a World Cup match in 1978 is correct. During the 1978 FIFA World Cup, Scotland achieved a victory against the Netherlands with a score of 3-2, which is highlighted as one of their notable matches.\n\nThe passage found states: \"Archie Gemmill scored what has been described as one of the greatest World Cup goals ever in a 3–2 win during the 1978 World Cup against the Netherlands, who reached the final of the tournament.\" This supports the proposed answer.\n\nIn conclusion, the proposed answer of 1978 is indeed accurate and supported by the evidence.",
+   "supported": true,
+   "issue": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You fact-check a proposed answer to a question about the 2026 FIFA World Cup. Do not trust the proposed answer or your memory: use the tools to find the Wikipedia passage that confirms or contradicts it. Mention the 2026 FIFA World Cup in your search queries. Finish with a short report: quote the passage you found and say whether it supports the answer."
+    },
+    {
+     "role": "user",
+     "content": "Question: Scotland defeated Haiti 1-0 in their group stage match. In what year had Scotland previously won a World Cup match before this victory?\nProposed answer: 1978\n\nEvidence the answering agent retrieved:\ne this article by adding citations to reliable sources. Unsourced material may be challenged and removed. Find sources: \"1978 FIFA World Cup\" – news · newspapers · books · scholar · JSTOR (October 2025) (Learn how and when to remove this message) 1978 FIFA World Cup Copa Mundial de Fútbol Argentina '78 (Spanish) Tournament details Host country Argentina Dates 1–25 June Teams 16 (from 5 confederations) Venues 6 (in 5 host cities) Final positions Champions Argentina (1st title) Runners-up Netherlands Third place Brazil Fourth place Italy Tournament statistics Matches played 38 Goals scored 102 (2.68 per match) Attendance 1,545,791 (40,679 per match) Top scorer Mario Kempes (6 goals) Best player Mario Kempes Best young\nOrmond lost his first match in charge 5–0 to England, but recovered to steer Scotland to their first World Cup finals in 16 years in 1974.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nPoor results in friendly matches and a bad start to the 2006 World Cup qualification caused the team to drop to a record low of 77th in the FIFA World Rankings.\nGordon Strachan was appointed Scotland manager in January 2013, but defeats in his first two competitive matches meant that Scotland were the first UEFA team to be eliminated from the 2014 World Cup qualification.\nSix consecutive wins later that year meant that Scotland finishe\nTeófilo Cubillas was outstanding for Peru, scoring twice against Scotland in Peru's 3–1 win and hitting a hat-trick in their 4–1 victory over newcomers Iran.\nThis win was the first World Cup title for Argentina, who became the fifth team (after Uruguay, Italy, England, and West Germany) to be both hosts and world champions and the third South American team to win the World Cup.\nThe following 16 teams qualified for the final tournament:\nScotland\nEach group played a round-robin with two points for a win and one for a draw, and goal difference used to separate teams level on points.\nThe winners of each group played each other in the final, and the second-place finishers in the match for third place.\nWith Brazil, Yugoslavia and Scotland drawing all their games against each other, it was decided by the number of goals these three teams scored when defeating Zaire.\nThe winners of each group played each other in the final, and the second-place finishers in the match for third place.\nTeófilo Cubillas was outstanding for Peru, scoring twice against Scotland in Peru's 3–1 win and hitting a hat-trick in their 4–1 victory over newcomers Iran.\nAs previously noted, rumours suggested that Peru might have been bribed or threatened into allowing Argentina to win the match by such a large margin.\nBrazil took third place from an enterprising Italian side with Nelinho scoring a memorable goal, and were dubbed \"moral champions\" by coach Cláudio Coutinho, because they did not win the tournament, but did not lose a single match.\nArgentina won 5 games but became the first team to win the World Cup after failing to win two matches, where they had lost to Italy in the f\n[Scotland national football team] Scotland Nickname The Tartan Army (supporters) Association Scottish Football Association (SFA) Confederation UEFA (Europe) Head coach Sébastien Pocognoli Captain Andy Robertson Most caps Kenny Dalglish (102) Top scorer Kenny Dalglish Denis Law (30) Home stadium Hampden Park FIFA code SCO First colours Second colours FIFA ranking Current 42 (20 July 2026) Highest 13 (October 2007) Lowest 88 (March 2005) First international Scotland 0–0 England (Partick, Scotland; 30 November 1872) (The first ever international football match) Biggest win Scotland 11–0 Ireland (Glasgow, Scotland; 23 February 1901) Biggest defeat Uruguay 7–0 Scotland (Basel, Switzerland; 19 June 1954) World Cup Appearances 9 (first in 1954) Best result Group stage (1954, 1958, 1974, 1978, 198"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_DGuMCfjWFJVsNW1ib8FEL5Ch",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Scotland World Cup match history\"}"
+       }
+      },
+      {
+       "type": "function",
+       "id": "call_Ui7kLfJ2JLTxlYT25JvzIGlR",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Scotland national football team\", \"keywords\": \"World Cup match history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_DGuMCfjWFJVsNW1ib8FEL5Ch",
+     "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: FIFA World Cup, Scotland national football team"
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_Ui7kLfJ2JLTxlYT25JvzIGlR",
+     "content": "Ormond lost his first match in charge 5–0 to England, but recovered to steer Scotland to their first World Cup finals in 16 years in 1974.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nPoor results in friendly matches and a bad start to the 2006 World Cup qualification caused the team to drop to a record low of 77th in the FIFA World Rankings.\nGordon Strachan was appointed Scotland manager in January 2013, but defeats in his first two competitive matches meant that Scotland were the first UEFA team to be eliminated from the 2014 World Cup qualification.\nOn 18 November 2025, they beat Denmark 4–2 at home in the last match of the section to qualify for their ninth World Cup finals, and their first since 1998.\nCeltic Park, Ibrox Stadium, Pittodrie Stadium and Rugby Park all hosted matches during the 1998 World Cup qualifying campaign, while Tynecastle Stadium, Pittodrie, Celtic Park and Ibrox Stadium were used for Euro 2000 qualifying matches."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_M5gQssFDb2Y63HtpOP7o7MBY",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Scotland national football team\", \"keywords\": \"1978 World Cup\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_M5gQssFDb2Y63HtpOP7o7MBY",
+     "content": "Archie Gemmill scored what has been described as one of the greatest World Cup goals ever in a 3–2 win during the 1978 World Cup against the Netherlands, who reached the final of the tournament.\nScotland appointed Ally MacLeod as manager in 1977, with qualification for the 1978 World Cup in Argentina far from assured.\nDuring the build-up to the 1978 FIFA World Cup, MacLeod fuelled the hopes of the nation by stating that Scotland would come home with a medal.\nMacLeod resigned as manager shortly after the 1978 World Cup, and Jock Stein, who had won nine consecutive Scottish league titles and the European Cup as manager of Celtic, was appointed as his successor.\nWorld Cup\nThey compete in three major professional tournaments: the FIFA World Cup, UEFA Nations League, and the UEFA European Championship."
+    },
+    {
+     "role": "assistant",
+     "content": "Based on my research regarding Scotland's World Cup match history, I can confirm the following:\n\nThe proposed answer that Scotland previously won a World Cup match in 1978 is correct. During the 1978 FIFA World Cup, Scotland achieved a victory against the Netherlands with a score of 3-2, which is highlighted as one of their notable matches.\n\nThe passage found states: \"Archie Gemmill scored what has been described as one of the greatest World Cup goals ever in a 3–2 win during the 1978 World Cup against the Netherlands, who reached the final of the tournament.\" This supports the proposed answer.\n\nIn conclusion, the proposed answer of 1978 is indeed accurate and supported by the evidence."
+    }
+   ]
+  }
+ ],
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "Scotland defeated Haiti 1-0 in their group stage match. In what year had Scotland previously won a World Cup match before this victory?\n\nA reviewer rejected your previous answer '1990': The proposed answer states that Scotland last won a World Cup match in 1990, but the evidence does not provide confirmation of any such win. It indicates that Scotland participated in World Cups, including 1990, but does not state they won any match that year. The passage mentions Scotland had victories, like in 1978, but no win in 1990 or subsequent tournaments is confirmed. Search again and correct it."
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_a9Os3PiBYe2u0EzLfG2dyzVu",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland World Cup match wins history\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a9Os3PiBYe2u0EzLfG2dyzVu",
+   "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: 1990 FIFA World Cup, 2026 Men's T20 World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_RagtuCOGvgBFPwlnfTvd8F2V",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland FIFA World Cup match wins history\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_RagtuCOGvgBFPwlnfTvd8F2V",
+   "content": "[1950 FIFA World Cup] 1950 FIFA World Cup IV Campeonato Mundial de Futebol Brasil 1950 (Brazilian Portuguese) Official poster Tournament details Host country Brazil Dates 24 June – 16 July Teams 13 (from 3 confederations) Venues 6 (in 6 host cities) Final positions Champions Uruguay (2nd title) Runners-up Brazil Third place Sweden Fourth place Spain Tournament statistics Matches played 22 Goals scored 88 (4 per match) Attendance 1,045,246 (47,511 per match) Top scorer Ademir (9 goals) ← 1938 1954 → The 1950 FIFA World Cup was the fourth edition of the FIFA World Cup, the quadrennial international football championship for senior men's national teams. It was held in Brazil from 24 June to 16 July 1950. It was the first World Cup tournament in 12 years, as the 1942 and 1946 World Cups were cancelled due to World War II. It was also the first World Cup tournament held during the Cold War. Italy, the two-time defending champions, were eliminated in the first round for the first time in history. Uruguay, who had won the inaugural competition in 1930, defeated the host nation, Brazil, in the deciding match of the four-team group of the final round, causing what is sometimes known as one of the biggest upsets in football history, occasionally called the Maracanaço. This was the only tournament not decided by a one-match final. It was also the inaugural tournament where the trophy was referred to as the Jules Rimet Cup, to mark the 25th anniversary of Jules Rimet 's presidency of FIFA. Cite error: There a | other articles: 2026 FIFA World Cup, 1930 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_i4fK54FISDYvkhfETwIzGdGB",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland World Cup 1974 1978 results\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_i4fK54FISDYvkhfETwIzGdGB",
+   "content": "[1978 FIFA World Cup] This article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. Find sources: \"1978 FIFA World Cup\" – news · newspapers · books · scholar · JSTOR (October 2025) (Learn how and when to remove this message) 1978 FIFA World Cup Copa Mundial de Fútbol Argentina '78 (Spanish) Tournament details Host country Argentina Dates 1–25 June Teams 16 (from 5 confederations) Venues 6 (in 5 host cities) Final positions Champions Argentina (1st title) Runners-up Netherlands Third place Brazil Fourth place Italy Tournament statistics Matches played 38 Goals scored 102 (2.68 per match) Attendance 1,545,791 (40,679 per match) Top scorer Mario Kempes (6 goals) Best player Mario Kempes Best young player Antonio Cabrini Fair play award Argentina ← 1974 1982 → The 1978 FIFA World Cup was the 11th edition of the FIFA World Cup, the quadrennial international football world championship tournament among the men's senior national teams. It was held in Argentina between 1 and 25 June. The tournament was won by the host nation, Argentina, who defeated the Netherlands 3–1 in the final, after extra time. The final was held at River Plate 's home stadium, Estadio Monumental, in the Argentine capital of Buenos Aires. This win was the first World Cup title for Argentina, who became the fifth team (after Uruguay, Italy, England, and West Germany) to be both hosts and world champions and the third South American team t | other articles: Scotland national football team, 1974 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_61KvxF7DidjdLu4PXGW20cx8",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"Scotland national football team\", \"keywords\": \"World Cup match wins\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "call_ElNg4ML5MDnFWUPJdOEoskUz",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"1978 FIFA World Cup\", \"keywords\": \"Scotland win\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_61KvxF7DidjdLu4PXGW20cx8",
+   "content": "Ormond lost his first match in charge 5–0 to England, but recovered to steer Scotland to their first World Cup finals in 16 years in 1974.\nAfter failing to qualify for the 1980 European Championship, Scotland qualified for the 1982 FIFA World Cup from a tough group including Sweden, Portugal, Israel and Northern Ireland, losing just one match in the process.\nPoor results in friendly matches and a bad start to the 2006 World Cup qualification caused the team to drop to a record low of 77th in the FIFA World Rankings.\nGordon Strachan was appointed Scotland manager in January 2013, but defeats in his first two competitive matches meant that Scotland were the first UEFA team to be eliminated from the 2014 World Cup qualification.\nSix consecutive wins later that year meant that Scotland finished second in Group F of 2022 FIFA World Cup qualification.\nOn 18 November 2025, they beat Denmark 4–2 at home in the last match of the section to qualify for their ninth World Cup finals, and their first since 1998."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ElNg4ML5MDnFWUPJdOEoskUz",
+   "content": "Teófilo Cubillas was outstanding for Peru, scoring twice against Scotland in Peru's 3–1 win and hitting a hat-trick in their 4–1 victory over newcomers Iran.\nThis win was the first World Cup title for Argentina, who became the fifth team (after Uruguay, Italy, England, and West Germany) to be both hosts and world champions and the third South American team to win the World Cup.\nThe following 16 teams qualified for the final tournament:\nScotland\nEach group played a round-robin with two points for a win and one for a draw, and goal difference used to separate teams level on points.\nThe winners of each group played each other in the final, and the second-place finishers in the match for third place."
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_claLkd4C756FlGh4TxIp5dth",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"1974 FIFA World Cup\", \"keywords\": \"Scotland 1st win\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_claLkd4C756FlGh4TxIp5dth",
+   "content": "With Brazil, Yugoslavia and Scotland drawing all their games against each other, it was decided by the number of goals these three teams scored when defeating Zaire."
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_2l390GyXaxJT8k2z7SDRZ0Yl",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"1978 FIFA World Cup\", \"keywords\": \"Scotland win match\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2l390GyXaxJT8k2z7SDRZ0Yl",
+   "content": "The winners of each group played each other in the final, and the second-place finishers in the match for third place.\nTeófilo Cubillas was outstanding for Peru, scoring twice against Scotland in Peru's 3–1 win and hitting a hat-trick in their 4–1 victory over newcomers Iran.\nAs previously noted, rumours suggested that Peru might have been bribed or threatened into allowing Argentina to win the match by such a large margin.\nBrazil took third place from an enterprising Italian side with Nelinho scoring a memorable goal, and were dubbed \"moral champions\" by coach Cláudio Coutinho, because they did not win the tournament, but did not lose a single match.\nArgentina won 5 games but became the first team to win the World Cup after failing to win two matches, where they had lost to Italy in the first round and drawn with Brazil in the second round.\nPer statistical convention in football, matches decided in extra time are counted as wins and losses."
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_sJsbYNa0TDO3jphu6eMBMEgq",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland national football team World Cup results\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_sJsbYNa0TDO3jphu6eMBMEgq",
+   "content": "[Scotland national football team] Scotland Nickname The Tartan Army (supporters) Association Scottish Football Association (SFA) Confederation UEFA (Europe) Head coach Sébastien Pocognoli Captain Andy Robertson Most caps Kenny Dalglish (102) Top scorer Kenny Dalglish Denis Law (30) Home stadium Hampden Park FIFA code SCO First colours Second colours FIFA ranking Current 42 (20 July 2026) Highest 13 (October 2007) Lowest 88 (March 2005) First international Scotland 0–0 England (Partick, Scotland; 30 November 1872) (The first ever international football match) Biggest win Scotland 11–0 Ireland (Glasgow, Scotland; 23 February 1901) Biggest defeat Uruguay 7–0 Scotland (Basel, Switzerland; 19 June 1954) World Cup Appearances 9 (first in 1954) Best result Group stage (1954, 1958, 1974, 1978, 1982, 1986, 1990, 1998, 2026) European Championship Appearances 4 (first in 1992) Best result Group stage (1992, 1996, 2020, 2024) Website scottishfa.co.uk The Scotland national football team represents Scotland in men's international football and is controlled by the Scottish Football Association. They compete in three major professional tournaments: the FIFA World Cup, UEFA Nations League, and the UEFA European Championship. Scotland, as a country of the United Kingdom, are not a member of the International Olympic Committee (as Scottish athletes compete for Great Britain), and therefore the national team does not compete in the Olympic Games. The majority of Scotland's home matches are played at the national stadium, Hampden | other articles: Scotland national football team results (1872–1914), Scotland national football team results (1960–1979)"
+  },
+  {
+   "role": "user",
+   "content": "Tools are no longer available. Answer from what you already know; write the last line as FINAL: <answer> in English."
+  },
+  {
+   "role": "assistant",
+   "content": "Scotland previously won a World Cup match in 1978. FINAL: 1978"
+  }
+ ]
+}

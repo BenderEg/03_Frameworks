@@ -1,0 +1,371 @@
+{
+ "task": {
+  "id": "fresh-49",
+  "source": "fresh",
+  "question": "When was Iraq's previous World Cup appearance before their group stage match against Norway?",
+  "answer": "1986",
+  "evidence": "The fixture marked the return of Iraq and Norway to the World Cup finals, their first appearances since 1986 and 1998 respectively.",
+  "page": "2026 FIFA World Cup Group I",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I#Iraq_vs_Norway"
+ },
+ "answer": "FINAL: 1986",
+ "correct": true,
+ "cost": 0.0014001,
+ "votes": "1986 | 1986. | 1986.",
+ "agreement": 1.0,
+ "escalated": false,
+ "budget_hit": false,
+ "vote_runs": [
+  {
+   "i": 0,
+   "answer": "FINAL: 1986",
+   "steps": 4,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "When was Iraq's previous World Cup appearance before their group stage match against Norway?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_N15U1nezRPYFAQC7UIc3Agf1",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Iraq World Cup appearance history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_N15U1nezRPYFAQC7UIc3Agf1",
+     "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: Iraq at the FIFA World Cup, 1986 FIFA World Cup Group B"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_NZsEncf0E2YvMBJuONTluBFa",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Iraq at the FIFA World Cup\", \"keywords\": \"previous appearance\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_NZsEncf0E2YvMBJuONTluBFa",
+     "content": "Most appearances\nAmir Al-Ammari and Ibrahim Bayesh started all three matches, while Ali Al-Hamadi, Zidane Iqbal and Ahmed Qasem each started two matches and made one substitute appearance."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_FOsaUFZata1cbO3Cf9z2pQxm",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"1986 FIFA World Cup Group B\", \"keywords\": \"Iraq appearance\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_FOsaUFZata1cbO3Cf9z2pQxm",
+     "content": "Host Mexico topped the group, joined in the second round by Belgium and by Paraguay, who were making their first appearance in the finals since 1958.\nIraq, making their debut in the World Cup, lost all three of their matches and scored just one goal.\nIraq\nParaguay vs Iraq\n4 June 1986 12:00 CST Paraguay 1–0 Iraq Romerito 35' Estadio Toluca 70–86, Toluca Attendance: 24,000 Referee: Edwin Picon-Ackong (Mauritius)\nIraq"
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: 1986"
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "answer": "FINAL: 1986.",
+   "steps": 5,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "When was Iraq's previous World Cup appearance before their group stage match against Norway?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_PhC9CWYf1CnNj7kLQ95y6AFN",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Iraq FIFA World Cup history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_PhC9CWYf1CnNj7kLQ95y6AFN",
+     "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: History of the FIFA World Cup, 2026 FIFA World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_pFPvXlLcapz6g4EfKtJdclBu",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Iraq FIFA World Cup history\", \"keywords\": \"previous appearance\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_pFPvXlLcapz6g4EfKtJdclBu",
+     "content": "no such page"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_hSPmJuMsJVhH3c3sp0IYNE5c",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Iraq 1986 FIFA World Cup\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_hSPmJuMsJVhH3c3sp0IYNE5c",
+     "content": "[1986 FIFA World Cup] 1986 FIFA World Cup Copa Mundial de Fútbol México '86 (Spanish) 1986 FIFA World Cup official logo, designed by Rubén Santiago Hernández Tournament details Host country Mexico Dates 31 May – 29 June Teams 24 (from 5 confederations) Venues 12 (in 11 host cities) Final positions Champions Argentina (2nd title) Runners-up West Germany Third place France Fourth place Belgium Tournament statistics Matches played 52 Goals scored 132 (2.54 per match) Attendance 2,394,031 (46,039 per match) Top scorer Gary Lineker (6 goals) Best player Diego Maradona Best young player Enzo Scifo Fair play award Brazil ← 1982 1990 → The 1986 FIFA World Cup was the 13th FIFA World Cup, the quadrennial football tournament for men's senior national teams. It was played in Mexico from 31 May to 29 June 1986. The tournament was the second to feature a 24-team format. Colombia had been originally chosen to host the competition by FIFA but, largely due to economic reasons, was not able to do so, and withdrew in November 1982. Mexico was selected as the new host in May 1983, and became the first country to host the World Cup more than once, after previously hosting the 1970 edition. The World Cup was won by Argentina (their second title, after winning in 1978). Argentina was captained by the 25-year-old Diego Maradona, who played a large part in his team's success by scoring his \" Hand of God \" goal, as well as another voted the \" Goal of the Century \", in the same quarter-final match against England. These we | other articles: 1986 FIFA World Cup squads, 2026 FIFA World Cup squads"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_65SiiFTtiJWdp7p7Q7srJ1io",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"1986 FIFA World Cup\", \"keywords\": \"Iraq\"}"
+       }
+      },
+      {
+       "type": "function",
+       "id": "call_zt96yT5WiVKgyW0c69W6ZF2e",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Iraq World Cup history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_65SiiFTtiJWdp7p7Q7srJ1io",
+     "content": "Canada, Denmark and Iraq made their first appearances at the final stage.\nThree teams qualified for the World Cup for the first time: Canada, Denmark, and Iraq.\nIraq played all their 'home' matches on neutral ground in Saudi Arabia because of the Iran–Iraq War.\nCanada would not appear again until 2022, and Iraq would not qualify again until the next time the tournament was held in Mexico in 2026.\nIraq (debut)\nBelgium, Paraguay, Iraq"
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_zt96yT5WiVKgyW0c69W6ZF2e",
+     "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: Iraq at the FIFA World Cup, Iraq national football team"
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: 1986."
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "answer": "FINAL: 1986.",
+   "steps": 5,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "When was Iraq's previous World Cup appearance before their group stage match against Norway?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_HOWDbUrT4F35IGuWnJCZjgw7",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Iraq World Cup history\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_HOWDbUrT4F35IGuWnJCZjgw7",
+     "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: Iraq at the FIFA World Cup, Iraq national football team"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_gpHWKDkTjtIIeGHdYRP8mKHS",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"Iraq at the FIFA World Cup\", \"keywords\": \"previous appearance, 1986\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_gpHWKDkTjtIIeGHdYRP8mKHS",
+     "content": "keywords not found on the page"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_XUiaeKxKG1uCCfQ6KfcGnHEi",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Iraq previous World Cup appearance before 2026\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_XUiaeKxKG1uCCfQ6KfcGnHEi",
+     "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: 2026 FIFA World Cup, 2026 FIFA World Cup Group J"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_lSRigUKHSX1ZTFqqNLUgvM1D",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"Iraq previous appearance\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_lSRigUKHSX1ZTFqqNLUgvM1D",
+     "content": "Qatar qualified for the tournament through qualification for the first time, as its only previous appearance was as host in 2022.\nIraq returned to the tournament after appearing in its only previous tournament in 1986."
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: 1986."
+    }
+   ]
+  }
+ ],
+ "escalation": {},
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "When was Iraq's previous World Cup appearance before their group stage match against Norway?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_N15U1nezRPYFAQC7UIc3Agf1",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Iraq World Cup appearance history\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_N15U1nezRPYFAQC7UIc3Agf1",
+   "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: Iraq at the FIFA World Cup, 1986 FIFA World Cup Group B"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_NZsEncf0E2YvMBJuONTluBFa",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"Iraq at the FIFA World Cup\", \"keywords\": \"previous appearance\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_NZsEncf0E2YvMBJuONTluBFa",
+   "content": "Most appearances\nAmir Al-Ammari and Ibrahim Bayesh started all three matches, while Ali Al-Hamadi, Zidane Iqbal and Ahmed Qasem each started two matches and made one substitute appearance."
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_FOsaUFZata1cbO3Cf9z2pQxm",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"1986 FIFA World Cup Group B\", \"keywords\": \"Iraq appearance\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_FOsaUFZata1cbO3Cf9z2pQxm",
+   "content": "Host Mexico topped the group, joined in the second round by Belgium and by Paraguay, who were making their first appearance in the finals since 1958.\nIraq, making their debut in the World Cup, lost all three of their matches and scored just one goal.\nIraq\nParaguay vs Iraq\n4 June 1986 12:00 CST Paraguay 1–0 Iraq Romerito 35' Estadio Toluca 70–86, Toluca Attendance: 24,000 Referee: Edwin Picon-Ackong (Mauritius)\nIraq"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 1986"
+  }
+ ]
+}

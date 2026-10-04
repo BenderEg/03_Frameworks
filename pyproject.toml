@@ -1,0 +1,23 @@
+[project]
+name = "03-frameworks"
+version = "0.1.0"
+description = "Homework 03: the 01_ReAct quiz agent on LangGraph"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph",
+    "langchain-core",
+    "langchain-openai",
+    "httpx>=0.28.1",
+    "requests",
+    "beautifulsoup4>=4.15.0",
+    "pydantic",
+    "python-dotenv",
+    "pandas",
+    "matplotlib>=3.11.2",
+    "tabulate>=0.10.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

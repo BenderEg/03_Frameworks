@@ -1,0 +1,79 @@
+config,model,id,source,correct,steps,tool_calls,cost,seconds,answer,gold
+поиск и чтение страницы,gpt-4o-mini,fresh-1,fresh,False,3,2,0.0002295,9.3,"The Group F game between Tunisia and Japan was the 1,000th m","1,000th World Cup match"
+поиск и чтение страницы,gpt-4o-mini,fresh-3,fresh,False,9,7,0.0015076499999999997,26.8,unknown,Tomas Soucek
+поиск и чтение страницы,gpt-4o-mini,fresh-4,fresh,True,3,4,0.00046275000000000005,13.1,Mexico became the first team to secure a spot in the round o,round of 32
+поиск и чтение страницы,gpt-4o-mini,fresh-6,fresh,False,5,4,0.0005108999999999999,16.2,round of 16.,knockout stages
+поиск и чтение страницы,gpt-4o-mini,fresh-8,fresh,False,9,7,0.0015087000000000004,26.1,unknown,Miro Muheim
+поиск и чтение страницы,gpt-4o-mini,fresh-9,fresh,False,9,7,0.0020691,27.4,unknown.,90+7'
+поиск и чтение страницы,gpt-4o-mini,fresh-10,fresh,False,9,7,0.0013654500000000016,28.5,unknown,Geoff Hurst
+поиск и чтение страницы,gpt-4o-mini,fresh-12,fresh,False,7,6,0.0008849999999999995,23.7,Own goal by Miro Muheim (Switzerland) in the match against Q,Mahmud Abunada
+поиск и чтение страницы,gpt-4o-mini,fresh-13,fresh,False,9,7,0.001369500000000001,28.7,unknown,12
+поиск и чтение страницы,gpt-4o-mini,fresh-14,fresh,False,7,7,0.0010746000000000002,23.5,1978.,1990
+поиск и чтение страницы,gpt-4o-mini,fresh-17,fresh,False,9,7,0.001708349999999999,31.2,unknown,"64,478"
+поиск и чтение страницы,gpt-4o-mini,fresh-18,fresh,False,9,7,0.0012295499999999977,36.4,unknown,Yassine Bounou
+поиск и чтение страницы,gpt-4o-mini,fresh-19,fresh,False,9,7,0.0018184499999999975,28.3,unknown.,Four
+поиск и чтение страницы,gpt-4o-mini,fresh-20,fresh,False,9,7,0.001089750000000004,27.2,unknown,dominate the game
+поиск и чтение страницы,gpt-4o-mini,fresh-21,fresh,True,3,2,0.00025125000000000147,9.2,Cameron Burgess,Cameron Burgess
+поиск и чтение страницы,gpt-4o-mini,fresh-22,fresh,False,9,7,0.0014413499999999975,30.6,unknown,Miguel Almirón
+поиск и чтение страницы,gpt-4o-mini,fresh-23,fresh,False,9,7,0.0018653999999999997,30.0,unknown,90+8'
+поиск и чтение страницы,gpt-4o-mini,fresh-24,fresh,False,9,7,0.0013904999999999994,28.9,unknown,Clément Turpin
+поиск и чтение страницы,gpt-4o-mini,fresh-26,fresh,False,9,7,0.0012443999999999997,27.4,unknown,90th minute
+поиск и чтение страницы,gpt-4o-mini,fresh-27,fresh,True,6,5,0.000727949999999998,18.1,Toronto,Toronto
+поиск и чтение страницы,gpt-4o-mini,fresh-28,fresh,False,6,5,0.0007192499999999977,21.7,Curaçao appeared in the FIFA World Cup for the first time.,earned a point
+поиск и чтение страницы,gpt-4o-mini,fresh-30,fresh,False,2,1,0.00015060000000000073,7.5,1994 World Cup,1994 FIFA World Cup
+поиск и чтение страницы,gpt-4o-mini,fresh-31,fresh,False,9,7,0.0015220500000000005,32.1,unknown.,"69,285"
+поиск и чтение страницы,gpt-4o-mini,fresh-32,fresh,True,3,2,0.00022725000000000176,9.0,Sabri Lamouchi.,Sabri Lamouchi
+поиск и чтение страницы,gpt-4o-mini,fresh-34,fresh,False,9,8,0.0015984000000000033,44.9,unknown,"70,137"
+поиск и чтение страницы,gpt-4o-mini,fresh-36,fresh,True,6,5,0.0007271999999999973,19.5,Mohamed Hany,Mohamed Hany
+поиск и чтение страницы,gpt-4o-mini,fresh-37,fresh,False,9,7,0.0015102000000000032,27.0,unknown,"70,108"
+поиск и чтение страницы,gpt-4o-mini,fresh-38,fresh,False,9,7,0.0013930500000000033,32.4,unknown,Nathan Ngoy
+поиск и чтение страницы,gpt-4o-mini,fresh-40,fresh,False,9,7,0.0018481500000000067,27.2,unknown,107.4 million
+поиск и чтение страницы,gpt-4o-mini,fresh-41,fresh,True,3,2,0.00026639999999999997,9.0,"52,497","52,497"
+поиск и чтение страницы,gpt-4o-mini,fresh-43,fresh,True,3,2,0.0002580000000000013,9.1,"62,764","62,764"
+поиск и чтение страницы,gpt-4o-mini,fresh-44,fresh,False,9,7,0.0015166499999999944,26.9,unknown,Hassan Al-Tambakti
+поиск и чтение страницы,gpt-4o-mini,fresh-45,fresh,False,9,7,0.001709849999999985,28.0,unknown,30 yards
+поиск и чтение страницы,gpt-4o-mini,fresh-47,fresh,False,9,7,0.001624049999999995,27.8,unknown,Zapopan
+поиск и чтение страницы,gpt-4o-mini,fresh-48,fresh,True,5,5,0.0007363499999999967,21.2,58 goals.,58
+поиск и чтение страницы,gpt-4o-mini,fresh-50,fresh,False,9,7,0.0013806000000000027,29.4,unknown,Norway vs Senegal
+поиск и чтение страницы,gpt-4o-mini,fresh-51,fresh,True,3,2,0.0002604000000000009,9.1,"80,663","80,663"
+поиск и чтение страницы,gpt-4o-mini,fresh-52,fresh,False,6,5,0.0006469500000000003,18.4,France.,Italy
+поиск и чтение страницы,gpt-4o-mini,fresh-53,fresh,False,9,8,0.001328700000000002,31.3,unknown.,Algeria
+поиск и чтение страницы,gpt-4o-mini,fresh-57,fresh,False,9,7,0.0014369999999999938,30.7,unknown,Levi's Stadium
+поиск и чтение страницы,gpt-4o-mini,fresh-58,fresh,False,9,7,0.001691099999999994,29.3,unknown,"69,045"
+поиск и чтение страницы,gpt-4o-mini,fresh-59,fresh,False,3,2,0.0002576999999999996,9.2,19,sixth goal
+поиск и чтение страницы,gpt-4o-mini,fresh-60,fresh,False,9,7,0.0012867000000000017,26.9,unknown,Tropical Storm Arthur
+поиск и чтение страницы,gpt-4o-mini,fresh-61,fresh,False,9,7,0.001194599999999997,28.7,unknown.,Abdukodir Khusanov
+поиск и чтение страницы,gpt-4o-mini,fresh-62,fresh,True,9,7,0.0013441499999999953,33.9,6 FIFA World Cup tournaments.,six
+поиск и чтение страницы,gpt-4o-mini,fresh-63,fresh,False,4,4,0.0004472999999999977,20.0,unknown,Never
+поиск и чтение страницы,gpt-4o-mini,fresh-64,fresh,True,4,3,0.0004597499999999949,12.1,"June 27, 2026","June 27, 2026"
+поиск и чтение страницы,gpt-4o-mini,fresh-65,fresh,False,5,5,0.0005206500000000044,15.7,2nd,first
+поиск и чтение страницы,gpt-4o-mini,fresh-66,fresh,True,3,3,0.00029819999999999847,12.1,10 goals.,10
+поиск и чтение страницы,gpt-4o-mini,fresh-67,fresh,False,9,8,0.0014395500000000047,30.3,unknown,95th minute
+поиск и чтение страницы,gpt-4o-mini,fresh-68,fresh,True,3,2,0.0002437500000000009,8.9,Ezri Konsa.,Ezri Konsa
+поиск и чтение страницы,gpt-4o-mini,fresh-69,fresh,True,3,2,0.000325350000000002,10.7,200.,200
+поиск и чтение страницы,gpt-4o-mini,fresh-70,fresh,False,9,7,0.0018386999999999987,29.8,unknown,"80,663"
+поиск и чтение страницы,gpt-4o-mini,fresh-71,fresh,True,3,2,0.00026384999999999603,9.0,"Lincoln Financial Field, Philadelphia.","Lincoln Financial Field, Philadelphia"
+поиск и чтение страницы,gpt-4o-mini,fresh-72,fresh,True,4,3,0.00047144999999999826,11.9,3,three
+поиск и чтение страницы,gpt-4o-mini,fresh-73,fresh,True,3,2,0.00025035000000000335,9.5,"68,777","68,777"
+поиск и чтение страницы,gpt-4o-mini,fresh-74,fresh,False,9,7,0.001224900000000008,27.0,unknown.,Julio Enciso
+поиск и чтение страницы,gpt-4o-mini,fresh-75,fresh,False,9,8,0.001385849999999994,28.7,unknown.,90+1
+поиск и чтение страницы,gpt-4o-mini,fresh-76,fresh,False,6,6,0.0007982999999999948,29.0,2 goals behind.,One
+поиск и чтение страницы,gpt-4o-mini,fresh-77,fresh,False,9,8,0.001622850000000002,38.7,8.,10 goals
+поиск и чтение страницы,gpt-4o-mini,fresh-78,fresh,False,9,7,0.0016654500000000128,27.4,unknown.,covering his mouth while speaking
+поиск и чтение страницы,gpt-4o-mini,fresh-80,fresh,False,9,7,0.0014643000000000156,27.3,unknown,Lamine Camara
+поиск и чтение страницы,gpt-4o-mini,fresh-83,fresh,False,9,7,0.0015101999999999893,27.5,unknown,Snickometer technology
+поиск и чтение страницы,gpt-4o-mini,fresh-84,fresh,False,6,5,0.0007565999999999684,18.3,unknown,46 seconds
+поиск и чтение страницы,gpt-4o-mini,fresh-85,fresh,False,9,7,0.0015544500000000266,29.2,unknown.,Mathew Ryan
+поиск и чтение страницы,gpt-4o-mini,fresh-86,fresh,True,4,3,0.00043980000000001795,14.0,Sidny Lopes Cabral,Sidny Lopes Cabral
+поиск и чтение страницы,gpt-4o-mini,fresh-87,fresh,False,9,7,0.0014501999999999987,27.8,unknown,Luis Díaz
+поиск и чтение страницы,gpt-4o-mini,fresh-88,fresh,True,3,2,0.0003334500000000129,11.0,Ceremony honoring the United States Semiquincentennial.,United States Semiquincentennial
+поиск и чтение страницы,gpt-4o-mini,fresh-90,fresh,False,9,7,0.0018175499999999872,32.1,unknown,Neymar
+поиск и чтение страницы,gpt-4o-mini,fresh-91,fresh,False,9,7,0.001195799999999983,26.8,unknown.,Canada
+поиск и чтение страницы,gpt-4o-mini,fresh-92,fresh,True,7,6,0.0009370499999999948,27.4,Cristiano Ronaldo.,Cristiano Ronaldo
+поиск и чтение страницы,gpt-4o-mini,fresh-93,fresh,False,9,7,0.001724399999999987,28.8,unknown,Czech Republic
+поиск и чтение страницы,gpt-4o-mini,fresh-94,fresh,False,9,7,0.0014349000000000028,32.3,unknown.,"3,000th goal in tournament history"
+поиск и чтение страницы,gpt-4o-mini,fresh-97,fresh,False,4,3,0.0004975499999999994,12.2,2 minutes before the end of regulation time.,88'
+поиск и чтение страницы,gpt-4o-mini,fresh-98,fresh,False,6,5,0.00040020000000000333,17.9,unknown,Snickometer
+поиск и чтение страницы,gpt-4o-mini,fresh-100,fresh,False,9,7,0.0019513499999999906,28.5,unknown,Lamine Yamal
+поиск и чтение страницы,gpt-4o-mini,fresh-101,fresh,False,9,7,0.001898250000000018,27.4,unknown.,Las Malvinas son argentinas
+поиск и чтение страницы,gpt-4o-mini,fresh-102,fresh,False,9,7,0.001430250000000008,27.0,unknown,1958

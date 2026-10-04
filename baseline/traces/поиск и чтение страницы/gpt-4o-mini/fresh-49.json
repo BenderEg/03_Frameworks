@@ -1,0 +1,74 @@
+{
+ "task": {
+  "id": "fresh-49",
+  "source": "fresh",
+  "question": "When was Iraq's previous World Cup appearance before their group stage match against Norway?",
+  "answer": "1986",
+  "evidence": "The fixture marked the return of Iraq and Norway to the World Cup finals, their first appearances since 1986 and 1998 respectively.",
+  "page": "2026 FIFA World Cup Group I",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I#Iraq_vs_Norway"
+ },
+ "answer": "Iraq's previous World Cup appearance before their match against Norway was in 1986. \n\nFINAL: 1986",
+ "correct": true,
+ "cost": 0.00024255000000000804,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы про чемпионат мира 2026 года.Если нужно найти факт, вызывай инструменты, а не угадывай. Добавляй в поисковые запросы уточнение, что запрос про чемпионат мира 2026 годаКогда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза."
+  },
+  {
+   "role": "user",
+   "content": "When was Iraq's previous World Cup appearance before their group stage match against Norway?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ATJphPTeJ4t2jYGGADLBRU0V",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Iraq World Cup history\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ATJphPTeJ4t2jYGGADLBRU0V",
+   "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: Iraq at the FIFA World Cup, 2027 FIBA Basketball World Cup qualification (Asia)"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Ex0Ybe1RbehWTTdZR9QAuMuq",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Iraq at the FIFA World Cup\",\"keywords\":\"previous World Cup appearance\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Ex0Ybe1RbehWTTdZR9QAuMuq",
+   "content": "Iraq appeared in the FIFA World Cup for the first time in 1986. They ended up in last place in their group with zero points, scoring one goal.\nIraq qualified for the FIFA World Cup for the second time in 2026, again finishing in last place in their group with zero points and scoring one goal.\nBoth times they have qualified for a World Cup, Mexico was the host or co-host.\n== Iraq at the 1986 FIFA World Cup ==\n== Iraq at the 2026 FIFA World Cup ==\nIraq has scored a total of two goals at the FIFA World Cup. The first was scored by Ahmed Radhi against Belgium in 1986, and the second was scored by Aymen Hussein against Norway in 2026."
+  },
+  {
+   "role": "assistant",
+   "content": "Iraq's previous World Cup appearance before their match against Norway was in 1986. \n\nFINAL: 1986",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

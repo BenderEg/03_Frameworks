@@ -1,0 +1,669 @@
+{
+ "task": {
+  "id": "fresh-13",
+  "source": "fresh",
+  "question": "In the Group Stage match between Brazil and Morocco on June 13, 2026, how many shots had Morocco registered by the 30th minute?",
+  "answer": "12",
+  "evidence": "Despite Morocco registering 12 shots by the 30th minute, Brazil managed to strike back in the 32nd after Vinícius Júnior received the ball inside the Morocco penalty area before cutting inside and striking a right-footed effort into the corner of the net to make it 1–1.",
+  "page": "2026 FIFA World Cup Group C",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C#Brazil_vs_Morocco"
+ },
+ "answer": "FINAL: 12 shots.",
+ "correct": true,
+ "cost": 0.00422625,
+ "answer_initial": "unknown.",
+ "correct_initial": false,
+ "rounds": 2,
+ "rejections": 1,
+ "first_verdict": false,
+ "budget_hit": false,
+ "verdicts": [
+  {
+   "round": 1,
+   "answer": "unknown.",
+   "supported": false,
+   "issue": "'unknown' is not an answer. The checker found: The proposed answer stating that the number of shots Morocco registered by the 30th minute was \"unknown\" is incorrect. I found a relevant passage that states, \"Despite Morocco registering 12 shots by the 30th minute...\" \n\nThis indicates that Morocco had indeed registered 12 shots by that time, which contradicts the proposed answer. Therefore, the correct information is that Morocco registered 12 shots by the 30th minute of their match against Brazil on June 13, 2026."
+  },
+  {
+   "round": 2,
+   "answer": "12 shots.",
+   "supported": true,
+   "issue": ""
+  }
+ ],
+ "history": [
+  {
+   "node": "answer",
+   "round": 1,
+   "answer": "FINAL: unknown.",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "In the Group Stage match between Brazil and Morocco on June 13, 2026, how many shots had Morocco registered by the 30th minute?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_rqyAC9QVizLTkHSkzRrenNZT",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil vs Morocco June 13 2026 match report\"}"
+       }
+      },
+      {
+       "type": "function",
+       "id": "call_9CY0MAYGADnJDApNmZe3qZee",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Group Stage match Brazil Morocco statistics\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_rqyAC9QVizLTkHSkzRrenNZT",
+     "content": "[2026 FIFA World Cup Group J] Group J of the 2026 FIFA World Cup took place from June 16 to 27, 2026. The group consisted of defending champions Argentina, Algeria, Austria, and Jordan. Argentina topped the group with three wins out of three, and Austria finished as runners-up, gaining the edge over Algeria on goal difference. Both teams thus advanced to the round of 32. In the knockout stage, Argentina defeated multiple teams but lost to Spain in the final. Algeria's four points were nonetheless sufficient enough to also qualify for the knockout stage as one of the best third-placed teams. World Cup debutants Jordan finished last with no points and were eliminated. On June 22, Lionel Messi scored his 17th World Cup goal in Argentina's win against Austria, surpassing Miroslav Klose (16) as the FIFA World Cup's all-time top goalscorer. Messi's six goals across the three group matches brought his overall tally to 19 across the six World Cups he had participated in. | other articles: 2026 FIFA World Cup knockout stage, 2026 FIFA World Cup"
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_9CY0MAYGADnJDApNmZe3qZee",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup final, 2026 FIFA World Cup qualification"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_w3SlD9ThPdSxij7ATjXE7rQW",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco match June 13 2026 shots statistics\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_w3SlD9ThPdSxij7ATjXE7rQW",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup qualification, 2026 FIFA World Cup final"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_zCUaTA2sDvrCwbfRIbBunZoi",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco match June 13 2026 report\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_zCUaTA2sDvrCwbfRIbBunZoi",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup Group C, 2026 FIFA World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_ifyrvzV7uV4IzfmJEjkHsAws",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup June 13 2026 Brazil vs Morocco summary\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_ifyrvzV7uV4IzfmJEjkHsAws",
+     "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup knockout stage, 2026 FIFA World Cup Group J"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_RGmOFRP1Mfcerh3Fsd1rRsUA",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco match June 13 detailed statistics\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_RGmOFRP1Mfcerh3Fsd1rRsUA",
+     "content": "[FIFA World Cup records and statistics] As of the 2026 edition, 84 national teams have competed at the finals of the men's FIFA World Cup. Brazil is the only team to have appeared in all 23 tournaments to date, with Germany having participated in 21, Argentina in 19, and Italy and Mexico both in 18. Eight nations have won the tournament. The inaugural winners in 1930 were Uruguay; the current champions are Spain. The most successful nation is Brazil, which has won the cup on five occasions. Five teams have appeared in FIFA World Cup finals without winning, while twelve more have appeared in the semi-finals. | other articles: Carlos Queiroz, Dunga"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_sKQo4SAHOtRuEiEHzSIKOGzO",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup June 13 2026 Brazil Morocco game summary and statistics\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_sKQo4SAHOtRuEiEHzSIKOGzO",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup, 2026 FIFA World Cup final"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_tr0WUfCcsKLm1ceA8c5n4zGF",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco shots statistics June 13 2026\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_tr0WUfCcsKLm1ceA8c5n4zGF",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup qualification, 2026 FIFA World Cup final"
+    },
+    {
+     "role": "user",
+     "content": "Tools are no longer available. Answer from what you already know; write the last line as FINAL: <answer> in English."
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: unknown."
+    }
+   ]
+  },
+  {
+   "node": "judge",
+   "round": 1,
+   "report": "The proposed answer stating that the number of shots Morocco registered by the 30th minute was \"unknown\" is incorrect. I found a relevant passage that states, \"Despite Morocco registering 12 shots by the 30th minute...\" \n\nThis indicates that Morocco had indeed registered 12 shots by that time, which contradicts the proposed answer. Therefore, the correct information is that Morocco registered 12 shots by the 30th minute of their match against Brazil on June 13, 2026.",
+   "supported": false,
+   "issue": "'unknown' is not an answer. The checker found: The proposed answer stating that the number of shots Morocco registered by the 30th minute was \"unknown\" is incorrect. I found a relevant passage that states, \"Despite Morocco registering 12 shots by the 30th minute...\" \n\nThis indicates that Morocco had indeed registered 12 shots by that time, which contradicts the proposed answer. Therefore, the correct information is that Morocco registered 12 shots by the 30th minute of their match against Brazil on June 13, 2026.",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You fact-check a proposed answer to a question about the 2026 FIFA World Cup. Do not trust the proposed answer or your memory: use the tools to find the Wikipedia passage that confirms or contradicts it. Mention the 2026 FIFA World Cup in your search queries. Finish with a short report: quote the passage you found and say whether it supports the answer."
+    },
+    {
+     "role": "user",
+     "content": "Question: In the Group Stage match between Brazil and Morocco on June 13, 2026, how many shots had Morocco registered by the 30th minute?\nProposed answer: unknown.\n\nEvidence the answering agent retrieved:\n26 FIFA World Cup final, 2026 FIFA World Cup qualification\n[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup qualification, 2026 FIFA World Cup final\n[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup Group C, 2026 FIFA World Cup\n[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-\n[FIFA World Cup records and statistics] As of the 2026 edition, 84 national teams have competed at the finals of the men's FIFA World Cup. Brazil is the only team to have appeared in all 23 tournaments to date, with Germany having participated in 21, Argentina in 19, and Italy and Mexico both in 18. Eight nations have won the tournament. The inaugural winners in 1930 were Uruguay; the current champions are Spain. The most successful nation is Brazil, which has won the cup on five occasions. Five teams have appeared in FIFA World Cup finals without winning, while twelve more have appeared in the semi-finals. | other articles: Carlos Queiroz, Dunga\n[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup, 2026 FIFA World Cup final\n[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: 2026 FIFA World Cup qualification, 2026 FIFA World Cup final"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_ccQhEp0lqCFSkXnoVXu5q62q",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco match June 13 shots\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_ccQhEp0lqCFSkXnoVXu5q62q",
+     "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup Group J, 2026 FIFA World Cup round of 32"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_tzyhwjRTqD25ySx7fhQ5Mly8",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"2026 FIFA World Cup Group C\", \"keywords\": \"Brazil Morocco June 13 shots\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_tzyhwjRTqD25ySx7fhQ5Mly8",
+     "content": "Despite Morocco registering 12 shots by the 30th minute, Brazil managed to strike back in the 32nd after Vinícius Júnior received the ball inside the Morocco penalty area before cutting inside and striking a right-footed effort into the corner of the net to make it 1–1.\nJune 13, 2026 6:00 p.m. Brazil 1–1 Morocco Vinícius 32' Saibari 21' MetLife Stadium, East Rutherford Attendance: 80,663 Referee: Slavko Vinčić (Slovenia)\nThe group consisted of Brazil, Morocco, Haiti, and Scotland.\nBrazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament.\nFive-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference.\nBrazil vs Morocco"
+    },
+    {
+     "role": "assistant",
+     "content": "The proposed answer stating that the number of shots Morocco registered by the 30th minute was \"unknown\" is incorrect. I found a relevant passage that states, \"Despite Morocco registering 12 shots by the 30th minute...\" \n\nThis indicates that Morocco had indeed registered 12 shots by that time, which contradicts the proposed answer. Therefore, the correct information is that Morocco registered 12 shots by the 30th minute of their match against Brazil on June 13, 2026."
+    }
+   ]
+  },
+  {
+   "node": "answer",
+   "round": 2,
+   "answer": "FINAL: 12 shots.",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "In the Group Stage match between Brazil and Morocco on June 13, 2026, how many shots had Morocco registered by the 30th minute?\n\nA reviewer rejected your previous answer 'unknown.': 'unknown' is not an answer. The checker found: The proposed answer stating that the number of shots Morocco registered by the 30th minute was \"unknown\" is incorrect. I found a relevant passage that states, \"Despite Morocco registering 12 shots by the 30th minute...\" \n\nThis indicates that Morocco had indeed registered 12 shots by that time, which contradicts the proposed answer. Therefore, the correct information is that Morocco registered 12 shots by the 30th minute of their match against Brazil on June 13, 2026. Search again and correct it."
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_cW6tDC08rXRJ9RKwjraJu8KH",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Brazil Morocco June 13 2026 shots by the 30th minute\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_cW6tDC08rXRJ9RKwjraJu8KH",
+     "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup final, African nations at the FIFA World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_dsqWl8bL1gp19OyH8mXtTOcC",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"Brazil Morocco shots 30th minute\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_dsqWl8bL1gp19OyH8mXtTOcC",
+     "content": "keywords not found on the page"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_AOQ1aIsTZB26Y2nUdk0vUCtL",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco match report\"}"
+       }
+      },
+      {
+       "type": "function",
+       "id": "call_8jts7EySDj6NI40jRlK3PSy5",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Brazil Morocco June 13 2026 match summary\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_AOQ1aIsTZB26Y2nUdk0vUCtL",
+     "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup round of 32, 2026 FIFA World Cup Group J"
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_8jts7EySDj6NI40jRlK3PSy5",
+     "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup knockout stage, 2026 FIFA World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_Ditf425gxSp2kxJps2W0wAR1",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Morocco Brazil June 13 2026 shots statistics\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_Ditf425gxSp2kxJps2W0wAR1",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: Achraf Hakimi, Casemiro"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_pUvQOdhJInz9rAsfvnWmj3ia",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 World Cup Group Stage Brazil Morocco June 13 statistics\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_pUvQOdhJInz9rAsfvnWmj3ia",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: FIFA World Cup records and statistics, 2026 FIFA World Cup final"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_iSxRbuvjJ2o8txgjdo4ZOuFL",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Morocco Brazil match report June 13 2026\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_iSxRbuvjJ2o8txgjdo4ZOuFL",
+     "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup knockout stage, 2026 FIFA World Cup"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_IEHxUwZaIZwFHe1JtZjVQZ9A",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"Morocco shots statistics June 13 2026\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_IEHxUwZaIZwFHe1JtZjVQZ9A",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: Morocco, Achraf Hakimi"
+    },
+    {
+     "role": "user",
+     "content": "Tools are no longer available. Answer from what you already know; write the last line as FINAL: <answer> in English."
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: 12 shots."
+    }
+   ]
+  },
+  {
+   "node": "judge",
+   "round": 2,
+   "report": "The found passage confirms that Morocco registered 12 shots by the 30th minute in the match against Brazil on June 13, 2026. \n\nThe relevant quote from the passage is: \"Despite Morocco registering 12 shots by the 30th minute, Brazil managed to strike back in the 32nd after Vinícius Júnior received the ball inside the Morocco penalty area before cutting inside and striking a right-footed effort into the corner of the net to make it 1–1.\"\n\nThus, the proposed answer of \"12 shots\" is indeed supported.",
+   "supported": true,
+   "issue": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You fact-check a proposed answer to a question about the 2026 FIFA World Cup. Do not trust the proposed answer or your memory: use the tools to find the Wikipedia passage that confirms or contradicts it. Mention the 2026 FIFA World Cup in your search queries. Finish with a short report: quote the passage you found and say whether it supports the answer."
+    },
+    {
+     "role": "user",
+     "content": "Question: In the Group Stage match between Brazil and Morocco on June 13, 2026, how many shots had Morocco registered by the 30th minute?\nProposed answer: 12 shots.\n\nEvidence the answering agent retrieved:\nr in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-\n[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-\n[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: Achraf Hakimi, Casemiro\n[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: FIFA World Cup records and statistics, 2026 FIFA World Cup final\n[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-\n[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: Morocco, Achraf Hakimi"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_rtzH0aSSNDOWSddVlRg1iyjR",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco June 13 shots\"}"
+       }
+      },
+      {
+       "type": "function",
+       "id": "call_abCZwBz8TvMewDwWE8hL0mpl",
+       "function": {
+        "name": "web_search",
+        "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco statistics\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_rtzH0aSSNDOWSddVlRg1iyjR",
+     "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup round of 32, 2026 FIFA World Cup knockout stage"
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_abCZwBz8TvMewDwWE8hL0mpl",
+     "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: FIFA World Cup records and statistics, 2026 FIFA World Cup final"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_wWdLInCjRPeAO9QR7sZd1dB2",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"2026 FIFA World Cup Group C\", \"keywords\": \"Brazil Morocco June 13 shots\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_wWdLInCjRPeAO9QR7sZd1dB2",
+     "content": "Despite Morocco registering 12 shots by the 30th minute, Brazil managed to strike back in the 32nd after Vinícius Júnior received the ball inside the Morocco penalty area before cutting inside and striking a right-footed effort into the corner of the net to make it 1–1.\nJune 13, 2026 6:00 p.m. Brazil 1–1 Morocco Vinícius 32' Saibari 21' MetLife Stadium, East Rutherford Attendance: 80,663 Referee: Slavko Vinčić (Slovenia)\nThe group consisted of Brazil, Morocco, Haiti, and Scotland.\nBrazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament.\nFive-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference.\nBrazil vs Morocco"
+    },
+    {
+     "role": "assistant",
+     "content": "The found passage confirms that Morocco registered 12 shots by the 30th minute in the match against Brazil on June 13, 2026. \n\nThe relevant quote from the passage is: \"Despite Morocco registering 12 shots by the 30th minute, Brazil managed to strike back in the 32nd after Vinícius Júnior received the ball inside the Morocco penalty area before cutting inside and striking a right-footed effort into the corner of the net to make it 1–1.\"\n\nThus, the proposed answer of \"12 shots\" is indeed supported."
+    }
+   ]
+  }
+ ],
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "In the Group Stage match between Brazil and Morocco on June 13, 2026, how many shots had Morocco registered by the 30th minute?\n\nA reviewer rejected your previous answer 'unknown.': 'unknown' is not an answer. The checker found: The proposed answer stating that the number of shots Morocco registered by the 30th minute was \"unknown\" is incorrect. I found a relevant passage that states, \"Despite Morocco registering 12 shots by the 30th minute...\" \n\nThis indicates that Morocco had indeed registered 12 shots by that time, which contradicts the proposed answer. Therefore, the correct information is that Morocco registered 12 shots by the 30th minute of their match against Brazil on June 13, 2026. Search again and correct it."
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_cW6tDC08rXRJ9RKwjraJu8KH",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Brazil Morocco June 13 2026 shots by the 30th minute\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_cW6tDC08rXRJ9RKwjraJu8KH",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup final, African nations at the FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_dsqWl8bL1gp19OyH8mXtTOcC",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"Brazil Morocco shots 30th minute\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_dsqWl8bL1gp19OyH8mXtTOcC",
+   "content": "keywords not found on the page"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_AOQ1aIsTZB26Y2nUdk0vUCtL",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 FIFA World Cup Brazil Morocco match report\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "call_8jts7EySDj6NI40jRlK3PSy5",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Brazil Morocco June 13 2026 match summary\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_AOQ1aIsTZB26Y2nUdk0vUCtL",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup round of 32, 2026 FIFA World Cup Group J"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_8jts7EySDj6NI40jRlK3PSy5",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup knockout stage, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_Ditf425gxSp2kxJps2W0wAR1",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Morocco Brazil June 13 2026 shots statistics\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Ditf425gxSp2kxJps2W0wAR1",
+   "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: Achraf Hakimi, Casemiro"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_pUvQOdhJInz9rAsfvnWmj3ia",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 World Cup Group Stage Brazil Morocco June 13 statistics\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_pUvQOdhJInz9rAsfvnWmj3ia",
+   "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: FIFA World Cup records and statistics, 2026 FIFA World Cup final"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_iSxRbuvjJ2o8txgjdo4ZOuFL",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Morocco Brazil match report June 13 2026\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_iSxRbuvjJ2o8txgjdo4ZOuFL",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup knockout stage, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_IEHxUwZaIZwFHe1JtZjVQZ9A",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Morocco shots statistics June 13 2026\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_IEHxUwZaIZwFHe1JtZjVQZ9A",
+   "content": "[2026 FIFA World Cup knockout stage] The knockout stage of the 2026 FIFA World Cup was the second and final stage of the competition, following the group stage. Played from June 28 to July 19, 2026, the knockout stage ended with the final, held at MetLife Stadium in East Rutherford, New Jersey. The top two teams from each of the twelve groups, along with the best eight third-place teams, advanced to the knockout stage to compete in a single-elimination tournament. There were 32 matches in the knockout stage, including a match for third place. | other articles: Morocco, Achraf Hakimi"
+  },
+  {
+   "role": "user",
+   "content": "Tools are no longer available. Answer from what you already know; write the last line as FINAL: <answer> in English."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 12 shots."
+  }
+ ]
+}

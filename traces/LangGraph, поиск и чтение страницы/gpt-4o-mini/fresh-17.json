@@ -1,0 +1,66 @@
+{
+ "task": {
+  "id": "fresh-17",
+  "source": "fresh",
+  "question": "What was the attendance at the Scotland vs Brazil group stage match?",
+  "answer": "64,478",
+  "evidence": "Attendance: 64,478",
+  "page": "2026 FIFA World Cup Group C",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C#Scotland_vs_Brazil"
+ },
+ "answer": "FINAL: 64,478",
+ "correct": true,
+ "cost": 0.00026789999999999995,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "What was the attendance at the Scotland vs Brazil group stage match?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_XvaaeBRmnbZKVVT2VSOrWRNG",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland vs Brazil group stage match attendance 2026 FIFA World Cup\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_XvaaeBRmnbZKVVT2VSOrWRNG",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup Group D, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_g2FYztuvEn52Oo0oqjAlVbv7",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"2026 FIFA World Cup Group C\", \"keywords\": \"attendance Scotland Brazil\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_g2FYztuvEn52Oo0oqjAlVbv7",
+   "content": "June 24, 2026 6:00 p.m. Scotland 0–3 Brazil Vinícius 7', 45+3' Cunha 60' Hard Rock Stadium, Miami Gardens Attendance: 64,478 Referee: César Arturo Ramos (Mexico)\nThe group consisted of Brazil, Morocco, Haiti, and Scotland.\nBrazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament.\nJune 13, 2026 6:00 p.m. Brazil 1–1 Morocco Vinícius 32' Saibari 21' MetLife Stadium, East Rutherford Attendance: 80,663 Referee: Slavko Vinčić (Slovenia)\nJune 13, 2026 9:00 p.m. Haiti 0–1 Scotland McGinn 28' Gillette Stadium, Foxborough Attendance: 64,146 Referee: Mustapha Ghorbal (Algeria)\nJune 19, 2026 6:00 p.m. Scotland 0–1 Morocco Saibari 2' Gillette Stadium, Foxborough Attendance: 64,146 Referee: Ilgiz Tantashev (Uzbekistan)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 64,478"
+  }
+ ]
+}

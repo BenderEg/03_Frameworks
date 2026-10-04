@@ -1,0 +1,105 @@
+config,model,id,source,correct,steps,tool_calls,cost,seconds,answer,gold
+поиск и чтение страницы,gpt-4o-mini,fresh-0,fresh,True,5,4,0.00054465,7.7,United States,United States
+поиск и чтение страницы,gpt-4o-mini,fresh-1,fresh,False,3,2,0.0002408999999999,4.6,"1,000th match in FIFA World Cup history.","1,000th World Cup match"
+поиск и чтение страницы,gpt-4o-mini,fresh-2,fresh,True,3,2,0.0003099,4.3,16,16
+поиск и чтение страницы,gpt-4o-mini,fresh-3,fresh,False,9,7,0.0015108,15.7,информация недоступна.,Tomas Soucek
+поиск и чтение страницы,gpt-4o-mini,fresh-4,fresh,False,9,7,0.0016565999999999,16.6,Первая команда в нокаут-этапе.,round of 32
+поиск и чтение страницы,gpt-4o-mini,fresh-5,fresh,True,5,4,0.00063705,8.2,6,sixth
+поиск и чтение страницы,gpt-4o-mini,fresh-6,fresh,False,3,2,0.0002966999999999,4.4,knockout stage (round of 32),knockout stages
+поиск и чтение страницы,gpt-4o-mini,fresh-7,fresh,True,3,2,0.00029055,4.1,Toronto,Toronto
+поиск и чтение страницы,gpt-4o-mini,fresh-8,fresh,False,9,7,0.0014803499999999,14.4,информация отсутствует.,Miro Muheim
+поиск и чтение страницы,gpt-4o-mini,fresh-9,fresh,False,9,7,0.00188415,15.0,Информация недоступна.,90+7'
+поиск и чтение страницы,gpt-4o-mini,fresh-10,fresh,False,9,7,0.0017812499999999,14.8,Неизвестно.,Geoff Hurst
+поиск и чтение страницы,gpt-4o-mini,fresh-11,fresh,True,3,2,0.00024975,4.2,Mexico,Mexico
+поиск и чтение страницы,gpt-4o-mini,fresh-12,fresh,False,6,6,0.0009366,9.4,Information not available.,Mahmud Abunada
+поиск и чтение страницы,gpt-4o-mini,fresh-13,fresh,False,9,8,0.0013933499999999,23.8,информация недоступна.,12
+поиск и чтение страницы,gpt-4o-mini,fresh-14,fresh,False,9,7,0.0018236999999999,14.4,1998.,1990
+поиск и чтение страницы,gpt-4o-mini,fresh-15,fresh,True,3,2,0.0002932499999999,4.3,2,2
+поиск и чтение страницы,gpt-4o-mini,fresh-16,fresh,True,2,1,0.0001426499999999,3.2,2,two
+поиск и чтение страницы,gpt-4o-mini,fresh-17,fresh,False,9,7,0.00139395,14.1,информация недоступна,"64,478"
+поиск и чтение страницы,gpt-4o-mini,fresh-18,fresh,False,9,7,0.0014612999999999,14.5,игрок сборной Гаити.,Yassine Bounou
+поиск и чтение страницы,gpt-4o-mini,fresh-19,fresh,False,9,7,0.0016007999999999,15.1,10,Four
+поиск и чтение страницы,gpt-4o-mini,fresh-20,fresh,False,9,7,0.0010784999999999,13.9,информация отсутствует.,dominate the game
+поиск и чтение страницы,gpt-4o-mini,fresh-21,fresh,False,9,7,0.0018903,15.0,Неизвестно.,Cameron Burgess
+поиск и чтение страницы,gpt-4o-mini,fresh-22,fresh,False,9,7,0.0016327499999999,14.7,информация отсутствует.,Miguel Almirón
+поиск и чтение страницы,gpt-4o-mini,fresh-23,fresh,False,9,7,0.0014067,15.0,Неизвестно.,90+8'
+поиск и чтение страницы,gpt-4o-mini,fresh-24,fresh,False,9,7,0.00145665,14.3,информация недоступна.,Clément Turpin
+поиск и чтение страницы,gpt-4o-mini,fresh-25,fresh,True,2,1,0.0001469999999999,2.8,Curaçao,Curaçao
+поиск и чтение страницы,gpt-4o-mini,fresh-26,fresh,False,9,7,0.00139005,14.6,информация недоступна.,90th minute
+поиск и чтение страницы,gpt-4o-mini,fresh-27,fresh,False,9,7,0.00127545,13.9,Место не указано.,Toronto
+поиск и чтение страницы,gpt-4o-mini,fresh-28,fresh,False,6,5,0.00098415,10.6,First World Cup participation.,earned a point
+поиск и чтение страницы,gpt-4o-mini,fresh-29,fresh,True,8,7,0.00114705,13.5,Lincoln Financial Field,Lincoln Financial Field
+поиск и чтение страницы,gpt-4o-mini,fresh-30,fresh,False,9,7,0.00131355,14.4,1994 год.,1994 FIFA World Cup
+поиск и чтение страницы,gpt-4o-mini,fresh-31,fresh,False,9,7,0.00148815,14.8,Невозможно предоставить информацию.,"69,285"
+поиск и чтение страницы,gpt-4o-mini,fresh-32,fresh,False,9,7,0.00161535,14.9,Информация недоступна.,Sabri Lamouchi
+поиск и чтение страницы,gpt-4o-mini,fresh-33,fresh,True,3,2,0.0002429999999999,4.1,14,fourteen
+поиск и чтение страницы,gpt-4o-mini,fresh-34,fresh,False,9,8,0.0015283499999999,16.4,Нет информации о посещаемости.,"70,137"
+поиск и чтение страницы,gpt-4o-mini,fresh-35,fresh,True,3,2,0.0002493,4.2,Ellyes Skhiri,Ellyes Skhiri
+поиск и чтение страницы,gpt-4o-mini,fresh-36,fresh,False,9,7,0.0015787499999999,14.7,неизвестно.,Mohamed Hany
+поиск и чтение страницы,gpt-4o-mini,fresh-37,fresh,False,9,7,0.0015809999999999,15.3,Информация недоступна.,"70,108"
+поиск и чтение страницы,gpt-4o-mini,fresh-38,fresh,False,9,7,0.0016632,15.7,Информация отсутствует.,Nathan Ngoy
+поиск и чтение страницы,gpt-4o-mini,fresh-39,fresh,True,9,7,0.0016685999999999,15.2,44,44 years
+поиск и чтение страницы,gpt-4o-mini,fresh-40,fresh,False,9,7,0.0014353499999999,15.3,Информация о зрителях отсутствует.,107.4 million
+поиск и чтение страницы,gpt-4o-mini,fresh-41,fresh,False,9,7,0.0015961499999999,15.1,неизвестно,"52,497"
+поиск и чтение страницы,gpt-4o-mini,fresh-42,fresh,True,2,1,0.0001298999999999,3.0,Cape Verde,Cape Verde
+поиск и чтение страницы,gpt-4o-mini,fresh-43,fresh,False,9,7,0.00143835,14.7,Неподтвержденные данные.,"62,764"
+поиск и чтение страницы,gpt-4o-mini,fresh-44,fresh,False,9,7,0.0013842,14.8,Информация недоступна.,Hassan Al-Tambakti
+поиск и чтение страницы,gpt-4o-mini,fresh-45,fresh,False,9,7,0.0018664499999999,14.9,информация недоступна.,30 yards
+поиск и чтение страницы,gpt-4o-mini,fresh-46,fresh,True,7,7,0.0010699499999999,13.0,Slovakia,Slovakia
+поиск и чтение страницы,gpt-4o-mini,fresh-47,fresh,False,9,7,0.001509,15.4,Мексика,Zapopan
+поиск и чтение страницы,gpt-4o-mini,fresh-48,fresh,False,3,2,0.00040155,5.2,54,58
+поиск и чтение страницы,gpt-4o-mini,fresh-49,fresh,True,3,2,0.00024255,3.9,1986,1986
+поиск и чтение страницы,gpt-4o-mini,fresh-50,fresh,False,9,8,0.0017723999999999,15.1,Сенегал vs Норвегия,Norway vs Senegal
+поиск и чтение страницы,gpt-4o-mini,fresh-51,fresh,False,9,7,0.0014536499999999,18.2,информация о посещаемости отсутствует.,"80,663"
+поиск и чтение страницы,gpt-4o-mini,fresh-52,fresh,False,9,7,0.00161475,13.6,Бразилия,Italy
+поиск и чтение страницы,gpt-4o-mini,fresh-53,fresh,False,9,7,0.00168885,15.7,Камерун,Algeria
+поиск и чтение страницы,gpt-4o-mini,fresh-54,fresh,True,5,4,0.0006789,7.8,6,six
+поиск и чтение страницы,gpt-4o-mini,fresh-55,fresh,True,3,2,0.0002971499999999,4.4,Yazan Al-Arab,Yazan Al-Arab
+поиск и чтение страницы,gpt-4o-mini,fresh-56,fresh,True,7,6,0.00123615,11.4,Miroslav Klose,Miroslav Klose
+поиск и чтение страницы,gpt-4o-mini,fresh-57,fresh,False,3,2,0.0002846999999999,4.2,"Lusail Stadium, Qatar",Levi's Stadium
+поиск и чтение страницы,gpt-4o-mini,fresh-58,fresh,False,8,8,0.0012314999999999,15.0,Attendance information not found.,"69,045"
+поиск и чтение страницы,gpt-4o-mini,fresh-59,fresh,False,3,2,0.0003329999999999,4.4,21,sixth goal
+поиск и чтение страницы,gpt-4o-mini,fresh-60,fresh,False,7,8,0.0009784499999999,14.3,No information found.,Tropical Storm Arthur
+поиск и чтение страницы,gpt-4o-mini,fresh-61,fresh,False,4,3,0.0003385499999999,5.8,Информация недоступна.,Abdukodir Khusanov
+поиск и чтение страницы,gpt-4o-mini,fresh-62,fresh,False,8,8,0.0018273,13.5,five,six
+поиск и чтение страницы,gpt-4o-mini,fresh-63,fresh,False,4,4,0.0006017999999999,7.7,No previous matches.,Never
+поиск и чтение страницы,gpt-4o-mini,fresh-64,fresh,False,3,2,0.0002307,4.2,It was their first meeting ever.,"June 27, 2026"
+поиск и чтение страницы,gpt-4o-mini,fresh-65,fresh,False,5,4,0.00064095,7.8,second,first
+поиск и чтение страницы,gpt-4o-mini,fresh-66,fresh,False,9,7,0.0019481999999999,14.4,6,10
+поиск и чтение страницы,gpt-4o-mini,fresh-67,fresh,False,9,7,0.0013858499999999,15.2,Невозможно определить.,95th minute
+поиск и чтение страницы,gpt-4o-mini,fresh-68,fresh,False,9,7,0.0013501499999999,15.0,Информация недоступна.,Ezri Konsa
+поиск и чтение страницы,gpt-4o-mini,fresh-69,fresh,False,9,7,0.0018459,14.6,более 150,200
+поиск и чтение страницы,gpt-4o-mini,fresh-70,fresh,False,7,6,0.0009471,12.6,Attendance not found.,"80,663"
+поиск и чтение страницы,gpt-4o-mini,fresh-71,fresh,False,9,7,0.00140715,14.0,Информация о стадионе не найдена.,"Lincoln Financial Field, Philadelphia"
+поиск и чтение страницы,gpt-4o-mini,fresh-72,fresh,False,9,8,0.0017592,16.0,2,three
+поиск и чтение страницы,gpt-4o-mini,fresh-73,fresh,False,9,7,0.0012785999999999,15.0,Неподтверждено.,"68,777"
+поиск и чтение страницы,gpt-4o-mini,fresh-74,fresh,False,9,7,0.00131235,15.4,Фредди Дос Сантос.,Julio Enciso
+поиск и чтение страницы,gpt-4o-mini,fresh-75,fresh,False,9,7,0.0013637999999999,15.8,информация недоступна.,90+1
+поиск и чтение страницы,gpt-4o-mini,fresh-76,fresh,False,9,7,0.0019670999999999,15.6,неизвестно.,One
+поиск и чтение страницы,gpt-4o-mini,fresh-77,fresh,False,8,8,0.00165975,14.0,12,10 goals
+поиск и чтение страницы,gpt-4o-mini,fresh-78,fresh,False,9,7,0.0014233499999999,15.2,Неизвестно.,covering his mouth while speaking
+поиск и чтение страницы,gpt-4o-mini,fresh-79,fresh,True,2,2,0.0002253,4.0,52,52 years
+поиск и чтение страницы,gpt-4o-mini,fresh-80,fresh,False,9,7,0.0015174,15.8,Неподтверждено.,Lamine Camara
+поиск и чтение страницы,gpt-4o-mini,fresh-81,fresh,True,2,1,0.0001622999999999,3.3,Donald Trump,Donald Trump
+поиск и чтение страницы,gpt-4o-mini,fresh-82,fresh,True,6,5,0.00067575,9.1,2010,2010
+поиск и чтение страницы,gpt-4o-mini,fresh-83,fresh,False,9,7,0.0012549,15.0,Полуавтоматизированная система определения офсайда.,Snickometer technology
+поиск и чтение страницы,gpt-4o-mini,fresh-84,fresh,False,9,7,0.0012950999999999,16.5,информация недоступна.,46 seconds
+поиск и чтение страницы,gpt-4o-mini,fresh-85,fresh,False,9,7,0.0014573999999999,16.1,Неизвестно.,Mathew Ryan
+поиск и чтение страницы,gpt-4o-mini,fresh-86,fresh,False,9,7,0.0015705,15.1,Информация недоступна.,Sidny Lopes Cabral
+поиск и чтение страницы,gpt-4o-mini,fresh-87,fresh,False,9,7,0.0015009,15.2,Информация отсутствует.,Luis Díaz
+поиск и чтение страницы,gpt-4o-mini,fresh-88,fresh,False,9,7,0.0016492499999999,16.0,Нет информации.,United States Semiquincentennial
+поиск и чтение страницы,gpt-4o-mini,fresh-89,fresh,True,4,3,0.0004043999999999,7.2,250-й юбилей Декларации независимости США.,250th
+поиск и чтение страницы,gpt-4o-mini,fresh-90,fresh,False,9,7,0.0011952,15.6,Информация недоступна.,Neymar
+поиск и чтение страницы,gpt-4o-mini,fresh-91,fresh,False,9,8,0.0021098999999999,17.8,Мексика.,Canada
+поиск и чтение страницы,gpt-4o-mini,fresh-92,fresh,False,9,7,0.0019270499999999,14.8,Криштиану Роналду.,Cristiano Ronaldo
+поиск и чтение страницы,gpt-4o-mini,fresh-93,fresh,False,9,7,0.0015014999999999,14.5,Исландия,Czech Republic
+поиск и чтение страницы,gpt-4o-mini,fresh-94,fresh,False,9,7,0.0015927,15.7,Информация недоступна.,"3,000th goal in tournament history"
+поиск и чтение страницы,gpt-4o-mini,fresh-95,fresh,True,3,2,0.0002476499999999,4.3,72,72 years
+поиск и чтение страницы,gpt-4o-mini,fresh-96,fresh,True,3,2,0.0002236499999999,4.2,84,84th minute
+поиск и чтение страницы,gpt-4o-mini,fresh-97,fresh,False,3,2,0.0003442499999999,4.2,Not specified.,88'
+поиск и чтение страницы,gpt-4o-mini,fresh-98,fresh,False,9,7,0.0011288999999999,13.6,Неизвестно.,Snickometer
+поиск и чтение страницы,gpt-4o-mini,fresh-99,fresh,True,3,2,0.0002438999999999,4.4,Breel Embolo,Breel Embolo
+поиск и чтение страницы,gpt-4o-mini,fresh-100,fresh,False,9,7,0.0018115499999999,14.1,Информация о фолах и пенальти недоступна.,Lamine Yamal
+поиск и чтение страницы,gpt-4o-mini,fresh-101,fresh,False,9,7,0.0016772999999999,15.1,Информация недоступна.,Las Malvinas son argentinas
+поиск и чтение страницы,gpt-4o-mini,fresh-102,fresh,False,9,7,0.00133485,15.3,1954.,1958
+поиск и чтение страницы,gpt-4o-mini,fresh-103,fresh,True,7,6,0.00108105,11.8,North America,North America

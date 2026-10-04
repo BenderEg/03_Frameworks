@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+# симлинк на первую домашку для локальной работы; всё нужное скопировано в utils/, data/, baseline/
+01_ReAct

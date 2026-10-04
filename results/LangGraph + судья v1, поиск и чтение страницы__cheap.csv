@@ -1,0 +1,51 @@
+config,model,id,source,correct,steps,tool_calls,calls,prompt_tokens,completion_tokens,cost,seconds,answer,gold,answer_initial,correct_initial,rounds,rejections,first_verdict,budget_hit
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-0,fresh,True,19,2,19,18154,822,0.0027363,42.8,United States,United States,unknown,False,2,1,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-1,fresh,False,7,2,7,4881,260,0.00081135,19.1,"The Group F game between Tunisia and Japan was the 1,000th m","1,000th World Cup match","The Group F game between Tunisia and Japan was the 1,000th m",False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-2,fresh,True,13,7,13,17673,529,0.00246915,39.7,16 years.,16,16 years.,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-3,fresh,False,13,8,13,12871,559,0.0018916500000000004,37.9,unknown.,Tomas Soucek,unknown.,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-4,fresh,False,29,8,29,37343,1439,0.005706449999999999,110.9,Mexico became the first team to qualify for the knockout sta,round of 32,Mexico became the first team to qualify for the 2026 FIFA Wo,False,3,2,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-5,fresh,True,8,4,8,8843,248,0.00128325,19.2,6.,sixth,6.,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-6,fresh,True,14,2,14,8994,649,0.0017385,40.1,knockout stages,knockout stages,Round of 32.,False,2,1,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-7,fresh,True,33,6,33,46240,1271,0.006460199999999998,118.4,Toronto,Toronto,Vancouver.,False,3,2,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-8,fresh,True,8,3,8,5145,277,0.00086115,25.5,Miro Muheim,Miro Muheim,Miro Muheim,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-9,fresh,True,26,6,26,41071,912,0.0054598500000000005,66.4,90+7th minute.,90+7',unknown,False,2,1,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-10,fresh,True,7,2,7,4689,338,0.00082935,20.0,Geoff Hurst,Geoff Hurst,Geoff Hurst,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-11,fresh,True,7,2,7,4485,249,0.00082215,16.0,Mexico,Mexico,Mexico,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-12,fresh,False,12,7,12,14880,422,0.0019572,32.4,unknown,Mahmud Abunada,unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-13,fresh,False,15,7,15,19983,398,0.00258345,31.4,unknown,12,unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-14,fresh,False,15,9,15,23195,467,0.00294345,48.0,1998,1990,1998,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-15,fresh,True,7,2,7,5120,252,0.0009192,12.4,2',2,2',True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-16,fresh,True,7,3,7,4456,215,0.0007974,16.0,2,two,2,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-17,fresh,True,12,6,12,16070,448,0.0020841,42.6,"64,478","64,478","64,478",True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-18,fresh,True,8,3,8,7392,281,0.0011717999999999998,20.6,Yassine Bounou,Yassine Bounou,Yassine Bounou,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-19,fresh,False,39,7,39,59115,1110,0.007814850000000002,100.8,unknown.,Four,unknown.,False,3,2,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-20,fresh,False,13,7,13,13463,413,0.00182565,25.2,unknown,dominate the game,unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-21,fresh,False,6,2,6,3929,228,0.0007261500000000001,12.6,Burgess.,Cameron Burgess,Burgess.,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-22,fresh,False,13,7,13,13497,399,0.00210075,33.8,unknown,Miguel Almirón,unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-23,fresh,False,14,7,14,19407,556,0.0025726499999999997,44.2,unknown,90+8',unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-24,fresh,True,9,5,9,10744,357,0.0015185999999999997,27.3,Clément Turpin (France),Clément Turpin,Clément Turpin (France),True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-25,fresh,True,8,3,8,4338,316,0.0008403,20.5,Curaçao.,Curaçao,Curaçao.,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-26,fresh,True,9,6,9,6752,366,0.0012324,24.6,90th minute,90th minute,90th minute,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-27,fresh,True,27,8,27,35871,899,0.00471045,72.5,"BMO Field, Toronto.",Toronto,unknown,False,2,1,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-28,fresh,False,5,2,5,2313,182,0.00045615,7.9,Curaçao appeared in the FIFA World Cup for the first time in,earned a point,Curaçao appeared in the FIFA World Cup for the first time in,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-29,fresh,True,5,2,5,2557,165,0.00048255000000000005,8.3,Lincoln Financial Field,Lincoln Financial Field,Lincoln Financial Field,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-30,fresh,False,7,3,7,5645,310,0.00103275,26.6,the 1994 edition.,1994 FIFA World Cup,the 1994 edition.,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-31,fresh,False,9,5,9,8614,335,0.0013395,36.6,unknown,"69,285",unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-32,fresh,True,7,2,7,3981,305,0.00078015,20.5,Sabri Lamouchi,Sabri Lamouchi,Sabri Lamouchi,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-33,fresh,True,8,2,8,5234,281,0.0009537,21.2,14 matches,fourteen,14 matches,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-34,fresh,True,7,5,7,5683,277,0.00094185,19.0,"70,137","70,137","70,137",True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-35,fresh,False,30,8,30,37423,934,0.004993050000000001,77.7,unknown.,Ellyes Skhiri,unknown,False,2,1,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-36,fresh,False,12,7,12,11308,349,0.0016368,28.6,unknown,Mohamed Hany,unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-37,fresh,False,13,7,13,15779,427,0.0020950499999999998,53.5,unknown.,"70,108",unknown.,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-38,fresh,True,19,4,19,18165,766,0.0027235499999999995,56.2,Nathan Ngoy,Nathan Ngoy,Nathan Ngoy,True,2,1,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-39,fresh,False,22,6,22,30527,1187,0.00413925,60.5,16 years.,44 years,44,True,2,1,False,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-40,fresh,False,14,7,14,22188,424,0.0027089999999999996,37.7,unknown,107.4 million,unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-41,fresh,False,12,7,12,10667,460,0.00164565,39.5,unknown,"52,497",unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-42,fresh,True,7,3,7,5324,235,0.0009396,15.1,Cape Verde,Cape Verde,Cape Verde,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-43,fresh,False,13,7,13,16497,455,0.00232515,43.7,unknown,"62,764",unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-44,fresh,False,15,7,15,19080,433,0.0024786,40.5,unknown.,Hassan Al-Tambakti,unknown.,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-45,fresh,False,13,7,13,15528,430,0.0020112,32.1,unknown,30 yards,unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-46,fresh,True,7,2,7,3992,342,0.0008039999999999999,22.8,Slovakia.,Slovakia,Slovakia.,True,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-47,fresh,False,14,8,14,19439,577,0.00248445,45.3,unknown,Zapopan,unknown,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-48,fresh,False,9,4,9,10357,366,0.0013987500000000003,24.7,67.,58,67.,False,1,0,True,False
+"LangGraph + судья v1, поиск и чтение страницы",gpt-4o-mini,fresh-49,fresh,True,7,2,7,4020,178,0.0007098,15.5,1986.,1986,1986.,True,1,0,True,False

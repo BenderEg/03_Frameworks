@@ -1,0 +1,74 @@
+{
+ "task": {
+  "id": "fresh-15",
+  "source": "fresh",
+  "question": "In which minute did Morocco score in the Scotland vs Morocco group stage match on June 19, 2026?",
+  "answer": "2",
+  "evidence": "Morocco took the lead in just the second minute of the game, after Brahim Díaz played a ball over the top of Scotland's defence and into the path of Ismael Saibari, who struck the ball into the left-hand corner of the net from the right to score. Saibari 2'",
+  "page": "2026 FIFA World Cup Group C",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C#Scotland_vs_Morocco"
+ },
+ "answer": "Morocco scored in the second minute of the match against Scotland on June 19, 2026. \n\nFINAL: 2",
+ "correct": true,
+ "cost": 0.0002932499999999949,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы про чемпионат мира 2026 года.Если нужно найти факт, вызывай инструменты, а не угадывай. Добавляй в поисковые запросы уточнение, что запрос про чемпионат мира 2026 годаКогда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза."
+  },
+  {
+   "role": "user",
+   "content": "In which minute did Morocco score in the Scotland vs Morocco group stage match on June 19, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_c4SKNC87sOhLwO6RO71BNiea",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Scotland vs Morocco June 19 2026 World Cup match report\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_c4SKNC87sOhLwO6RO71BNiea",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup Group D, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_uxtJhoYhGloPT6fKf5tLkzlU",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"2026 FIFA World Cup Group C\",\"keywords\":\"Morocco Scotland June 19 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_uxtJhoYhGloPT6fKf5tLkzlU",
+   "content": "Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52\nScotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco.\n=== Scotland vs Morocco ===\nMorocco took the lead in just the second minute of the game, after Brahim Díaz played a ball over the top of Scotland's defence and into the path of Ismael Saibari, who struck the ball into the left-hand corner of the net from the right to score for the second straight game. Morocco came forward with a similar looking attack in the 18th minute, with Díaz playing another ball over the top which Ach\nEarly in the second half, Scotland players protested for a penalty following an alleged foul by El Aynaoui on John McGinn inside the penalty area, however no penalty was forthcoming. Morocco pushed forward again through El Khannouss, who squared the ball across to Saibari whose deflected effort struck the crossbar. Scotland continued to push for an equaliser, and in the 82nd minute, they protested"
+  },
+  {
+   "role": "assistant",
+   "content": "Morocco scored in the second minute of the match against Scotland on June 19, 2026. \n\nFINAL: 2",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

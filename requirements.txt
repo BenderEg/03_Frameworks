@@ -1,0 +1,12 @@
+langgraph
+langchain-core
+langchain-openai
+httpx>=0.28.1
+requests
+beautifulsoup4>=4.15.0
+pydantic
+python-dotenv
+pandas
+matplotlib
+tabulate
+tiktoken

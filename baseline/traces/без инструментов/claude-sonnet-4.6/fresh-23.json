@@ -1,0 +1,30 @@
+{
+ "task": {
+  "id": "fresh-23",
+  "source": "fresh",
+  "question": "At what minute did Turkey score the match-winning goal in the Group Stage match against the United States on June 25, 2026?",
+  "answer": "90+8'",
+  "evidence": "Ayhan 90+8' [ Report 5 ] - A dramatic stoppage-time goal by Kaan Ayhan secured Turkey's match victory.",
+  "page": "2026 FIFA World Cup Group D",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D#Turkey_vs_United_States"
+ },
+ "answer": "I'll search for information about this specific match.",
+ "correct": false,
+ "cost": 0.0007530000000000037,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы про чемпионат мира 2026 года.Если нужно найти факт, вызывай инструменты, а не угадывай. Добавляй в поисковые запросы уточнение, что запрос про чемпионат мира 2026 годаКогда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза."
+  },
+  {
+   "role": "user",
+   "content": "At what minute did Turkey score the match-winning goal in the Group Stage match against the United States on June 25, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "I'll search for information about this specific match.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}
