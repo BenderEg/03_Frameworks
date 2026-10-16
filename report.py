@@ -1,6 +1,8 @@
 """Итоговая таблица и картинка «цена вопроса против доли верных» по всем конфигурациям. Без вызовов модели.
 
-Голый цикл и сильная модель берутся из baseline/ (копия трейсов и CSV 01_ReAct), остальное — из results/.
+Голый цикл одним прогоном через счётчик (bare_loop.py), паттерны и тот же агент на haiku и sonnet — из results/.
+Составная строка голого цикла 01_ReAct (повтор только провалов) и sonnet без инструментов — из baseline/
+(копия трейсов и CSV 01_ReAct), для справки.
 Верность везде пересчитана по полному FINAL из трейсов локальной answer_check (с правилом 6); исходная проверка
 из 01_ReAct нужна только для раздела «Проверка проверки».
 В 01_ReAct токены не сохранялись, поэтому для этих двух строк они оценены tiktoken по трейсам (помечены ≈);
@@ -29,8 +31,11 @@ from utils import answer_check as original_check  # копия проверки 
 N = 50
 IMG = HERE / "img"
 LANGGRAPH = "LangGraph, поиск и чтение страницы"
-JUDGE, VOTE = PATTERNS["judge"][0], PATTERNS["vote"][0]
+JUDGE, VOTE, RETRY = PATTERNS["judge"][0], PATTERNS["vote"][0], PATTERNS["retry"][0]
 JUDGE_V1 = "LangGraph + судья v1, поиск и чтение страницы"
+BARE = "голый цикл, поиск и чтение страницы"  # голый цикл 01_ReAct одним прогоном через счётчик (bare_loop.py)
+HAIKU = "LangGraph на haiku-4.5, поиск и чтение страницы"
+SONNET = "LangGraph на sonnet-4.6, поиск и чтение страницы"
 REACT_CHEAP = [BASELINE / "traces/повторные запуски/поиск и чтение страницы/gpt-4o-mini",
                BASELINE / "traces/поиск и чтение страницы/gpt-4o-mini"]
 REACT_CHEAP_CSV = [BASELINE / "results/повторные запуски/поиск и чтение страницы__cheap.csv",
@@ -119,12 +124,12 @@ def react_rows(config: str, trace_dirs: list[Path], csvs: list[Path], tools: boo
     return pd.DataFrame(rows)
 
 
-def local_rows(config: str) -> pd.DataFrame:
+def local_rows(config: str, level: str = "cheap", model_label: str = "gpt-4o-mini") -> pd.DataFrame:
     """Строки из results/; верность пересчитана по полному ответу из трейса, а не взята из CSV прогона."""
-    df = pd.read_csv(RESULTS / f"{config}__cheap.csv")
+    df = pd.read_csv(RESULTS / f"{config}__{level}.csv")
     tasks = {t["id"]: t for t in load_tasks(limit=N)}
     df = df[df["id"].isin(tasks)].copy()
-    traces = {i: json.loads((TRACES / config / "gpt-4o-mini" / f"{i}.json").read_text(encoding="utf-8"))
+    traces = {i: json.loads((TRACES / config / model_label / f"{i}.json").read_text(encoding="utf-8"))
               for i in df["id"]}
     df["config"] = config
     df["tokens"] = df["prompt_tokens"] + df["completion_tokens"]
@@ -154,7 +159,7 @@ def estimator_error() -> float:
 
 # Цвет по роли строки (категориальные слоты 1–3 эталонной палитры dataviz, светлая тема).
 SURFACE, INK, INK_2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e4e3df"
-ROLES = {"база": "#2a78d6", "паттерн": "#eb6834", "ориентир": "#1baf7a"}
+ROLES = {"база": "#2a78d6", "паттерн": "#eb6834", "ориентир": "#1baf7a", "контроль": "#eda100"}
 
 
 def money_chart(table: pd.DataFrame, path: Path) -> None:
@@ -165,9 +170,9 @@ def money_chart(table: pd.DataFrame, path: Path) -> None:
     for role, color in ROLES.items():
         part = table["роль"] == role
         ax.scatter(x[part], y[part], s=90, color=color, edgecolors=SURFACE, linewidths=2, zorder=3, label=role)
-    ax.set_xlim(x.min() / 1.6, x.max() * 3.2)
+    ax.set_xlim(x.min() / 3.5, x.max() * 3.2)
     ax.set_ylim(0, 100)
-    ax.xaxis.set_major_locator(FixedLocator([0.05, 0.1, 0.2, 0.5, 1, 2]))
+    ax.xaxis.set_major_locator(FixedLocator([0.02, 0.05, 0.1, 0.2, 0.5, 1, 2]))
     ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g}"))
     ax.xaxis.set_minor_formatter(NullFormatter())
     fig.canvas.draw()
@@ -177,7 +182,9 @@ def money_chart(table: pd.DataFrame, path: Path) -> None:
         for dx, dy in [(9, 8), (9, -14), (-9, 8), (-9, -14), (9, 26), (9, -30)]:
             label = ax.annotate(text, (r["центов на вопрос"], r["доля верных"] * 100), xytext=(dx, dy),
                                 textcoords="offset points", fontsize=8.5, color=INK, va="center",
-                                ha="left" if dx > 0 else "right")
+                                ha="left" if dx > 0 else "right",
+                                arrowprops={"arrowstyle": "-", "color": INK_2, "lw": 0.6, "shrinkA": 1, "shrinkB": 5,
+                                            "relpos": (0 if dx > 0 else 1, 0.5)})
             box = label.get_window_extent()
             if not any(box.overlaps(b) for b in placed) or dy == -30:
                 break
@@ -231,14 +238,17 @@ def capped_example(lg: pd.DataFrame) -> list[str]:
 MISS, DEBATABLE, WRONG = "проверка ошиблась", "спорно, оставлено неверным", "неверно"
 REVIEW: dict[str, list[tuple[str, str, str]]] = {
     "fresh-1": [("", MISS, "тот же 1,000-й матч, слова в другом порядке; исправлено правилом 6")],
-    "fresh-30": [("", MISS, "тот же ЧМ-1994 без слова FIFA; исправлено правилом 6")],
+    "fresh-30": [("1994", MISS, "тот же ЧМ-1994 без слова FIFA; исправлено правилом 6"),
+                 ("", WRONG, "ЧМ-2022 вместо ЧМ-1994")],
+    "fresh-2": [("", WRONG, "1986 — год, когда тренеры играли друг против друга; прошлый матч открытия — 2010, 16 лет")],
     "fresh-4": [("knockout stage", DEBATABLE, "round of 32 и есть первый раунд плей-офф, но эталон назван точнее"),
                 ("", WRONG, "квалификация на сам турнир, а не в round of 32")],
     "fresh-6": [("round of 32", DEBATABLE, "round of 32 — первый раунд плей-офф, но эталон «knockout stages»"),
                 ("", WRONG, "round of 16: в 2026 первый раунд плей-офф — 1/16")],
     "fresh-12": [("abunada", DEBATABLE, "только фамилия, а промпт требует имя как в источнике"),
                  ("", WRONG, "автогол забил другой игрок")],
-    "fresh-21": [("", DEBATABLE, "только фамилия, а промпт требует имя как в источнике")],
+    "fresh-21": [("burgess", DEBATABLE, "только фамилия, а промпт требует имя как в источнике"),
+                 ("", WRONG, "Бобадилья — автогол в матче США — Парагвай, а в матче с Австралией — Кэмерон Бёрджесс")],
     "fresh-44": [("", DEBATABLE, "только фамилия, а промпт требует имя как в источнике")],
     "fresh-14": [("", WRONG, "прошлая победа Шотландии — 1990 (Швеция 2–1), эталон совпадает с источником")],
     "fresh-28": [("", WRONG, "вопрос о первом очке Кюрасао, а не о первом участии")],
@@ -285,15 +295,75 @@ def votes_only(tag: str) -> tuple[int, int]:
     return single, plural
 
 
+def fixed_ids(df: pd.DataFrame) -> set[str]:
+    return set(df.loc[~df["correct_initial"] & df["correct"], "id"])
+
+
+def control_lines(judge: pd.DataFrame, retry: pd.DataFrame) -> list[str]:
+    """Судья против повтора при unknown без судьи: окупает ли проверяющий агент свою цену."""
+    rows = []
+    for name, df in (("повтор при unknown", retry), ("судья", judge)):
+        ok, cost = int(df["correct"].sum()), df["cost"].sum()
+        rows.append({"конфигурация": name, "верно": f"{ok}/{len(df)}", "исправил": len(fixed_ids(df)),
+                     "испортил": int((df["correct_initial"] & ~df["correct"]).sum()),
+                     "вопросов с повтором": int((df["rounds"] > 1).sum()),
+                     "центов на вопрос": round(cost / len(df) * 100, 3),
+                     "центов за верный": round(cost / ok * 100, 3) if ok else None})
+    both = fixed_ids(judge) & fixed_ids(retry)
+    only_judge, only_retry = fixed_ids(judge) - both, fixed_ids(retry) - both
+    unknown_first = int(retry["answer_initial"].fillna("").map(is_unknown).sum())
+    return ["## Судья против повтора при unknown", "",
+            pd.DataFrame(rows).to_markdown(index=False), "",
+            f"Первый ответ unknown у повтора: {unknown_first} из {len(retry)}. "
+            f"Из {len(fixed_ids(judge))} вопросов, исправленных судьёй, повтор без судьи исправил тоже {len(both)}"
+            f"{': ' + ', '.join(sorted(both, key=qnum)) if both else ''}. "
+            f"Только судья: {', '.join(sorted(only_judge, key=qnum)) or 'нет'}; "
+            f"только повтор: {', '.join(sorted(only_retry, key=qnum)) or 'нет'}.", ""]
+
+
+def qnum(qid: str) -> int:
+    return int(qid.split("-")[-1])
+
+
+def strong_lines(table: pd.DataFrame, vote: pd.DataFrame, haiku: pd.DataFrame) -> list[str]:
+    """Каскад против того же агента на haiku и sonnet по всем вопросам: сколько экономят голоса."""
+    rows = table.set_index("коротко")
+    cascade, h, s = rows.loc["голосование + каскад"], rows.loc["LangGraph haiku"], rows.loc["LangGraph sonnet"]
+    escalated = vote.loc[vote["escalated"], "id"]
+    h_on_escalated = haiku[haiku["id"].isin(escalated)]
+    return ["## Каскад против того же агента на сильной модели", "",
+            rows.loc[["голосование + каскад", "LangGraph haiku", "LangGraph sonnet"],
+                     ["верно", "центов на вопрос", "центов за верный"]].to_markdown(), "",
+            f"Каскад стоит {cascade['центов на вопрос'] / h['центов на вопрос']:.0%} цены haiku на всех вопросах "
+            f"и {cascade['центов на вопрос'] / s['центов на вопрос']:.0%} цены sonnet. "
+            f"На {len(escalated)} вопросах, ушедших наверх, haiku в своём прогоне верна "
+            f"{int(h_on_escalated['correct'].sum())}/{len(h_on_escalated)} "
+            f"(в каскаде {int(vote.loc[vote['escalated'], 'correct'].sum())}/{len(escalated)}), "
+            f"на остальных {int(haiku.loc[~haiku['id'].isin(escalated), 'correct'].sum())}/{len(haiku) - len(escalated)} "
+            f"против {int(vote.loc[~vote['escalated'], 'correct'].sum())}/{len(vote) - len(escalated)} у большинства голосов mini.", ""]
+
+
+# Какие конфигурации на gpt-4o-mini прочитаны глазами в «Проверке проверки».
+READ = ["голый цикл", "LangGraph", "повтор при unknown", "судья v1", "LangGraph + судья", "голосование + каскад",
+        "голый цикл 01_ReAct"]
+
+
 def main() -> None:
     configs = [
-        ("голый цикл (01_ReAct), gpt-4o-mini", "голый цикл", "база", True,
-         react_rows("голый цикл", REACT_CHEAP, REACT_CHEAP_CSV, tools=True)),
+        ("голый цикл, gpt-4o-mini (один прогон через счётчик)", "голый цикл", "база", False, local_rows(BARE)),
         ("LangGraph, gpt-4o-mini", "LangGraph", "база", False, local_rows(LANGGRAPH)),
+        ("LangGraph + повтор при unknown (контроль к судье)", "повтор при unknown", "контроль", False,
+         local_rows(RETRY)),
         ("LangGraph + судья v1 (принимал unknown)", "судья v1", "паттерн", False, local_rows(JUDGE_V1)),
         ("LangGraph + судья, gpt-4o-mini", "LangGraph + судья", "паттерн", False, local_rows(JUDGE)),
         ("голосование 3 + каскад на haiku-4.5", "голосование + каскад", "паттерн", False, local_rows(VOTE)),
-        ("claude-sonnet-4.6 без инструментов (01_ReAct)", "sonnet-4.6 без инструментов", "ориентир", True,
+        ("LangGraph на claude-haiku-4.5", "LangGraph haiku", "ориентир", False,
+         local_rows(HAIKU, "mid", "claude-haiku-4.5")),
+        ("LangGraph на claude-sonnet-4.6", "LangGraph sonnet", "ориентир", False,
+         local_rows(SONNET, "strong", "claude-sonnet-4.6")),
+        ("голый цикл 01_ReAct: повтор только провалов", "голый цикл 01_ReAct", "ориентир", True,
+         react_rows("голый цикл 01_ReAct", REACT_CHEAP, REACT_CHEAP_CSV, tools=True)),
+        ("claude-sonnet-4.6 без инструментов (01_ReAct)", "sonnet без инструментов", "ориентир", True,
          react_rows("sonnet", [REACT_STRONG], [REACT_STRONG_CSV], tools=False)),
     ]
     table = pd.DataFrame([{**summarize(df, label, est), "коротко": short, "роль": role}
@@ -308,7 +378,6 @@ def main() -> None:
     mini_cents = calls.loc[~calls["model"].str.contains("haiku"), "cost"].sum() / N * 100
     single, plural = votes_only(VOTE)
     agreed, escalated = vote[~vote["escalated"]], vote[vote["escalated"]]
-    sonnet = table.iloc[-1]
 
     lines = [
         f"# Итог на {N} вопросах", "", table.drop(columns=["коротко", "роль"]).to_markdown(index=False), "",
@@ -317,17 +386,18 @@ def main() -> None:
         "## Судья", "",
         *judge_lines("Судья (unknown всегда отклоняется кодом)", frames["LangGraph + судья"]),
         *judge_lines("Судья v1 (unknown решала модель)", frames["судья v1"]),
+        *control_lines(frames["LangGraph + судья"], frames["повтор при unknown"]),
         "## Голосование и каскад", "",
         f"Наверх ушло **{len(escalated)} из {len(vote)} ({len(escalated) / len(vote):.0%})**. "
         f"Где большинство нашлось, верно {int(agreed['correct'].sum())}/{len(agreed)}; "
         f"из ушедших на haiku верно {int(escalated['correct'].sum())}/{len(escalated)}. "
         f"На haiku пришлось {haiku_share:.0%} цены конфигурации; упёрлись в потолок вызовов "
-        f"{int(vote['budget_hit'].sum())}. Верный ответ каскада стоит {table.iloc[-2]['центов за верный']}¢ "
-        f"против {sonnet['центов за верный']}¢ у сильной модели на всём наборе.", "",
+        f"{int(vote['budget_hit'].sum())}.", "",
         f"Без каскада по тем же трейсам: один голос mini верен {single}/{N}, большинство из трёх {plural}/{N} "
         f"за {mini_cents:.3f}¢ на вопрос — прирост даёт haiku на спорных вопросах, а голоса работают как маршрутизатор.", "",
+        *strong_lines(table, vote, frames["LangGraph haiku"]),
         "## Потолок на деньги", "", *capped_example(frames["LangGraph"]), "",
-        *check_lines(frames, [short for _, short, role, _, _ in configs if role != "ориентир"]),
+        *check_lines(frames, READ),
     ]
     report = "\n".join(lines)
     (RESULTS / "report.md").write_text(report + "\n", encoding="utf-8")

@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "fresh-18",
+  "source": "fresh",
+  "question": "In the group stage match between Morocco and Haiti on June 24, 2026, who scored an own goal in the 10th minute?",
+  "answer": "Yassine Bounou",
+  "evidence": "Yassine Bounou made a costly own goal in the 10-minute first half. The goalscorers are listed as 'Bounou 10' ( o.g. )' indicating an own goal by Bounou in the 10th minute.",
+  "page": "2026 FIFA World Cup Group C",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C#Morocco_vs_Haiti"
+ },
+ "answer": "Perfect! I found the information about the match.\n\nFINAL: Yassine Bounou",
+ "correct": true,
+ "cost": 0.013718000000000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "In the group stage match between Morocco and Haiti on June 24, 2026, who scored an own goal in the 10th minute?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_018UwRV4oPdnUs8dLE9GTyoH",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 FIFA World Cup Morocco Haiti June 24\"}"
+     }
+    }
+   ],
+   "content": "I'll search for information about the Morocco vs Haiti match in the 2026 FIFA World Cup group stage."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_018UwRV4oPdnUs8dLE9GTyoH",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup squads, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_015cNewH3rsGSKXSJERpyP1a",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Morocco Haiti 2026 World Cup own goal 10th minute\"}"
+     }
+    }
+   ],
+   "content": "Let me search for more specific details about the Morocco vs Haiti match."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_015cNewH3rsGSKXSJERpyP1a",
+   "content": "[Morocco national football team] This article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. Find sources: \"Morocco national football team\" – news · newspapers · books · scholar · JSTOR (May 2026) (Learn how and when to remove this message) Morocco Nickname The Atlas Lions Association Royal Moroccan Football Federation (FRMF) Confederation CAF (Africa) Sub-confederation UNAF (North Africa) Head coach Mohamed Ouahbi Captain Achraf Hakimi Most caps Noureddine Naybet (115) Top scorer Ahmed Faras (36) Home stadium Prince Moulay Abdellah Stadium FIFA code MAR First colours Second colours FIFA ranking Current 7 1 (7 October 2026) Highest 6 (July 2026) Lowest 95 (September 2010) First international Morocco 3–3 Iraq (Beirut, Lebanon; 19 October 1957) Biggest win Morocco 13–1 Saudi Arabia (Casablanca, Morocco; 6 September 1961) Biggest defeat Hungary 6–0 Morocco (Tokyo, Japan; 11 October 1964) World Cup Appearances 7 (first in 1970) Best result Fourth place (2022) Africa Cup of Nations Appearances 20 (first in 1972) Best result Champions (1976, 2025) Arab Cup Appearances 5 (first in 1998) Best result Champions (2012, 2025) African Nations Championship Appearances 5 (first in 2014) Best result Champions (2018, 2020, 2024) Medal record Africa Cup of Nations 1976 Ethiopia 2025 Morocco 2004 Tunisia 1980 Nigeria Arab Cup 2012 Saudi Arabia 2025 Qatar African Nations Championship 2018 Morocco 2020 Cameroon 2024 Kenya, Tanzania | other articles: Haiti national football team, 2022 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_013yL8nyJBeaLYjGd5Re5tqL",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"2026 FIFA World Cup\\\" Group C matches results\"}"
+     }
+    }
+   ],
+   "content": "Let me try a more specific search for the 2026 FIFA World Cup article and the Group C results."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_013yL8nyJBeaLYjGd5Re5tqL",
+   "content": "[2026 FIFA World Cup qualification] 2026 FIFA World Cup qualification Tournament details Dates 7 September 2023 – 31 March 2026 Teams 206 (from 6 confederations) Tournament statistics Matches played 899 Goals scored 2,527 (2.81 per match) Attendance 15,626,580 (17,382 per match) Top scorer Erling Haaland (16 goals) ← 2022 2030 → The 2026 FIFA World Cup qualification decided the 45 teams that joined hosts Canada, Mexico, and the United States at the 2026 FIFA World Cup. The qualifying process began on 7 September 2023 with three matches of the CONMEBOL zone played that day. The first goal of the qualification series was scored by Colombian player Rafael Santos Borré against Venezuela. Qualification ended on 31 March 2026. Cape Verde, Curaçao, Jordan, and Uzbekistan all qualified for the first time, with Curaçao becoming the smallest nation to ever qualify with a population of just 158,000, while Qatar had their first successful qualifying campaign after making their debut in the previous edition as hosts, and Iraq had the longest qualifying campaign, playing 21 matches over a 28-month period to qualify for the World Cup. | other articles: Paraguay national football team, England national football team results (2020–present)"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01BULKCHRLc6jWkMDaZif1Ch",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 FIFA World Cup\"}"
+     }
+    }
+   ],
+   "content": "Let me search for the specific 2026 FIFA World Cup article."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01BULKCHRLc6jWkMDaZif1Ch",
+   "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: 2026 FIFA World Cup squads, 2026 FIFA World Cup knockout stage"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01FwF7uFNRbzgpUNxorNCPZ3",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"2026 FIFA World Cup Group C\", \"keywords\": \"Morocco Haiti June 24 own goal\"}"
+     }
+    }
+   ],
+   "content": "Now let me search for the specific group stage page to find the Morocco vs Haiti match details."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01FwF7uFNRbzgpUNxorNCPZ3",
+   "content": "Morocco dominated through the match against the inexperienced Haitian team that were already eliminated, though Yassine Bounou made a costly own goal in the 10-minute first half.\nJune 24, 2026 6:00 p.m. Morocco 4–2 Haiti Hakimi 39' Saibari 45+1' Rahimi 78' Yassine 89' Bounou 10' (o.g.) Isidor 43' Mercedes-Benz Stadium, Atlanta Attendance: 68,239 Referee: Danny Makkelie (Netherlands)"
+  },
+  {
+   "role": "assistant",
+   "content": "Perfect! I found the information about the match.\n\nFINAL: Yassine Bounou"
+  }
+ ]
+}

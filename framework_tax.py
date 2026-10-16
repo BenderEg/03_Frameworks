@@ -9,9 +9,8 @@ OpenRouter, а тела и заголовки сравниваются байт 
 
 import os, json, difflib
 
-import requests
-
-from langgraph_agent import BASE_URL, CALLS, CONFIGS, FIRST_RAW, MODELS, RESULTS, SYSTEM, TAG, TOOLS, HTTP, agent
+from bare_loop import bare_request
+from langgraph_agent import CALLS, CONFIGS, FIRST_RAW, MODELS, RESULTS, SYSTEM, TAG, TOOLS, HTTP, agent
 
 QUESTION = "Which country will host the 2026 FIFA World Cup final?"
 BARE, FRAMEWORK = "налог: голый цикл", "налог: LangGraph"
@@ -21,20 +20,11 @@ OUT = RESULTS / "first_request"
 HIDDEN = {"authorization", "content-length", "host", "cookie"}
 
 
-def bare_request(question: str, model: str) -> requests.PreparedRequest:
-    """Первый запрос agent_loop из 01_ReAct/main.py: тело как в chat(), заголовки как в HEADERS, отправка requests.post."""
-    # --- скопировано из 01_ReAct/main.py: HEADERS, CHAT_URL и тело chat() ---
-    headers = {"Authorization": f"Bearer {os.environ['OPENROUTER_API_KEY']}",
-               "HTTP-Referer": "https://postypashki.ru", "X-Title": "agents-course-seminar01"}
+def first_body(question: str, model: str) -> dict:
+    """Тело первого вызова agent_loop из 01_ReAct: как в chat() с инструментами конфигурации."""
     messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": question}]
     tools = [TOOLS[n]["schema"] for n in CONFIGS["поиск и чтение страницы"]]
-    body = {"model": model, "messages": messages, "usage": {"include": True}}
-    if tools:
-        body["tools"] = tools
-        body["tool_choice"] = "auto"
-    # --- конец копии ---
-    return requests.Session().prepare_request(requests.Request("POST", f"{BASE_URL}/chat/completions",
-                                                               json=body, headers=headers))
+    return {"model": model, "messages": messages, "usage": {"include": True}, "tools": tools, "tool_choice": "auto"}
 
 
 def first_call(tag: str) -> dict:
@@ -48,7 +38,7 @@ def shown_headers(headers) -> dict[str, str]:
 def main() -> None:
     model = MODELS["cheap"]
     TAG["now"] = BARE
-    prepared = bare_request(QUESTION, model)
+    prepared = bare_request(first_body(QUESTION, model))
     HTTP.post(prepared.url, content=prepared.body, headers=dict(prepared.headers)).raise_for_status()
     bare_raw = FIRST_RAW[BARE].content
 

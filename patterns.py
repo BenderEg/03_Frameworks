@@ -4,12 +4,14 @@
 по схеме Verdict; при отказе агент получает замечание и ищет заново — не больше двух попыток исправиться.
 Голосование: три независимых прогона gpt-4o-mini при temperature 0.7, ответ большинством (2 из 3, не unknown);
 без большинства вопрос уходит тому же агенту на claude-haiku-4.5.
+Повтор при unknown — контроль к судье: те же раунды и то же замечание на unknown, но без проверяющего агента.
 
 Оба паттерна — графы LangGraph поверх agent() из langgraph_agent.py, все вызовы идут через тот же счётчик,
 а потолок MAX_CALLS_PER_QUESTION проверяется кодом перед каждым вызовом модели.
 
     uv run python patterns.py --pattern judge --limit 3
     uv run python patterns.py --pattern vote --limit 3
+    uv run python patterns.py --pattern retry --limit 3
 """
 
 import os, argparse, logging, operator
@@ -146,6 +148,52 @@ def solve_judge(task: dict) -> dict[str, Any]:
             "trace": {"verdicts": state["verdicts"], "history": state["history"]}}
 
 
+# --- контроль к судье: повтор при unknown без судьи ---
+
+UNKNOWN_ISSUE = "'unknown' is not an answer."
+
+
+def after_answer(state: JudgeState) -> str:
+    """Тот же потолок раундов, что у судьи; повтор только при unknown — его в судье отклоняет код, а не модель."""
+    if state["route"] == "end" or not is_unknown(state["answer"]):
+        return "end"
+    return "reject"
+
+
+def reject_unknown_node(state: JudgeState) -> dict[str, Any]:
+    """Отказ без вызова модели: замечание то же, что шлёт судья на unknown, но без находок проверяющего."""
+    budget_hit = calls_left() < ANSWER_CALLS
+    record = {"round": state["rounds"], "answer": final_answer(state["answer"]), "supported": False,
+              "issue": UNKNOWN_ISSUE}
+    return {"verdicts": state["verdicts"] + [record], "feedback": UNKNOWN_ISSUE, "budget_hit": budget_hit,
+            "route": "end" if budget_hit else "answer"}
+
+
+def build_retry_graph():
+    graph = StateGraph(JudgeState)
+    graph.add_node("answer", answer_node)
+    graph.add_node("reject", reject_unknown_node)
+    graph.add_edge(START, "answer")
+    graph.add_conditional_edges("answer", after_answer, {"reject": "reject", "end": END})
+    graph.add_conditional_edges("reject", lambda s: s["route"], {"answer": "answer", "end": END})
+    return graph.compile()
+
+
+RETRY_GRAPH = build_retry_graph()
+
+
+def solve_retry(task: dict) -> dict[str, Any]:
+    state = RETRY_GRAPH.invoke({"question": task["question"], "answer": "", "first_answer": "", "evidence": "",
+                                "feedback": "", "rounds": 0, "steps": 0, "verdicts": [], "history": [],
+                                "messages": [], "budget_hit": False, "route": ""},
+                               {"recursion_limit": 2 * MAX_ROUNDS + 2})
+    first = final_answer(state["first_answer"])
+    return {"answer": state["answer"], "messages": state["messages"], "steps": state["steps"],
+            "answer_initial": first[:60], "correct_initial": is_correct(task, first), "rounds": state["rounds"],
+            "rejections": len(state["verdicts"]), "budget_hit": state["budget_hit"],
+            "trace": {"verdicts": state["verdicts"], "history": state["history"]}}
+
+
 # --- голосование и каскад ---
 
 class VoteState(TypedDict):
@@ -225,6 +273,7 @@ def solve_vote(task: dict) -> dict[str, Any]:
 PATTERNS = {
     "judge": ("LangGraph + судья, поиск и чтение страницы", solve_judge),
     "vote": ("голосование 3 + каскад haiku, поиск и чтение страницы", solve_vote),
+    "retry": ("LangGraph + повтор при unknown, поиск и чтение страницы", solve_retry),
 }
 
 
@@ -245,10 +294,10 @@ if __name__ == "__main__":
     df = run_tasks(load_tasks(limit=args.limit), solve, tag, CHEAP.split("/")[-1])
     df.to_csv(RESULTS / f"{tag}__cheap.csv", index=False, encoding="utf-8")
     print(summary_line(df))
-    if args.pattern == "judge":
+    if args.pattern in ("judge", "retry"):
         fixed = int((~df["correct_initial"] & df["correct"]).sum())
         broken = int((df["correct_initial"] & ~df["correct"]).sum())
-        print(f"судья: исправил {fixed}, испортил {broken}, отклонений {int(df['rejections'].sum())}, "
+        print(f"{args.pattern}: исправил {fixed}, испортил {broken}, отклонений {int(df['rejections'].sum())}, "
               f"упёрлись в потолок {int(df['budget_hit'].sum())}")
     else:
         print(f"наверх ушло {int(df['escalated'].sum())} из {len(df)} ({df['escalated'].mean():.0%}), "

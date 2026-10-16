@@ -1,0 +1,74 @@
+{
+ "task": {
+  "id": "fresh-15",
+  "source": "fresh",
+  "question": "In which minute did Morocco score in the Scotland vs Morocco group stage match on June 19, 2026?",
+  "answer": "2",
+  "evidence": "Morocco took the lead in just the second minute of the game, after Brahim Díaz played a ball over the top of Scotland's defence and into the path of Ismael Saibari, who struck the ball into the left-hand corner of the net from the right to score. Saibari 2'",
+  "page": "2026 FIFA World Cup Group C",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C#Scotland_vs_Morocco"
+ },
+ "answer": "FINAL: 2'",
+ "correct": true,
+ "cost": 0.00025725,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "In which minute did Morocco score in the Scotland vs Morocco group stage match on June 19, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_6EGZWDYibgyhV6FlWbVavZDb",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Scotland vs Morocco group stage match June 19, 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_6EGZWDYibgyhV6FlWbVavZDb",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup Group D, Morocco national football team"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_pzY7wo8pzpnIdTLn50WJ47Dr",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"2026 FIFA World Cup Group C\",\"keywords\":\"Morocco score Scotland\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_pzY7wo8pzpnIdTLn50WJ47Dr",
+   "content": "Morocco took the lead in just the second minute of the game, after Brahim Díaz played a ball over the top of Scotland's defence and into the path of Ismael Saibari, who struck the ball into the left-hand corner of the net from the right to score for the second straight game.\nThe group consisted of Brazil, Morocco, Haiti, and Scotland.\nBrazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament.\nScotland vs Morocco\nJune 19, 2026 6:00 p.m. Scotland 0–1 Morocco Saibari 2' Gillette Stadium, Foxborough Attendance: 64,146 Referee: Ilgiz Tantashev (Uzbekistan)"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 2'",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

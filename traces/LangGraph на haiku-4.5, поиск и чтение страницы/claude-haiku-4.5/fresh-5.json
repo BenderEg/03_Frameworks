@@ -1,0 +1,243 @@
+{
+ "task": {
+  "id": "fresh-5",
+  "source": "fresh",
+  "question": "In the Czech Republic vs Mexico World Cup 2026 group stage match, for how many FIFA World Cup squads had Guillermo Ochoa been selected?",
+  "answer": "sixth",
+  "evidence": "Guillermo Ochoa secured his sixth FIFA World Cup squad selection, joining Lionel Messi of Argentina and Cristiano Ronaldo of Portugal in achieving this historic milestone.",
+  "page": "2026 FIFA World Cup Group A",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A#Czech_Republic_vs_Mexico"
+ },
+ "answer": "Based on the information I found in my searches, Guillermo Ochoa had a long international career with Mexico spanning from 2005-2026. The search results mentioned he appeared in the 2018 FIFA World Cup and indicated he was selected for multiple World Cup tournaments.\n\nFrom what I could gather, Guillermo Ochoa was selected for the following FIFA World Cup squads:\n1. 2010 FIFA World Cup\n2. 2014 FIFA World Cup\n3. 2018 FIFA World Cup\n4. 2022 FIFA World Cup\n5. 2026 FIFA World Cup\n\nBy the time of the Czech Republic vs Mexico group stage match in 2026, Ochoa would have been selected for 5 FIFA World Cup squads.\n\nFINAL: 5",
+ "correct": false,
+ "cost": 0.045454,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "In the Czech Republic vs Mexico World Cup 2026 group stage match, for how many FIFA World Cup squads had Guillermo Ochoa been selected?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_0132sKHpoXsy98iTNW9JYrde",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Guillermo Ochoa FIFA World Cup squads history\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01TVdmFmoAdv1GmMN3wweKNm",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 FIFA World Cup Czech Republic Mexico group stage\"}"
+     }
+    }
+   ],
+   "content": "I'll help you find information about Guillermo Ochoa's World Cup squad selections up to and including the 2026 World Cup match between Czech Republic and Mexico."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_0132sKHpoXsy98iTNW9JYrde",
+   "content": "[Guillermo Ochoa] Guillermo Ochoa Ochoa with Mexico at the 2018 FIFA World Cup Personal information Full name Francisco Guillermo Ochoa Magaña Date of birth 13 July 1985 (age 41) Place of birth Guadalajara, Jalisco, Mexico Height 1.90 m (6 ft 3 in) Position Goalkeeper Youth career 1995–2005 América Senior career* Years Team Apps (Gls) 2003 Tigrillos Coapa 12 (0) 2004–2011 América 239 (0) 2004 → San Luis (loan) 1 (0) 2011–2014 Ajaccio 112 (0) 2014–2017 Málaga 11 (0) 2016–2017 → Granada (loan) 38 (0) 2017–2019 Standard Liège 78 (0) 2019–2022 América 118 (0) 2022–2024 Salernitana 41 (0) 2024–2025 AVS 23 (0) 2025–2026 AEL Limassol 22 (0) Total 695 (0) International career 2004–2012 Mexico U23 6 (0) 2021 Mexico Olympic (O.P.) 6 (0) 2005–2026 Mexico 154 (0) Medal record Men's football Representing Mexico Olympic Games 2020 Tokyo Team Copa América 2007 Venezuela CONCACAF Gold Cup Winner 2009 United States Winner 2011 United States Winner 2015 United States–Canada Winner 2019 United States Winner 2023 United States–Canada Winner 2025 United States–Canada Runner-up 2007 United States CONCACAF Nations League Winner 2025 United States Runner-up 2021 United States Runner-up 2024 United States 2023 United States * Club domestic league appearances and goals Francisco Guillermo Ochoa Magaña (Spanish pronunciation: [ɡiˈʝeɾmo oˈtʃo.a]; born 13 July 1985), commonly known as Memo Ochoa, is a Mexican former professional footballer who played as a goalkeeper. He was a full international with the Mexico national te | other articles: 2026 FIFA World Cup Group A, 2022 FIFA World Cup squads"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01TVdmFmoAdv1GmMN3wweKNm",
+   "content": "[2026 FIFA World Cup Group A] Group A of the 2026 FIFA World Cup took place from June 11 to 24, 2026. The group consisted of national football teams representing Mexico (co-host), South Africa, South Korea, and the Czech Republic. This also marked the return of the Czech Republic and South Africa to the World Cup, respectively, since 2006 and 2010. The top two teams, Mexico and South Africa, secured their place in the round of 32. Mexico won the group, winning three consecutive games, while South Africa won one game and drew the other, having lost their opening match to Mexico. South Korea finished third, having won one game, while the Czech Republic finished fourth with a single point. | other articles: 2026 FIFA World Cup knockout stage, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01EPxWY1j4hTXR5TzJRW6XdK",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Guillermo Ochoa World Cup 2006 2010 2014 2018 2022 2026 squad selections\"}"
+     }
+    }
+   ],
+   "content": "Now I need to get more specific information about Guillermo Ochoa's World Cup squad selections. Let me search for detailed information about his World Cup participation."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01EPxWY1j4hTXR5TzJRW6XdK",
+   "content": "[2026 FIFA World Cup Group A] Group A of the 2026 FIFA World Cup took place from June 11 to 24, 2026. The group consisted of national football teams representing Mexico (co-host), South Africa, South Korea, and the Czech Republic. This also marked the return of the Czech Republic and South Africa to the World Cup, respectively, since 2006 and 2010. The top two teams, Mexico and South Africa, secured their place in the round of 32. Mexico won the group, winning three consecutive games, while South Africa won one game and drew the other, having lost their opening match to Mexico. South Korea finished third, having won one game, while the Czech Republic finished fourth with a single point. | other articles: 2022 FIFA World Cup, FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01CvkR12Bc4yCRfDi2oK6RvW",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Guillermo Ochoa\\\" 2026 World Cup Mexico squad\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01B8whDpNrhxVGUexTpJVJBB",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Guillermo Ochoa\\\" World Cup appearances 2006 2010 2014 2018 2022\"}"
+     }
+    }
+   ],
+   "content": "Let me search for more specific information about Guillermo Ochoa's individual World Cup appearances."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01CvkR12Bc4yCRfDi2oK6RvW",
+   "content": "[Guillermo Ochoa] Guillermo Ochoa Ochoa with Mexico at the 2018 FIFA World Cup Personal information Full name Francisco Guillermo Ochoa Magaña Date of birth 13 July 1985 (age 41) Place of birth Guadalajara, Jalisco, Mexico Height 1.90 m (6 ft 3 in) Position Goalkeeper Youth career 1995–2005 América Senior career* Years Team Apps (Gls) 2003 Tigrillos Coapa 12 (0) 2004–2011 América 239 (0) 2004 → San Luis (loan) 1 (0) 2011–2014 Ajaccio 112 (0) 2014–2017 Málaga 11 (0) 2016–2017 → Granada (loan) 38 (0) 2017–2019 Standard Liège 78 (0) 2019–2022 América 118 (0) 2022–2024 Salernitana 41 (0) 2024–2025 AVS 23 (0) 2025–2026 AEL Limassol 22 (0) Total 695 (0) International career 2004–2012 Mexico U23 6 (0) 2021 Mexico Olympic (O.P.) 6 (0) 2005–2026 Mexico 154 (0) Medal record Men's football Representing Mexico Olympic Games 2020 Tokyo Team Copa América 2007 Venezuela CONCACAF Gold Cup Winner 2009 United States Winner 2011 United States Winner 2015 United States–Canada Winner 2019 United States Winner 2023 United States–Canada Winner 2025 United States–Canada Runner-up 2007 United States CONCACAF Nations League Winner 2025 United States Runner-up 2021 United States Runner-up 2024 United States 2023 United States * Club domestic league appearances and goals Francisco Guillermo Ochoa Magaña (Spanish pronunciation: [ɡiˈʝeɾmo oˈtʃo.a]; born 13 July 1985), commonly known as Memo Ochoa, is a Mexican former professional footballer who played as a goalkeeper. He was a full international with the Mexico national te | other articles: List of players who have appeared in the most FIFA World Cups, Mexico national football team"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01B8whDpNrhxVGUexTpJVJBB",
+   "content": "[Guillermo Ochoa] Guillermo Ochoa Ochoa with Mexico at the 2018 FIFA World Cup Personal information Full name Francisco Guillermo Ochoa Magaña Date of birth 13 July 1985 (age 41) Place of birth Guadalajara, Jalisco, Mexico Height 1.90 m (6 ft 3 in) Position Goalkeeper Youth career 1995–2005 América Senior career* Years Team Apps (Gls) 2003 Tigrillos Coapa 12 (0) 2004–2011 América 239 (0) 2004 → San Luis (loan) 1 (0) 2011–2014 Ajaccio 112 (0) 2014–2017 Málaga 11 (0) 2016–2017 → Granada (loan) 38 (0) 2017–2019 Standard Liège 78 (0) 2019–2022 América 118 (0) 2022–2024 Salernitana 41 (0) 2024–2025 AVS 23 (0) 2025–2026 AEL Limassol 22 (0) Total 695 (0) International career 2004–2012 Mexico U23 6 (0) 2021 Mexico Olympic (O.P.) 6 (0) 2005–2026 Mexico 154 (0) Medal record Men's football Representing Mexico Olympic Games 2020 Tokyo Team Copa América 2007 Venezuela CONCACAF Gold Cup Winner 2009 United States Winner 2011 United States Winner 2015 United States–Canada Winner 2019 United States Winner 2023 United States–Canada Winner 2025 United States–Canada Runner-up 2007 United States CONCACAF Nations League Winner 2025 United States Runner-up 2021 United States Runner-up 2024 United States 2023 United States * Club domestic league appearances and goals Francisco Guillermo Ochoa Magaña (Spanish pronunciation: [ɡiˈʝeɾmo oˈtʃo.a]; born 13 July 1985), commonly known as Memo Ochoa, is a Mexican former professional footballer who played as a goalkeeper. He was a full international with the Mexico national te | other articles: List of players who have appeared in the most FIFA World Cups, FIFA World Cup records and statistics"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_018dngF1iXHJ6hBSQR8Pp1vd",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Guillermo Ochoa most FIFA World Cup appearances record\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01QEF7s23iKpm6VFCQvp71EV",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"List of players who have appeared in the most FIFA World Cups\", \"keywords\": \"Guillermo Ochoa World Cup\"}"
+     }
+    }
+   ],
+   "content": "Let me check the page about players who have appeared in the most FIFA World Cups, which might have details about Ochoa."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_018dngF1iXHJ6hBSQR8Pp1vd",
+   "content": "[Guillermo Ochoa] Guillermo Ochoa Ochoa with Mexico at the 2018 FIFA World Cup Personal information Full name Francisco Guillermo Ochoa Magaña Date of birth 13 July 1985 (age 41) Place of birth Guadalajara, Jalisco, Mexico Height 1.90 m (6 ft 3 in) Position Goalkeeper Youth career 1995–2005 América Senior career* Years Team Apps (Gls) 2003 Tigrillos Coapa 12 (0) 2004–2011 América 239 (0) 2004 → San Luis (loan) 1 (0) 2011–2014 Ajaccio 112 (0) 2014–2017 Málaga 11 (0) 2016–2017 → Granada (loan) 38 (0) 2017–2019 Standard Liège 78 (0) 2019–2022 América 118 (0) 2022–2024 Salernitana 41 (0) 2024–2025 AVS 23 (0) 2025–2026 AEL Limassol 22 (0) Total 695 (0) International career 2004–2012 Mexico U23 6 (0) 2021 Mexico Olympic (O.P.) 6 (0) 2005–2026 Mexico 154 (0) Medal record Men's football Representing Mexico Olympic Games 2020 Tokyo Team Copa América 2007 Venezuela CONCACAF Gold Cup Winner 2009 United States Winner 2011 United States Winner 2015 United States–Canada Winner 2019 United States Winner 2023 United States–Canada Winner 2025 United States–Canada Runner-up 2007 United States CONCACAF Nations League Winner 2025 United States Runner-up 2021 United States Runner-up 2024 United States 2023 United States * Club domestic league appearances and goals Francisco Guillermo Ochoa Magaña (Spanish pronunciation: [ɡiˈʝeɾmo oˈtʃo.a]; born 13 July 1985), commonly known as Memo Ochoa, is a Mexican former professional footballer who played as a goalkeeper. He was a full international with the Mexico national te | other articles: FIFA World Cup records and statistics, List of players who have appeared in the most FIFA World Cups"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01QEF7s23iKpm6VFCQvp71EV",
+   "content": "Lionel Messi holds the record for most matches played at the FIFA World Cup.\nIn the FIFA World Cup, the following male football players have made the most final tournament appearances in matches and inclusions as squad members.\nThe following players had caps in at least 15 FIFA World Cup tournament matches.\nThe following players have been included in their national squads for multiple World Cup final tournaments.\nGuillermo Ochoa\nList of players who have appeared in four or more FIFA Women's World Cups"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01XQzoK9gYkFWyTs5rRniubH",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Guillermo Ochoa\\\" \\\"World Cup\\\" squads selected 2010 2014 2018 2022 2026\"}"
+     }
+    }
+   ],
+   "content": "Good! The search confirmed that Guillermo Ochoa is on the list of players who appeared in multiple World Cups. Now let me search for the specific details about how many World Cup squads he was selected for."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01XQzoK9gYkFWyTs5rRniubH",
+   "content": "[Guillermo Ochoa] Guillermo Ochoa Ochoa with Mexico at the 2018 FIFA World Cup Personal information Full name Francisco Guillermo Ochoa Magaña Date of birth 13 July 1985 (age 41) Place of birth Guadalajara, Jalisco, Mexico Height 1.90 m (6 ft 3 in) Position Goalkeeper Youth career 1995–2005 América Senior career* Years Team Apps (Gls) 2003 Tigrillos Coapa 12 (0) 2004–2011 América 239 (0) 2004 → San Luis (loan) 1 (0) 2011–2014 Ajaccio 112 (0) 2014–2017 Málaga 11 (0) 2016–2017 → Granada (loan) 38 (0) 2017–2019 Standard Liège 78 (0) 2019–2022 América 118 (0) 2022–2024 Salernitana 41 (0) 2024–2025 AVS 23 (0) 2025–2026 AEL Limassol 22 (0) Total 695 (0) International career 2004–2012 Mexico U23 6 (0) 2021 Mexico Olympic (O.P.) 6 (0) 2005–2026 Mexico 154 (0) Medal record Men's football Representing Mexico Olympic Games 2020 Tokyo Team Copa América 2007 Venezuela CONCACAF Gold Cup Winner 2009 United States Winner 2011 United States Winner 2015 United States–Canada Winner 2019 United States Winner 2023 United States–Canada Winner 2025 United States–Canada Runner-up 2007 United States CONCACAF Nations League Winner 2025 United States Runner-up 2021 United States Runner-up 2024 United States 2023 United States * Club domestic league appearances and goals Francisco Guillermo Ochoa Magaña (Spanish pronunciation: [ɡiˈʝeɾmo oˈtʃo.a]; born 13 July 1985), commonly known as Memo Ochoa, is a Mexican former professional footballer who played as a goalkeeper. He was a full international with the Mexico national te | other articles: FIFA World Cup, 2022 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_011CuSgucKbiAihKtTLobE4t",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Guillermo Ochoa Wikipedia\"}"
+     }
+    }
+   ],
+   "content": "Let me search more specifically for Ochoa's World Cup squad information."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_011CuSgucKbiAihKtTLobE4t",
+   "content": "[Cumbres Borrascosas (1964 TV series)] Cumbres Borrascosas Genre Telenovela Country of origin Mexico Original language Spanish Original release Network Telesistema Mexicano Release 1964 Infobox instructions (only shown in preview) Cumbres Borrascosas is a Mexican telenovela produced by Televisa for Telesistema Mexicano in 1964. | other articles: Alexis Ochoa, Dominic Ochoa"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01J7cLscKbuMCEM1vpDuae72",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2010 FIFA World Cup Mexico squad Guillermo Ochoa\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01V9hiPubpiNRwqezyAs7CKJ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2014 FIFA World Cup Mexico squad Guillermo Ochoa\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01TZbAgqhv5KmnKeRKYyEeo2",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2018 FIFA World Cup Mexico squad Guillermo Ochoa\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01DSwXi6LBPrUPoRcYLztqzj",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2022 FIFA World Cup Mexico squad Guillermo Ochoa\"}"
+     }
+    }
+   ],
+   "content": "Let me try searching for specific World Cup squads where Ochoa was included."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01J7cLscKbuMCEM1vpDuae72",
+   "content": "[Guillermo Ochoa] Guillermo Ochoa Ochoa with Mexico at the 2018 FIFA World Cup Personal information Full name Francisco Guillermo Ochoa Magaña Date of birth 13 July 1985 (age 41) Place of birth Guadalajara, Jalisco, Mexico Height 1.90 m (6 ft 3 in) Position Goalkeeper Youth career 1995–2005 América Senior career* Years Team Apps (Gls) 2003 Tigrillos Coapa 12 (0) 2004–2011 América 239 (0) 2004 → San Luis (loan) 1 (0) 2011–2014 Ajaccio 112 (0) 2014–2017 Málaga 11 (0) 2016–2017 → Granada (loan) 38 (0) 2017–2019 Standard Liège 78 (0) 2019–2022 América 118 (0) 2022–2024 Salernitana 41 (0) 2024–2025 AVS 23 (0) 2025–2026 AEL Limassol 22 (0) Total 695 (0) International career 2004–2012 Mexico U23 6 (0) 2021 Mexico Olympic (O.P.) 6 (0) 2005–2026 Mexico 154 (0) Medal record Men's football Representing Mexico Olympic Games 2020 Tokyo Team Copa América 2007 Venezuela CONCACAF Gold Cup Winner 2009 United States Winner 2011 United States Winner 2015 United States–Canada Winner 2019 United States Winner 2023 United States–Canada Winner 2025 United States–Canada Runner-up 2007 United States CONCACAF Nations League Winner 2025 United States Runner-up 2021 United States Runner-up 2024 United States 2023 United States * Club domestic league appearances and goals Francisco Guillermo Ochoa Magaña (Spanish pronunciation: [ɡiˈʝeɾmo oˈtʃo.a]; born 13 July 1985), commonly known as Memo Ochoa, is a Mexican former professional footballer who played as a goalkeeper. He was a full international with the Mexico national te | other articles: 2026 FIFA World Cup Group A, 2010 FIFA World Cup squads"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01V9hiPubpiNRwqezyAs7CKJ",
+   "content": "[2014 FIFA World Cup squads] The 2014 FIFA World Cup was an international football tournament that was held in Brazil from 12 June to 13 July 2014. The 32 national teams involved in the tournament were required to register a squad of 23 players, including three goalkeepers. Only players in these squads were eligible to take part in the tournament. A provisional list of 30 players per national team was submitted to FIFA by 13 May 2014. FIFA published the 30-player provisional lists on their website on 16 May 2014. The final lists of 23 players per national team were submitted to FIFA by 2 June 2014. FIFA published the 23-player final lists, with the squad numbers, on their website, on 5 June 2014. Teams were permitted to make late replacements in the event of serious injury, at any time up to 24 hours before their first game. The age listed for each player is on 12 June 2014, the first day of the tournament. The number of caps listed for each player does not include any matches played after the start of the 2014 FIFA World Cup. The club listed is the club for which the player last played a competitive match prior to the tournament. The nationality for each club reflects the national association (not the league) to which the club is affiliated. The Netherlands was the only team to use all of its 23 players during the tournament, making it the fourth team in World Cup history to ever use all of its players in the squad, after France in 1978, and both Greece and Russia in 1994 (although these squads had only | other articles: Guillermo Ochoa, 2026 FIFA World Cup Group A"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01TZbAgqhv5KmnKeRKYyEeo2",
+   "content": "[Guillermo Ochoa] Guillermo Ochoa Ochoa with Mexico at the 2018 FIFA World Cup Personal information Full name Francisco Guillermo Ochoa Magaña Date of birth 13 July 1985 (age 41) Place of birth Guadalajara, Jalisco, Mexico Height 1.90 m (6 ft 3 in) Position Goalkeeper Youth career 1995–2005 América Senior career* Years Team Apps (Gls) 2003 Tigrillos Coapa 12 (0) 2004–2011 América 239 (0) 2004 → San Luis (loan) 1 (0) 2011–2014 Ajaccio 112 (0) 2014–2017 Málaga 11 (0) 2016–2017 → Granada (loan) 38 (0) 2017–2019 Standard Liège 78 (0) 2019–2022 América 118 (0) 2022–2024 Salernitana 41 (0) 2024–2025 AVS 23 (0) 2025–2026 AEL Limassol 22 (0) Total 695 (0) International career 2004–2012 Mexico U23 6 (0) 2021 Mexico Olympic (O.P.) 6 (0) 2005–2026 Mexico 154 (0) Medal record Men's football Representing Mexico Olympic Games 2020 Tokyo Team Copa América 2007 Venezuela CONCACAF Gold Cup Winner 2009 United States Winner 2011 United States Winner 2015 United States–Canada Winner 2019 United States Winner 2023 United States–Canada Winner 2025 United States–Canada Runner-up 2007 United States CONCACAF Nations League Winner 2025 United States Runner-up 2021 United States Runner-up 2024 United States 2023 United States * Club domestic league appearances and goals Francisco Guillermo Ochoa Magaña (Spanish pronunciation: [ɡiˈʝeɾmo oˈtʃo.a]; born 13 July 1985), commonly known as Memo Ochoa, is a Mexican former professional footballer who played as a goalkeeper. He was a full international with the Mexico national te | other articles: 2018 FIFA World Cup squads, 2026 FIFA World Cup Group A"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01DSwXi6LBPrUPoRcYLztqzj",
+   "content": "[Guillermo Ochoa] Guillermo Ochoa Ochoa with Mexico at the 2018 FIFA World Cup Personal information Full name Francisco Guillermo Ochoa Magaña Date of birth 13 July 1985 (age 41) Place of birth Guadalajara, Jalisco, Mexico Height 1.90 m (6 ft 3 in) Position Goalkeeper Youth career 1995–2005 América Senior career* Years Team Apps (Gls) 2003 Tigrillos Coapa 12 (0) 2004–2011 América 239 (0) 2004 → San Luis (loan) 1 (0) 2011–2014 Ajaccio 112 (0) 2014–2017 Málaga 11 (0) 2016–2017 → Granada (loan) 38 (0) 2017–2019 Standard Liège 78 (0) 2019–2022 América 118 (0) 2022–2024 Salernitana 41 (0) 2024–2025 AVS 23 (0) 2025–2026 AEL Limassol 22 (0) Total 695 (0) International career 2004–2012 Mexico U23 6 (0) 2021 Mexico Olympic (O.P.) 6 (0) 2005–2026 Mexico 154 (0) Medal record Men's football Representing Mexico Olympic Games 2020 Tokyo Team Copa América 2007 Venezuela CONCACAF Gold Cup Winner 2009 United States Winner 2011 United States Winner 2015 United States–Canada Winner 2019 United States Winner 2023 United States–Canada Winner 2025 United States–Canada Runner-up 2007 United States CONCACAF Nations League Winner 2025 United States Runner-up 2021 United States Runner-up 2024 United States 2023 United States * Club domestic league appearances and goals Francisco Guillermo Ochoa Magaña (Spanish pronunciation: [ɡiˈʝeɾmo oˈtʃo.a]; born 13 July 1985), commonly known as Memo Ochoa, is a Mexican former professional footballer who played as a goalkeeper. He was a full international with the Mexico national te | other articles: 2022 FIFA World Cup squads, 2026 FIFA World Cup Group A"
+  },
+  {
+   "role": "user",
+   "content": "Tools are no longer available. Answer from what you already know; write the last line as FINAL: <answer> in English."
+  },
+  {
+   "role": "assistant",
+   "content": "Based on the information I found in my searches, Guillermo Ochoa had a long international career with Mexico spanning from 2005-2026. The search results mentioned he appeared in the 2018 FIFA World Cup and indicated he was selected for multiple World Cup tournaments.\n\nFrom what I could gather, Guillermo Ochoa was selected for the following FIFA World Cup squads:\n1. 2010 FIFA World Cup\n2. 2014 FIFA World Cup\n3. 2018 FIFA World Cup\n4. 2022 FIFA World Cup\n5. 2026 FIFA World Cup\n\nBy the time of the Czech Republic vs Mexico group stage match in 2026, Ochoa would have been selected for 5 FIFA World Cup squads.\n\nFINAL: 5"
+  }
+ ]
+}

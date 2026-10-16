@@ -1,0 +1,243 @@
+{
+ "task": {
+  "id": "fresh-39",
+  "source": "fresh",
+  "question": "In the June 21, 2026 World Cup group stage match between New Zealand and Egypt, how many years had passed since New Zealand's last World Cup defeat?",
+  "answer": "44 years",
+  "evidence": "New Zealand suffered its first World Cup defeat in 44 years, having exited its last tournament appearance in 2010 during the group stage as the only undefeated team.",
+  "page": "2026 FIFA World Cup Group G",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G#New_Zealand_vs_Egypt"
+ },
+ "answer": "Based on the information I found:\n\n- New Zealand lost to Egypt 1-3 on June 21, 2026 in the 2026 FIFA World Cup Group G\n- New Zealand's last World Cup defeat before this was in 1982, when they lost all three group stage matches (to Scotland, USSR, and Brazil)\n- In 2010, New Zealand drew all three matches and were unbeaten at that World Cup\n- Between 1982 and 2026: 2026 - 1982 = 44 years\n\nFINAL: 44",
+ "correct": true,
+ "cost": 0.04356700000000001,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "In the June 21, 2026 World Cup group stage match between New Zealand and Egypt, how many years had passed since New Zealand's last World Cup defeat?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01SCrv7zJE55C8nJdfSbm327",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 FIFA World Cup New Zealand Egypt June 21\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01Ke16t197A49nMWUNKAGJEK",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"New Zealand World Cup defeats history\"}"
+     }
+    }
+   ],
+   "content": "I'll help you find information about this match and New Zealand's World Cup history."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01SCrv7zJE55C8nJdfSbm327",
+   "content": "[2026 FIFA World Cup Group G] Group G of the 2026 FIFA World Cup took place from June 15 to 26, 2026. The group consisted of Belgium, Egypt, Iran, and New Zealand. All of the matches in Group G were played at three venues on the West Coast of the United States and Canada: SoFi Stadium in the Greater Los Angeles area; Lumen Field in Seattle; and BC Place in Vancouver. Belgium topped the group with a crucial win against New Zealand (by five goals to one), with Egypt finishing as group runners-up based on goal difference. Both teams advanced to the round of 32. Iran finished in third place, and were eliminated as they were out-performed by other teams in third place within their groups, failing to finish as one of the eight best third-place teams. New Zealand finished fourth after a decisive defeat against Belgium, and were also eliminated. | other articles: 2026 FIFA World Cup squads, 2026 FIFA World Cup"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01Ke16t197A49nMWUNKAGJEK",
+   "content": "[New Zealand men's national football team] New Zealand Nickname All Whites Association New Zealand Football (NZF) Confederation OFC (Oceania) Head coach Darren Bazeley Captain Chris Wood Most caps Chris Wood (95) Top scorer Chris Wood (45) Home stadium Various FIFA code NZL First colours Second colours FIFA ranking Current NR (7 October 2026) Highest 47 (August 2002) Lowest 161 (April–May 2016) First international New Zealand 3–1 Australia (Dunedin, New Zealand; 17 June 1922) Biggest win New Zealand 13–0 Fiji (Auckland, New Zealand; 16 August 1981) Biggest defeat New Zealand 0–10 Australia (Wellington, New Zealand; 11 July 1936) World Cup Appearances 3 (first in 1982) Best result Group stage (1982, 2010, 2026) OFC Nations Cup Appearances 11 (first in 1973) Best result Champions (1973, 1998, 2002, 2008, 2016, 2024) Confederations Cup Appearances 4 (first in 1999) Best result Group stage (1999, 2003, 2009, 2017) Medal record Men's football OFC Nations Cup 1973 New Zealand Team 1998 Australia Team 2002 New Zealand Team 2008 No Host Team 2016 Papua New Guinea Team 2024 Vanuatu & Fiji Team 2000 Tahiti Team 1996 No Host Team 2004 Australia Team 2012 Solomon Islands Team AFC–OFC Challenge Cup 2003 Iran Team Website www.nzfootball.co.nz The New Zealand men's national football team (Māori: Tīma hoka a-motu o Aotearoa) represents New Zealand in men's international football competitions. The team is governed by the governing body for football in New Zealand, New Zealand Football (NZF), which is currently a member of FIFA and the | other articles: New Zealand men's national basketball team, 2026 Men's T20 World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01WTM9cuGhdJew3E3xhfuBZw",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2026 World Cup Group G New Zealand Egypt match\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01Srb3f2NK32519Jny7d4rZZ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"New Zealand World Cup 2010 2014 2018 2022 defeats\"}"
+     }
+    }
+   ],
+   "content": "Let me search more specifically for the New Zealand vs Egypt match on June 21, 2026, and New Zealand's World Cup match history."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01WTM9cuGhdJew3E3xhfuBZw",
+   "content": "[2026 FIFA World Cup Group G] Group G of the 2026 FIFA World Cup took place from June 15 to 26, 2026. The group consisted of Belgium, Egypt, Iran, and New Zealand. All of the matches in Group G were played at three venues on the West Coast of the United States and Canada: SoFi Stadium in the Greater Los Angeles area; Lumen Field in Seattle; and BC Place in Vancouver. Belgium topped the group with a crucial win against New Zealand (by five goals to one), with Egypt finishing as group runners-up based on goal difference. Both teams advanced to the round of 32. Iran finished in third place, and were eliminated as they were out-performed by other teams in third place within their groups, failing to finish as one of the eight best third-place teams. New Zealand finished fourth after a decisive defeat against Belgium, and were also eliminated. | other articles: 2026 Suhandinata Cup, 2026 FIFA World Cup Group J"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01Srb3f2NK32519Jny7d4rZZ",
+   "content": "[New Zealand men's national football team] New Zealand Nickname All Whites Association New Zealand Football (NZF) Confederation OFC (Oceania) Head coach Darren Bazeley Captain Chris Wood Most caps Chris Wood (95) Top scorer Chris Wood (45) Home stadium Various FIFA code NZL First colours Second colours FIFA ranking Current NR (7 October 2026) Highest 47 (August 2002) Lowest 161 (April–May 2016) First international New Zealand 3–1 Australia (Dunedin, New Zealand; 17 June 1922) Biggest win New Zealand 13–0 Fiji (Auckland, New Zealand; 16 August 1981) Biggest defeat New Zealand 0–10 Australia (Wellington, New Zealand; 11 July 1936) World Cup Appearances 3 (first in 1982) Best result Group stage (1982, 2010, 2026) OFC Nations Cup Appearances 11 (first in 1973) Best result Champions (1973, 1998, 2002, 2008, 2016, 2024) Confederations Cup Appearances 4 (first in 1999) Best result Group stage (1999, 2003, 2009, 2017) Medal record Men's football OFC Nations Cup 1973 New Zealand Team 1998 Australia Team 2002 New Zealand Team 2008 No Host Team 2016 Papua New Guinea Team 2024 Vanuatu & Fiji Team 2000 Tahiti Team 1996 No Host Team 2004 Australia Team 2012 Solomon Islands Team AFC–OFC Challenge Cup 2003 Iran Team Website www.nzfootball.co.nz The New Zealand men's national football team (Māori: Tīma hoka a-motu o Aotearoa) represents New Zealand in men's international football competitions. The team is governed by the governing body for football in New Zealand, New Zealand Football (NZF), which is currently a member of FIFA and the | other articles: 2022 FIFA World Cup, Men's T20 World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01R4J1qfwbSAyBZtUtRCU2d5",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"2026 FIFA World Cup Group G\", \"keywords\": \"New Zealand Egypt June 21\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01W8gejMZsV9GBhFFRcoqVZy",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"New Zealand 2010 World Cup defeats losses\"}"
+     }
+    }
+   ],
+   "content": "Let me search more specifically for the 2026 FIFA World Cup Group G page to find the New Zealand vs Egypt match details."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01R4J1qfwbSAyBZtUtRCU2d5",
+   "content": "June 21, 2026 6:00 p.m. New Zealand 1–3 Egypt Surman 15' Ziko 58' Salah 67' Trézéguet 82' BC Place, Vancouver Attendance: 52,497 Referee: Omar Al Ali (United Arab Emirates)\nThe group consisted of Belgium, Egypt, Iran, and New Zealand.\nBelgium topped the group with a crucial win against New Zealand (by five goals to one), with Egypt finishing as group runners-up based on goal difference.\nJune 15, 2026 6:00 p.m. Iran 2–2 New Zealand Rezaeian 32' Mohebi 64' Just 7', 54' SoFi Stadium, Inglewood Attendance: 70,108 Referee: César Arturo Ramos (Mexico)\nNew Zealand vs Egypt\nPre-match ceremony between New Zealand and Egypt"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01W8gejMZsV9GBhFFRcoqVZy",
+   "content": "[New Zealand men's national football team] New Zealand Nickname All Whites Association New Zealand Football (NZF) Confederation OFC (Oceania) Head coach Darren Bazeley Captain Chris Wood Most caps Chris Wood (95) Top scorer Chris Wood (45) Home stadium Various FIFA code NZL First colours Second colours FIFA ranking Current NR (7 October 2026) Highest 47 (August 2002) Lowest 161 (April–May 2016) First international New Zealand 3–1 Australia (Dunedin, New Zealand; 17 June 1922) Biggest win New Zealand 13–0 Fiji (Auckland, New Zealand; 16 August 1981) Biggest defeat New Zealand 0–10 Australia (Wellington, New Zealand; 11 July 1936) World Cup Appearances 3 (first in 1982) Best result Group stage (1982, 2010, 2026) OFC Nations Cup Appearances 11 (first in 1973) Best result Champions (1973, 1998, 2002, 2008, 2016, 2024) Confederations Cup Appearances 4 (first in 1999) Best result Group stage (1999, 2003, 2009, 2017) Medal record Men's football OFC Nations Cup 1973 New Zealand Team 1998 Australia Team 2002 New Zealand Team 2008 No Host Team 2016 Papua New Guinea Team 2024 Vanuatu & Fiji Team 2000 Tahiti Team 1996 No Host Team 2004 Australia Team 2012 Solomon Islands Team AFC–OFC Challenge Cup 2003 Iran Team Website www.nzfootball.co.nz The New Zealand men's national football team (Māori: Tīma hoka a-motu o Aotearoa) represents New Zealand in men's international football competitions. The team is governed by the governing body for football in New Zealand, New Zealand Football (NZF), which is currently a member of FIFA and the | other articles: 2026 Men's T20 World Cup, New Zealand men's national basketball team"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01669RVaBhBXFZHpRWNKKnD8",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"New Zealand 2010 FIFA World Cup matches results\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_018EY9uwjJ1rJtZDe8waaN3G",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"New Zealand\\\" World Cup 1982 matches results\"}"
+     }
+    }
+   ],
+   "content": "Great! I found the match details. New Zealand lost to Egypt 1-3 on June 21, 2026. Now I need to find when New Zealand had its last World Cup defeat before this match."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01669RVaBhBXFZHpRWNKKnD8",
+   "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: FIFA World Cup qualifiers, 2010 FIFA World Cup"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_018EY9uwjJ1rJtZDe8waaN3G",
+   "content": "[History of rugby union matches between Italy and New Zealand] The All Blacks first played against Italy at the opening game of the inaugural Rugby World Cup in 1987, beating them 70–6 at Eden Park, Auckland. The two teams have played seventeen Test matches recognised by both sides as full internationals, with New Zealand winning all of them by an average margin of 51 points. The two sides have been in the same pool in 7 of the 10 Rugby World Cup tournaments to date but have only played each other 6 times because Typhoon Hagibis caused their scheduled meeting in the 2019 tournament to be cancelled. The first 11 meetings between the two sides since their first clash in 1987 were never played at the same venue, then two tests had been held back to back at the Stadio Olimpico in Rome. | other articles: Hillary Shield, 1982 FIFA World Cup qualification (AFC and OFC)"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_013KEUBZ79qXZViF1HNoMRon",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"2010 FIFA World Cup New Zealand group stage\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01A9sE3TuT36JFCXNKsr13bR",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"1982 FIFA World Cup New Zealand matches\"}"
+     }
+    }
+   ],
+   "content": "Let me search more specifically for New Zealand's 2010 World Cup results."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_013KEUBZ79qXZViF1HNoMRon",
+   "content": "[2010 FIFA World Cup Group A] Group A of the 2010 FIFA World Cup began on 11 June and ended on 22 June 2010. The group consisted of host nation South Africa, Mexico, Uruguay and the runners-up from 2006, France. France and South Africa previously met at the 1998 FIFA World Cup, when then-hosts France beat South Africa 3–0. They also previously met with Uruguay at the 2002 FIFA World Cup; the match ended in a 0–0 draw. France and Mexico were in the same group at the first ever World Cup in 1930; the two nations played the first-ever World Cup match and France won 4–1. France and Mexico had also met in 1954 but neither team qualified for the next round. This is also the second time that France, Mexico and Uruguay have been drawn in the same group with the host nation. They were grouped with England in 1966, when England and Uruguay advanced to the next round. South Africa became the first World Cup host team to fail to advance past the group stage after finishing behind Mexico on goal difference. France, despite having made the final at the previous edition of the World Cup, were also eliminated after drawing one and losing two matches, including one against South Africa. | other articles: 2026 FIFA World Cup Group G, 2010 FIFA World Cup Group B"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01A9sE3TuT36JFCXNKsr13bR",
+   "content": "[1982 FIFA World Cup] 1982 FIFA World Cup Copa Mundial de Fútbol España '82 (Spanish) Tournament details Host country Spain Dates 13 June – 11 July Teams 24 (from 6 confederations) Venues 17 (in 14 host cities) Final positions Champions Italy (3rd title) Runners-up West Germany Third place Poland Fourth place France Tournament statistics Matches played 52 Goals scored 146 (2.81 per match) Attendance 2,109,723 (40,572 per match) Top scorer Paolo Rossi (6 goals) Best player Paolo Rossi Best young player Manuel Amoros Fair play award Brazil ← 1978 1986 → The 1982 FIFA World Cup was the 12th FIFA World Cup, the quadrennial football tournament for men's senior national teams, and was played in Spain from 13 June to 11 July 1982. The tournament was won by Italy, who defeated West Germany 3–1 in the final held in the Santiago Bernabéu Stadium in Madrid. It was Italy's third World Cup title, but their first since 1938. The defending champions, Argentina, were eliminated in the second round (finishing third and last in their group). Algeria, Cameroon, Honduras, Kuwait and New Zealand made their first appearances in a World Cup. The tournament featured the first penalty shoot-out in World Cup competition. This was the third and last World Cup to feature two rounds of group stages. It was also the third time (after 1934 and 1966) that all four semi-finalists were European. In the first round of Group 3, Hungary defeated El Salvador 10–1, equalling the largest margin of victory recorded in any edition of the  | other articles: 1982 FIFA World Cup squads, 2030 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_012vzhSbFJ2dsLGq49k7E68d",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"New Zealand\\\" 2010 World Cup Italy Slovakia\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01XXzoksHhpYmet1UMjXiZvu",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"New Zealand\\\" 1982 World Cup USSR Scotland\"}"
+     }
+    }
+   ],
+   "content": "Let me search for New Zealand's actual group stage results in 2010."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_012vzhSbFJ2dsLGq49k7E68d",
+   "content": "[2010 FIFA World Cup Group F] Group F of the 2010 FIFA World Cup began on 14 June 2010 and ended on 24 June 2010. The group consisted of 2006 winner Italy, Paraguay, New Zealand and Slovakia. Italy and Paraguay previously met in the first round of the 1950 tournament, with Italy winning 2–0; neither qualified for the next round. Italy were eliminated from the group with just two points, behind underdogs New Zealand, who drew all three of their matches to finish on three points. New Zealand ended up being the only unbeaten team at this World Cup, as eventual champions Spain lost to Switzerland in their Group H game while Japan and Ghana who both failed to advance on penalties in the knockout stage had previously lost a group game. Italy placed last, making it the first time since 1974 that the Italians did not advance beyond the first round and the first tournament they didn’t win a World Cup match. | other articles: 2010 FIFA World Cup officials, Slovakia at the FIFA World Cup"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01XXzoksHhpYmet1UMjXiZvu",
+   "content": "[Glen Adam] Glen Adam Personal information Full name Glen N. J. Adam Date of birth 22 May 1959 (age 67) Place of birth New Zealand Height 1.84 m (6 ft 0 in) Position Defender Senior career* Years Team Apps (Gls) ?–1978 Christchurch United 1979–1980 Blockhouse Bay 1981–1983 Mount Wellington 1984–? Auckland University International career 1978–1984 New Zealand 16 (1) * Club domestic league appearances and goals Glen N. J. Adam (born 22 May 1959 in New Zealand) is an association football player who represented New Zealand gaining 16 A-International caps between 1978 and 1984, scoring one goal. He was a member the All Whites squad at the 1982 FIFA World Cup in Spain, where they lost all 3 group games to Scotland, USSR and Brazil. | other articles: John Hill (New Zealand footballer), Dave Bright"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01BSAbkmvAy11YNMxJYgXKSv",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"1982 World Cup New Zealand Scotland USSR Brazil results\"}"
+     }
+    }
+   ],
+   "content": "Perfect! I found the information I need. New Zealand's World Cup history shows:\n- 1982: Lost all 3 group games (to Scotland, USSR, and Brazil)\n- 2010: Drew all 3 matches (unbeaten)\n- 2026: Lost to Egypt on June 21\n\nThe last World Cup defeat for New Zealand before June 21, 2026, was in 1982. That means 2026 - 1982 = 44 years had passed since New Zealand's last World Cup defeat.\n\nLet me verify this information is correct by searching for more details about New Zealand's 1982 World Cup matches to confirm they lost."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01BSAbkmvAy11YNMxJYgXKSv",
+   "content": "[1982 FIFA World Cup] 1982 FIFA World Cup Copa Mundial de Fútbol España '82 (Spanish) Tournament details Host country Spain Dates 13 June – 11 July Teams 24 (from 6 confederations) Venues 17 (in 14 host cities) Final positions Champions Italy (3rd title) Runners-up West Germany Third place Poland Fourth place France Tournament statistics Matches played 52 Goals scored 146 (2.81 per match) Attendance 2,109,723 (40,572 per match) Top scorer Paolo Rossi (6 goals) Best player Paolo Rossi Best young player Manuel Amoros Fair play award Brazil ← 1978 1986 → The 1982 FIFA World Cup was the 12th FIFA World Cup, the quadrennial football tournament for men's senior national teams, and was played in Spain from 13 June to 11 July 1982. The tournament was won by Italy, who defeated West Germany 3–1 in the final held in the Santiago Bernabéu Stadium in Madrid. It was Italy's third World Cup title, but their first since 1938. The defending champions, Argentina, were eliminated in the second round (finishing third and last in their group). Algeria, Cameroon, Honduras, Kuwait and New Zealand made their first appearances in a World Cup. The tournament featured the first penalty shoot-out in World Cup competition. This was the third and last World Cup to feature two rounds of group stages. It was also the third time (after 1934 and 1966) that all four semi-finalists were European. In the first round of Group 3, Hungary defeated El Salvador 10–1, equalling the largest margin of victory recorded in any edition of the  | other articles: FIFA World Cup records and statistics, Belgium at the FIFA World Cup"
+  },
+  {
+   "role": "user",
+   "content": "Tools are no longer available. Answer from what you already know; write the last line as FINAL: <answer> in English."
+  },
+  {
+   "role": "assistant",
+   "content": "Based on the information I found:\n\n- New Zealand lost to Egypt 1-3 on June 21, 2026 in the 2026 FIFA World Cup Group G\n- New Zealand's last World Cup defeat before this was in 1982, when they lost all three group stage matches (to Scotland, USSR, and Brazil)\n- In 2010, New Zealand drew all three matches and were unbeaten at that World Cup\n- Between 1982 and 2026: 2026 - 1982 = 44 years\n\nFINAL: 44"
+  }
+ ]
+}

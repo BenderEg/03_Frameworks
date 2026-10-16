@@ -1,0 +1,130 @@
+{
+ "task": {
+  "id": "fresh-14",
+  "source": "fresh",
+  "question": "Scotland defeated Haiti 1-0 in their group stage match. In what year had Scotland previously won a World Cup match before this victory?",
+  "answer": "1990",
+  "evidence": "The match marked the first time Scotland won a World Cup match since 1990, when the team defeated Sweden 2–1.",
+  "page": "2026 FIFA World Cup Group C",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C#Haiti_vs_Scotland"
+ },
+ "answer": "The answer is clear. According to the Scotland national football team article, their 1-0 win over Haiti at the 2026 FIFA World Cup \"marked their first win at a World Cup since a victory over Sweden at the 1990 iteration.\"\n\nFINAL: 1990",
+ "correct": true,
+ "cost": 0.036545999999999995,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "Scotland defeated Haiti 1-0 in their group stage match. In what year had Scotland previously won a World Cup match before this victory?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_01ACPUG9viJJdD9HVCywAqsn",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland Haiti 2026 FIFA World Cup group stage\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_01LZKoF758DReN3kch19kaDH",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland FIFA World Cup wins history\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_01ACPUG9viJJdD9HVCywAqsn",
+   "content": "[2026 FIFA World Cup Group C] Group C of the 2026 FIFA World Cup took place from June 13 to 24, 2026. The group consisted of Brazil, Morocco, Haiti, and Scotland. Brazil, Morocco and Scotland were also drawn together in Group A in the 1998 edition of the competition, which was also Scotland's latest appearance prior to this tournament. This also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence. Five-time champions Brazil and the previous tournament's fourth-place team Morocco topped the group, with Brazil clinching first place over Morocco based on goal difference. Thus, these two teams advanced to the round of 32. Scotland finished third in the group with only one win at the group stage, and were eliminated as they were outperformed by third-place teams in other groups. Haiti were the first team eliminated from the tournament after two consecutive group-stage losses, and they finished fourth after losing their third group game against Morocco. | other articles: 2026 FIFA World Cup Group D, 2026 FIFA World Cup"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_01LZKoF758DReN3kch19kaDH",
+   "content": "[2026 FIFA World Cup Group D] Group D of the 2026 FIFA World Cup took place from June 12 to 25, 2026. The group consisted of the United States (co-host), Paraguay, Australia, and Turkey. This also marked the return of Turkey and Paraguay to the World Cup finals, their first appearances since 2002 and 2010 respectively. The United States were the second team to secure their place in the round of 32 after Mexico, and were guaranteed to top the group after two consecutive wins. Australia finished in second place, edging out Paraguay based on head-to-head goal difference. Paraguay's performance allowed them to advance as one of the eight best third-place teams, and would further advance into the round of 16 (all other third-place teams were eliminated by then). Turkey exited the tournament after two consecutive defeats but managed to beat co-hosts the United States in their final group match. | other articles: 2026 FIFA World Cup, 2022 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_017kFbn8fd523PVv5XyC4NKK",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland World Cup match wins history previous victory year\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_017kFbn8fd523PVv5XyC4NKK",
+   "content": "[2026 FIFA World Cup] 2026 FIFA World Cup Coupe du Monde de la FIFA 2026 (French) Copa Mundial de la FIFA 2026 (Spanish) Tournament details Host countries Canada Mexico United States Dates June 11 – July 19 Teams 48 (from 6 confederations) Venues 16 (in 16 host cities) Final positions Champions Spain (2nd title) Runners-up Argentina Third place England Fourth place France Tournament statistics Matches played 104 Goals scored 308 (2.96 per match) Attendance 6,810,966 (65,490 per match) Top scorer Kylian Mbappé (10 goals) Best player Rodri Best young player Pau Cubarsí Best goalkeeper Unai Simón Fair play award Netherlands ← 2022 2030 → The 2026 FIFA World Cup was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. It was jointly hosted by 16 cities—11 in the United States, 3 in Mexico, and 2 in Canada. The tournament was the first FIFA World Cup to be hosted by three countries and the first to include 48 teams, an expansion from the previous 32-team format. The 2026 tournament was the second World Cup to be hosted by multiple nations, after the 2002 edition. Mexico became the first country to host the World Cup three times, having hosted the 1970 and 1986 tournaments. The United States previously hosted the World Cup in 1994, while it was Canada's first time hosting the tournament. Th | other articles: 2026 Men's T20 World Cup, 2023 Rugby World Cup"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_01GH6GtCjeBSDWkTpXEuQLp3",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"2026 FIFA World Cup Group C\", \"keywords\": \"Scotland Haiti win previous World Cup victory\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_018P1QmV82N6ZFP9fxHJHXru",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Scotland national football team World Cup wins history last win before 2026\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_01GH6GtCjeBSDWkTpXEuQLp3",
+   "content": "The teams had met three times previously, including once in the World Cup, a 3–0 group stage victory for Brazil in 1998, and most recently in 2023, a 2–1 win for Morocco (their first) in a friendly.\nThis also marked Haiti's first appearance in the World Cup finals since 1974, following a 52-year absence.\nWith three additional defeats, Haiti has six overall losses from their two World Cup appearances, remaining winless in their 52-year return."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_018P1QmV82N6ZFP9fxHJHXru",
+   "content": "[Scotland national football team] Scotland Nickname The Tartan Army (supporters) Association Scottish Football Association (SFA) Confederation UEFA (Europe) Head coach Sébastien Pocognoli Captain Andy Robertson Most caps Kenny Dalglish (102) Top scorer Kenny Dalglish Denis Law (30) Home stadium Hampden Park FIFA code SCO First colours Second colours FIFA ranking Current 43 1 (7 October 2026) Highest 13 (October 2007) Lowest 88 (March 2005) First international Scotland 0–0 England (Partick, Scotland; 30 November 1872) (The first ever international football match) Biggest win Scotland 11–0 Ireland (Glasgow, Scotland; 23 February 1901) Biggest defeat Uruguay 7–0 Scotland (Basel, Switzerland; 19 June 1954) World Cup Appearances 9 (first in 1954) Best result Group stage (1954, 1958, 1974, 1978, 1982, 1986, 1990, 1998, 2026) European Championship Appearances 4 (first in 1992) Best result Group stage (1992, 1996, 2020, 2024) Website scottishfa.co.uk The Scotland national football team represents Scotland in men's international football and is controlled by the Scottish Football Association. They compete in three major professional tournaments: the FIFA World Cup, UEFA Nations League, and the UEFA European Championship. Scotland, as a country of the United Kingdom, are not a member of the International Olympic Committee (as Scottish athletes compete for Great Britain), and therefore the national team does not compete in the Olympic Games. The majority of Scotland's home matches are played at the national stadium, Ham | other articles: History of the Portugal national football team, 2026 FIFA World Cup Group D"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_018yUUCqPZsJ4Z7xGRaHkKyh",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"Scotland national football team\", \"keywords\": \"World Cup win victory last previous\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_018yUUCqPZsJ4Z7xGRaHkKyh",
+   "content": "This marked their first win at a World Cup since a victory over Sweden at the 1990 iteration and their first major tournament victory since a 1-0 win over Switzerland at UEFA Euro 1996.\nThe team have achieved some noteworthy results, such as beating the 1966 FIFA World Cup winners England 3–2 at Wembley Stadium in 1967.\nArchie Gemmill scored what has been described as one of the greatest World Cup goals ever in a 3–2 win during the 1978 World Cup against the Netherlands, who reached the final of the tournament.\nScotland had qualified by right for the World Cup, but had not met the demand of the SFA to win the Championship.\nDespite the Dutch taking the lead, Scotland fought back to win 3–2 with a goal from Kenny Dalglish and two from Archie Gemmill, the second of which is considered one of the greatest World Cup goals ever; Gemmill beat three Dutch defenders before lifting the ball over goalkeeper Jan Jongbloed into the net.\nThe victory was not sufficient to secure a place in the second round, and Scotland were eliminated on goal difference for the second successive World Cup."
+  },
+  {
+   "role": "assistant",
+   "content": "The answer is clear. According to the Scotland national football team article, their 1-0 win over Haiti at the 2026 FIFA World Cup \"marked their first win at a World Cup since a victory over Sweden at the 1990 iteration.\"\n\nFINAL: 1990"
+  }
+ ]
+}

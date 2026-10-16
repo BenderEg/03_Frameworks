@@ -231,10 +231,10 @@ def load_tasks(path: Path = QUIZ_PATH, limit: int | None = None) -> list[dict]:
     return rows[:limit] if limit is not None else rows
 
 
-def solve_with_agent(model: str, tool_names: list[str]) -> Callable[[dict], dict[str, Any]]:
+def solve_with_agent(model: str, tool_names: list[str], max_steps: int = 8) -> Callable[[dict], dict[str, Any]]:
     """Голый граф: ответ, трейс и число шагов одного прогона."""
     def solve(task: dict) -> dict[str, Any]:
-        run = agent(task["question"], model, tool_names)
+        run = agent(task["question"], model, tool_names, max_steps)
         return {"answer": run.answer, "messages": run.messages, "steps": run.steps}
     return solve
 
@@ -300,12 +300,13 @@ if __name__ == "__main__":
     parser.add_argument("--config", default="поиск и чтение страницы", choices=list(CONFIGS))
     parser.add_argument("--limit", type=int, default=None, help="взять только первые N вопросов")
     parser.add_argument("--tag", default="LangGraph", help="метка конфигурации в счётчике, трейсах и CSV")
+    parser.add_argument("--max-steps", type=int, default=8, help="шагов агента до финального вызова без инструментов")
     args = parser.parse_args()
     assert os.getenv("OPENROUTER_API_KEY"), "нет ключа: положите OPENROUTER_API_KEY в .env"
 
     tag = f"{args.tag}, {args.config}"
     model = MODELS[args.level]
-    df = run_tasks(load_tasks(limit=args.limit), solve_with_agent(model, CONFIGS[args.config]), tag,
+    df = run_tasks(load_tasks(limit=args.limit), solve_with_agent(model, CONFIGS[args.config], args.max_steps), tag,
                    model.split("/")[-1])
     df.to_csv(RESULTS / f"{tag}__{args.level}.csv", index=False, encoding="utf-8")
     print(summary_line(df))

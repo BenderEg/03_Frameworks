@@ -1,0 +1,51 @@
+config,model,id,source,correct,steps,tool_calls,calls,prompt_tokens,completion_tokens,cost,seconds,answer,gold
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-0,fresh,True,7,7,7,6136,215,0.000963,18.9,United States,United States
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-1,fresh,True,3,2,3,1236,66,0.000225,7.5,"The 1,000th match in FIFA World Cup history.","1,000th World Cup match"
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-2,fresh,True,6,6,6,6240,207,0.0008489999999999999,21.1,16,16
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-3,fresh,False,9,8,9,13190,281,0.0016670999999999997,25.6,unknown.,Tomas Soucek
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-4,fresh,False,9,7,9,8671,236,0.0011734500000000001,26.0,Mexico became the first team to qualify for the knockout sta,round of 32
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-5,fresh,True,2,1,2,676,32,0.0001206,4.9,6,sixth
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-6,fresh,False,6,5,6,3974,142,0.0006812999999999999,18.5,Round of 32.,knockout stages
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-7,fresh,False,9,7,9,14341,240,0.0018343500000000002,23.6,unknown,Toronto
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-8,fresh,True,3,2,3,1363,58,0.00023925000000000001,5.7,Miro Muheim,Miro Muheim
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-9,fresh,False,9,7,9,12258,218,0.0015183,21.0,unknown.,90+7'
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-10,fresh,False,9,7,9,13567,206,0.0016402499999999998,18.4,unknown.,Geoff Hurst
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-11,fresh,True,3,2,3,1307,57,0.00023025,5.9,Mexico.,Mexico
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-12,fresh,False,9,7,9,13941,245,0.0017293500000000002,21.7,unknown,Mahmud Abunada
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-13,fresh,False,7,5,7,7228,157,0.0010056,14.3,unknown,12
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-14,fresh,False,7,6,7,8336,155,0.0011130000000000003,20.7,1998,1990
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-15,fresh,True,3,2,3,1475,60,0.00025725,8.4,2',2
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-16,fresh,True,5,4,5,3599,113,0.00060765,10.9,2 consecutive matches.,two
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-17,fresh,True,7,6,7,7589,158,0.0009355499999999999,20.1,"64,478","64,478"
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-18,fresh,True,4,3,4,2055,94,0.00036465,10.6,Yassine Bounou,Yassine Bounou
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-19,fresh,False,9,7,9,14202,202,0.0017235,26.3,unknown,Four
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-20,fresh,False,9,7,9,7576,249,0.0010938,16.5,unknown.,dominate the game
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-21,fresh,False,3,2,3,1428,62,0.0002514,5.2,Damián Bobadilla,Cameron Burgess
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-22,fresh,False,9,7,9,10201,229,0.00129315,22.2,unknown,Miguel Almirón
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-23,fresh,False,9,7,9,11898,212,0.0015663,26.6,unknown,90+8'
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-24,fresh,True,3,2,3,1570,66,0.0002751,6.3,Clément Turpin (France),Clément Turpin
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-25,fresh,True,3,2,3,1330,73,0.0002433,5.8,Curaçao became the smallest country by population ever to qu,Curaçao
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-26,fresh,False,9,7,9,10285,207,0.00135975,18.6,unknown.,90th minute
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-27,fresh,True,3,2,3,1430,61,0.00025110000000000003,6.7,Toronto,Toronto
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-28,fresh,False,3,2,3,1416,75,0.00025739999999999997,6.5,Curaçao became the smallest nation by both population and ar,earned a point
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-29,fresh,True,3,2,3,1409,62,0.00024855,7.0,Lincoln Financial Field,Lincoln Financial Field
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-30,fresh,False,8,7,8,11415,188,0.00129705,24.7,2022 FIFA World Cup,1994 FIFA World Cup
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-31,fresh,False,5,4,5,3990,103,0.0005835,18.0,unknown.,"69,285"
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-32,fresh,True,3,2,3,1206,64,0.0002193,6.2,Sabri Lamouchi,Sabri Lamouchi
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-33,fresh,False,9,7,9,8365,191,0.00118695,24.8,unknown,fourteen
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-34,fresh,False,8,7,8,8600,181,0.0010146,20.7,unknown,"70,137"
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-35,fresh,False,9,7,9,9550,192,0.0012693000000000001,20.2,unknown,Ellyes Skhiri
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-36,fresh,True,3,2,3,1446,64,0.00025529999999999997,5.8,Mohamed Hany.,Mohamed Hany
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-37,fresh,True,5,4,5,3214,114,0.0005505,14.2,"70,108","70,108"
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-38,fresh,False,9,7,9,9965,192,0.0013123499999999999,18.3,unknown,Nathan Ngoy
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-39,fresh,False,7,6,7,8286,176,0.0010125000000000002,18.0,16 years.,44 years
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-40,fresh,False,9,7,9,11048,199,0.0014597999999999998,24.0,unknown,107.4 million
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-41,fresh,False,5,5,5,2954,147,0.0005313,27.6,unknown,"52,497"
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-42,fresh,True,2,1,2,850,36,0.0001491,4.6,Cape Verde was making their first FIFA World Cup appearance.,Cape Verde
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-43,fresh,True,3,2,3,1457,64,0.00025695000000000004,6.1,"62,764","62,764"
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-44,fresh,False,9,7,9,13575,208,0.0016618499999999999,20.4,unknown,Hassan Al-Tambakti
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-45,fresh,False,9,7,9,11033,236,0.00140295,24.6,unknown.,30 yards
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-46,fresh,True,4,3,4,1941,91,0.00034575000000000003,14.3,Slovakia.,Slovakia
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-47,fresh,False,9,7,9,13558,194,0.0016797,28.0,unknown,Zapopan
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-48,fresh,False,5,4,5,4046,143,0.0006159,19.4,67,58
+"голый цикл, поиск и чтение страницы",gpt-4o-mini,fresh-49,fresh,True,4,3,4,2038,63,0.0003435,7.2,1986.,1986

@@ -1,0 +1,51 @@
+config,model,id,source,correct,steps,tool_calls,calls,prompt_tokens,completion_tokens,cost,seconds,answer,gold
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-0,fresh,True,3,2,3,3399,178,0.012867,8.5,the United States,United States
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-1,fresh,False,4,3,4,4771,295,0.018737999999999998,13.6,Japan became the first Asian team to score multiple goals in,"1,000th World Cup match"
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-2,fresh,True,4,5,4,6765,578,0.028965,20.8,16 years,16
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-3,fresh,False,9,9,9,17203,854,0.064419,31.8,unknown,Tomas Soucek
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-4,fresh,True,4,3,4,4928,226,0.018174000000000003,9.4,the round of 32,round of 32
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-5,fresh,True,6,7,6,12041,579,0.044808,22.1,6,sixth
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-6,fresh,False,4,3,4,4838,226,0.017904,9.2,the knockout stage (round of 32),knockout stages
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-7,fresh,True,7,7,8,13727,529,0.04911600000000001,33.0,Toronto,Toronto
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-8,fresh,True,4,3,4,5066,223,0.018543,9.1,Miro Muheim,Miro Muheim
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-9,fresh,True,4,3,4,4832,251,0.018261,9.7,90+7,90+7'
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-10,fresh,True,9,9,9,21317,1252,0.082731,36.5,Geoff Hurst,Geoff Hurst
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-11,fresh,True,6,7,6,11340,571,0.042585,21.2,Mexico,Mexico
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-12,fresh,False,7,6,7,11481,448,0.041163,17.5,Abunada,Mahmud Abunada
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-13,fresh,True,4,3,4,4960,229,0.018314999999999998,9.2,12,12
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-14,fresh,True,5,6,5,9982,440,0.036545999999999995,18.8,1990,1990
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-15,fresh,True,3,2,3,3488,162,0.012894,6.4,2nd minute,2
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-16,fresh,True,4,3,4,5162,211,0.018650999999999997,8.7,2,two
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-17,fresh,True,3,2,3,3534,212,0.013782,7.2,"64,478","64,478"
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-18,fresh,True,3,2,3,3376,164,0.012587999999999998,6.8,Yassine Bounou,Yassine Bounou
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-19,fresh,True,4,3,4,5043,239,0.018714,9.5,4,Four
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-20,fresh,True,3,2,3,3251,162,0.012183000000000001,6.5,dominate the game,dominate the game
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-21,fresh,False,6,6,6,11639,441,0.041532,19.4,Burgess,Cameron Burgess
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-22,fresh,True,3,4,3,4236,282,0.016938,10.1,Miguel Almirón,Miguel Almirón
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-23,fresh,True,3,2,3,3561,202,0.013713,7.6,90+8',90+8'
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-24,fresh,True,3,2,3,3537,164,0.013071,7.0,Clément Turpin (France),Clément Turpin
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-25,fresh,True,3,4,3,4139,261,0.016332,9.3,Curaçao,Curaçao
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-26,fresh,True,3,2,3,3294,159,0.012267,6.5,90th minute,90th minute
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-27,fresh,True,4,3,4,5083,246,0.018938999999999998,9.7,Toronto,Toronto
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-28,fresh,True,4,5,4,6762,471,0.027351,14.4,earned a point at the World Cup for the first time,earned a point
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-29,fresh,True,3,2,3,3577,169,0.013266,6.6,Lincoln Financial Field,Lincoln Financial Field
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-30,fresh,True,3,4,3,4186,305,0.017133,10.9,1994 FIFA World Cup,1994 FIFA World Cup
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-31,fresh,True,5,5,5,8258,394,0.030683999999999996,14.9,"69,285","69,285"
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-32,fresh,True,3,3,3,3758,261,0.015189,8.9,Sabri Lamouchi,Sabri Lamouchi
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-33,fresh,True,3,2,3,3211,179,0.012317999999999999,7.0,14,fourteen
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-34,fresh,True,6,6,6,9661,419,0.035268,16.4,"70,137","70,137"
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-35,fresh,True,3,2,3,3163,162,0.011918999999999999,6.8,Ellyes Skhiri,Ellyes Skhiri
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-36,fresh,True,4,4,4,5428,297,0.020739,10.4,Mohamed Hany,Mohamed Hany
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-37,fresh,True,5,5,5,8053,367,0.029664,13.4,"70,108","70,108"
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-38,fresh,True,4,3,4,4869,257,0.018462,9.5,Nathan Ngoy,Nathan Ngoy
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-39,fresh,True,9,10,9,27815,907,0.09705,32.3,44,44 years
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-40,fresh,True,4,3,4,4969,234,0.018417,9.1,approximately 107.4 million viewers,107.4 million
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-41,fresh,True,3,3,3,3997,255,0.015816,9.2,"52,497","52,497"
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-42,fresh,True,3,2,3,3329,220,0.013287,7.9,Cape Verde,Cape Verde
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-43,fresh,True,4,3,4,5065,256,0.019035,9.8,"62,764","62,764"
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-44,fresh,False,4,3,4,4624,278,0.018042,9.6,Al-Tambakti,Hassan Al-Tambakti
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-45,fresh,True,5,6,5,8164,516,0.032232,16.0,30,30 yards
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-46,fresh,True,5,5,5,9370,432,0.034589999999999996,16.4,Slovakia,Slovakia
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-47,fresh,True,3,2,3,3225,197,0.01263,7.1,Zapopan,Zapopan
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-48,fresh,True,4,4,4,7133,415,0.027623999999999996,15.0,58,58
+"LangGraph на sonnet-4.6, поиск и чтение страницы",claude-sonnet-4.6,fresh-49,fresh,True,2,2,2,2253,175,0.009384,7.1,1986,1986

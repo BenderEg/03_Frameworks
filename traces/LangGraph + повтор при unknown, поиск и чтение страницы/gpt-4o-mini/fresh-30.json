@@ -1,0 +1,93 @@
+{
+ "task": {
+  "id": "fresh-30",
+  "source": "fresh",
+  "question": "The Ecuador vs Germany group stage match on June 25, 2026, at MetLife Stadium marked when the 2026 World Cup surpassed which previous World Cup's attendance record?",
+  "answer": "1994 FIFA World Cup",
+  "evidence": "This surpassed the previous record of 3,587,538, which had been held for 32 years by the 1994 FIFA World Cup, also hosted in the United States.",
+  "page": "2026 FIFA World Cup Group E",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E#Ecuador_vs_Germany"
+ },
+ "answer": "FINAL: 1994 World Cup.",
+ "correct": true,
+ "cost": 0.0001293,
+ "answer_initial": "1994 World Cup.",
+ "correct_initial": true,
+ "rounds": 1,
+ "rejections": 0,
+ "budget_hit": false,
+ "verdicts": [],
+ "history": [
+  {
+   "node": "answer",
+   "round": 1,
+   "answer": "FINAL: 1994 World Cup.",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+    },
+    {
+     "role": "user",
+     "content": "The Ecuador vs Germany group stage match on June 25, 2026, at MetLife Stadium marked when the 2026 World Cup surpassed which previous World Cup's attendance record?"
+    },
+    {
+     "role": "assistant",
+     "tool_calls": [
+      {
+       "type": "function",
+       "id": "call_FUjdwT7alW1heVjYwMLcBEt0",
+       "function": {
+        "name": "page_find",
+        "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"attendance record\"}"
+       }
+      }
+     ],
+     "content": ""
+    },
+    {
+     "role": "tool",
+     "tool_call_id": "call_FUjdwT7alW1heVjYwMLcBEt0",
+     "content": "Nearly 7 million people attended matches during the tournament, surpassing the 1994 edition to set a new record for the highest attendance in World Cup history.\nThe tournament set the record for the highest cumulative attendance in World Cup history, with a total of 6,810,966 spectators.\nAcross the first 60 matches, venues operated at an average occupancy rate of 99.7%. Additionally, a single-day World Cup attendance record was established on June 16, 2026, when 281,223 fans attended four group stage matches.\nAttendance 6,810,966 (65,490 per match)\nThe 2026 World Cup reportedly generated a record $15 billion in revenue.\nThe 2026 World Cup featured six female match officials, equalling the record for the highest number of female officials appointed to a men's World Cup."
+    },
+    {
+     "role": "assistant",
+     "content": "FINAL: 1994 World Cup."
+    }
+   ]
+  }
+ ],
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "The Ecuador vs Germany group stage match on June 25, 2026, at MetLife Stadium marked when the 2026 World Cup surpassed which previous World Cup's attendance record?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "call_FUjdwT7alW1heVjYwMLcBEt0",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"2026 FIFA World Cup\", \"keywords\": \"attendance record\"}"
+     }
+    }
+   ],
+   "content": ""
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_FUjdwT7alW1heVjYwMLcBEt0",
+   "content": "Nearly 7 million people attended matches during the tournament, surpassing the 1994 edition to set a new record for the highest attendance in World Cup history.\nThe tournament set the record for the highest cumulative attendance in World Cup history, with a total of 6,810,966 spectators.\nAcross the first 60 matches, venues operated at an average occupancy rate of 99.7%. Additionally, a single-day World Cup attendance record was established on June 16, 2026, when 281,223 fans attended four group stage matches.\nAttendance 6,810,966 (65,490 per match)\nThe 2026 World Cup reportedly generated a record $15 billion in revenue.\nThe 2026 World Cup featured six female match officials, equalling the record for the highest number of female officials appointed to a men's World Cup."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 1994 World Cup."
+  }
+ ]
+}

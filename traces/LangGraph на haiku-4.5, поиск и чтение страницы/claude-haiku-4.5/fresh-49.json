@@ -1,0 +1,60 @@
+{
+ "task": {
+  "id": "fresh-49",
+  "source": "fresh",
+  "question": "When was Iraq's previous World Cup appearance before their group stage match against Norway?",
+  "answer": "1986",
+  "evidence": "The fixture marked the return of Iraq and Norway to the World Cup finals, their first appearances since 1986 and 1998 respectively.",
+  "page": "2026 FIFA World Cup Group I",
+  "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I#Iraq_vs_Norway"
+ },
+ "answer": "Perfect! I found the information. According to the search results, Iraq's match against Norway in the 2026 FIFA World Cup was part of Group I. The article explicitly states that \"this edition marked Iraq's return to the tournament after only appearing in 1986.\"\n\nFINAL: 1986",
+ "correct": true,
+ "cost": 0.003209,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about the 2026 FIFA World Cup. If you need a fact, call the tools instead of guessing. Mention the 2026 FIFA World Cup in your search queries. When the answer is ready, write it as the last line in the format FINAL: <answer>. The FINAL answer must be in English, with names and terms spelled exactly as in the source article; write numbers as digits; give a short phrase, no explanation. If you could not find the answer, write FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "When was Iraq's previous World Cup appearance before their group stage match against Norway?"
+  },
+  {
+   "role": "assistant",
+   "tool_calls": [
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01RWRuGixBZ4GLqkJDf56cSb",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Iraq Norway 2026 FIFA World Cup group stage\"}"
+     }
+    },
+    {
+     "type": "function",
+     "id": "toolu_bdrk_01K7wrtA2eDov6mJdDavk8nU",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Iraq FIFA World Cup history appearances\"}"
+     }
+    }
+   ],
+   "content": "I'll help you find information about Iraq's previous World Cup appearance before their group stage match against Norway."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01RWRuGixBZ4GLqkJDf56cSb",
+   "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: 2026 FIFA World Cup qualification, 2026 FIFA World Cup"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01K7wrtA2eDov6mJdDavk8nU",
+   "content": "[2026 FIFA World Cup Group I] Group I of the 2026 FIFA World Cup took place from June 16 to 26, 2026. The group consisted of France, Senegal, Iraq, and Norway. France and Norway secured their spots in the round of 32 after two group game wins each, with France topping the group after defeating Norway in their final group game. Senegal finished third with a decisive victory over Iraq, allowing them to advance as one of the eight best third-place teams. Iraq were eliminated after losing all three of their group stage matches, and they finished last in the World Cup based on goal difference. Additionally, this edition marked Iraq’s return to the tournament after only appearing in 1986, France played its first ever World Cup on U.S. soil after having missed the 1994 edition and Norway also returning since 1998. | other articles: National team appearances in the FIFA World Cup, 2026 FIFA World Cup"
+  },
+  {
+   "role": "assistant",
+   "content": "Perfect! I found the information. According to the search results, Iraq's match against Norway in the 2026 FIFA World Cup was part of Group I. The article explicitly states that \"this edition marked Iraq's return to the tournament after only appearing in 1986.\"\n\nFINAL: 1986"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+config,model,id,source,correct,steps,tool_calls,calls,prompt_tokens,completion_tokens,cost,seconds,answer,gold,answer_initial,correct_initial,rounds,rejections,budget_hit
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-0,fresh,True,3,2,3,1486,69,0.0002643,5.7,United States,United States,United States,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-1,fresh,True,3,2,3,1237,76,0.00023115,9.0,"The Group F game between Tunisia and Japan was the 1,000th m","1,000th World Cup match","The Group F game between Tunisia and Japan was the 1,000th m",True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-2,fresh,False,8,7,8,9679,230,0.00114825,22.2,40 years,16,40 years,False,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-3,fresh,False,27,7,27,34062,720,0.0044277000000000006,77.3,unknown,Tomas Soucek,unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-4,fresh,False,6,5,6,4944,151,0.0007458,25.0,Mexico became the first team to qualify for the 2026 FIFA Wo,round of 32,Mexico became the first team to qualify for the 2026 FIFA Wo,False,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-5,fresh,True,4,3,4,2852,80,0.00047579999999999996,9.7,6,sixth,6,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-6,fresh,True,3,2,3,1385,64,0.00024615,6.8,knockout stages of a World Cup for the first time.,knockout stages,knockout stages of a World Cup for the first time.,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-7,fresh,True,6,5,6,6485,131,0.00084975,26.5,Toronto,Toronto,Toronto,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-8,fresh,True,3,2,3,1358,58,0.0002385,6.5,Miro Muheim,Miro Muheim,Miro Muheim,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-9,fresh,True,3,2,3,1425,71,0.00025635,6.5,90+7,90+7',90+7,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-10,fresh,True,14,4,14,15234,313,0.0020505,32.8,Geoff Hurst,Geoff Hurst,unknown,False,2,1,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-11,fresh,True,4,3,4,2270,86,0.0003921,12.3,Mexico.,Mexico,Mexico.,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-12,fresh,False,27,7,27,37480,666,0.004543199999999999,58.8,unknown,Mahmud Abunada,unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-13,fresh,False,27,7,27,35600,636,0.0044928,55.1,unknown.,12,unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-14,fresh,False,9,7,9,11927,217,0.0014872499999999999,27.5,1998.,1990,1998.,False,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-15,fresh,True,3,2,3,1526,62,0.0002661,6.2,2',2,2',True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-16,fresh,True,5,4,5,2997,114,0.00051795,13.8,2 consecutive matches.,two,2 consecutive matches.,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-17,fresh,True,3,2,3,1543,59,0.00026685,6.0,"64,478","64,478","64,478",True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-18,fresh,True,5,4,5,3130,119,0.0005409,14.3,Yassine Bounou,Yassine Bounou,Yassine Bounou,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-19,fresh,False,27,7,27,38438,600,0.0050601000000000005,64.9,unknown.,Four,unknown.,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-20,fresh,True,17,7,17,8858,482,0.0016179000000000002,42.3,Hakan Çalhanoğlu predicted Turkey would dominate the game ag,dominate the game,unknown,False,2,1,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-21,fresh,False,3,2,3,1428,62,0.0002514,6.0,Damián Bobadilla,Cameron Burgess,Damián Bobadilla,False,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-22,fresh,False,27,7,27,28275,676,0.00399405,82.9,unknown,Miguel Almirón,unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-23,fresh,True,23,4,23,35703,540,0.00437385,63.0,90+8,90+8',unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-24,fresh,True,21,2,21,24777,470,0.00324975,47.0,Clément Turpin (France).,Clément Turpin,unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-25,fresh,True,5,4,5,3090,122,0.0005367,16.0,Curaçao became the smallest nation in history to qualify for,Curaçao,Curaçao became the smallest nation in history to qualify for,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-26,fresh,True,3,2,3,1344,59,0.000237,6.3,90th minute,90th minute,90th minute,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-27,fresh,True,3,2,3,1422,58,0.0002481,6.3,Toronto,Toronto,Toronto,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-28,fresh,False,3,2,3,1418,70,0.00025469999999999996,8.2,Curaçao achieved their FIFA World Cup debut in 2026.,earned a point,Curaçao achieved their FIFA World Cup debut in 2026.,False,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-29,fresh,True,14,4,14,14962,299,0.0020205,36.6,Lincoln Financial Field,Lincoln Financial Field,unknown,False,2,1,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-30,fresh,True,2,1,2,734,32,0.0001293,6.4,1994 World Cup.,1994 FIFA World Cup,1994 World Cup.,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-31,fresh,True,17,7,17,23780,372,0.0026861999999999997,53.5,"69,285","69,285",unknown.,False,2,1,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-32,fresh,True,12,2,12,11331,272,0.0016420500000000002,32.7,Sabri Lamouchi.,Sabri Lamouchi,unknown,False,2,1,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-33,fresh,True,3,2,3,1280,55,0.000225,36.3,14 matches,fourteen,14 matches,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-34,fresh,True,3,2,3,1545,61,0.00026835,6.5,"70,137","70,137","70,137",True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-35,fresh,True,21,2,21,27895,479,0.0035116500000000003,50.7,Ellyes Skhiri.,Ellyes Skhiri,unknown.,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-36,fresh,True,5,4,5,3362,110,0.0005703,10.8,Mohamed Hany.,Mohamed Hany,Mohamed Hany.,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-37,fresh,True,23,5,23,30719,573,0.003934050000000001,70.8,"70,108.","70,108",unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-38,fresh,True,3,2,3,1448,55,0.0002502,7.1,Nathan Ngoy,Nathan Ngoy,Nathan Ngoy,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-39,fresh,False,22,4,22,27772,625,0.0035903999999999997,58.3,9 years,44 years,unknown.,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-40,fresh,False,27,7,27,32052,644,0.004454999999999999,83.7,unknown.,107.4 million,unknown.,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-41,fresh,False,22,7,22,23322,532,0.0033086999999999995,73.4,unknown,"52,497",unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-42,fresh,True,7,6,7,6553,150,0.0008905499999999999,18.3,Cape Verde.,Cape Verde,Cape Verde.,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-43,fresh,True,3,2,3,1457,64,0.00025695000000000004,6.1,"62,764","62,764","62,764",True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-44,fresh,False,27,7,27,43993,673,0.00539955,66.5,unknown.,Hassan Al-Tambakti,unknown.,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-45,fresh,False,27,7,27,40401,660,0.00501615,63.3,unknown,30 yards,unknown.,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-46,fresh,True,3,2,3,1572,74,0.0002802,5.8,Slovakia,Slovakia,Slovakia,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-47,fresh,False,27,7,27,36013,595,0.00448215,77.4,unknown,Zapopan,unknown,False,3,2,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-48,fresh,True,6,5,6,6153,153,0.0008227499999999999,21.1,58.,58,58.,True,1,0,False
+"LangGraph + повтор при unknown, поиск и чтение страницы",gpt-4o-mini,fresh-49,fresh,True,5,4,5,3670,105,0.0006134999999999999,14.6,1986.,1986,1986.,True,1,0,False

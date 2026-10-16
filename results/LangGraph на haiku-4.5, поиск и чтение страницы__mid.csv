@@ -1,0 +1,51 @@
+config,model,id,source,correct,steps,tool_calls,calls,prompt_tokens,completion_tokens,cost,seconds,answer,gold
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-0,fresh,True,9,10,9,26412,1318,0.033002000000000004,41.5,United States,United States
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-1,fresh,True,6,5,6,9488,474,0.011858,19.0,"The Tunisia vs Japan match was the 1,000th World Cup match.","1,000th World Cup match"
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-2,fresh,True,5,5,5,8237,541,0.010941999999999999,26.8,16,16
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-3,fresh,False,9,7,9,17513,871,0.021868,33.8,unknown,Tomas Soucek
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-4,fresh,True,4,3,4,5199,328,0.006839,12.8,the newly introduced round of 32,round of 32
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-5,fresh,False,9,13,9,37984,1494,0.045454,54.0,5,sixth
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-6,fresh,False,2,1,2,1929,150,0.002679,9.9,round of 32,knockout stages
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-7,fresh,True,9,7,9,18015,870,0.022365000000000003,34.9,Toronto,Toronto
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-8,fresh,True,4,3,4,5067,270,0.006417,18.0,Miro Muheim,Miro Muheim
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-9,fresh,True,5,4,5,7272,409,0.009317,24.3,90+7',90+7'
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-10,fresh,True,8,8,8,20372,735,0.024047,44.5,Geoff Hurst,Geoff Hurst
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-11,fresh,True,9,12,9,28978,1176,0.034858,51.7,Mexico,Mexico
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-12,fresh,False,6,5,6,10663,559,0.013458,22.3,Abunada,Mahmud Abunada
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-13,fresh,True,4,3,4,5001,283,0.006416,15.1,12,12
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-14,fresh,True,9,9,9,29382,1104,0.034902,54.1,1990,1990
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-15,fresh,True,4,4,4,6392,351,0.008147,17.1,2,2
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-16,fresh,True,2,2,2,2327,184,0.003247,8.1,2,two
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-17,fresh,True,4,3,4,5393,304,0.006913000000000001,15.5,"64,478","64,478"
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-18,fresh,True,6,5,6,11428,458,0.013718000000000001,28.0,Yassine Bounou,Yassine Bounou
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-19,fresh,True,4,3,4,5246,317,0.006831,18.5,4,Four
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-20,fresh,True,3,3,3,3638,278,0.0050279999999999995,15.4,dominate the game,dominate the game
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-21,fresh,True,8,8,8,20772,764,0.024592000000000003,32.0,Cameron Burgess,Cameron Burgess
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-22,fresh,True,3,4,3,4386,407,0.006421,16.8,Miguel Almirón,Miguel Almirón
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-23,fresh,True,3,2,3,3630,284,0.00505,9.8,90+8',90+8'
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-24,fresh,True,3,3,3,4290,311,0.0058449999999999995,13.1,Clément Turpin (France),Clément Turpin
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-25,fresh,True,5,5,5,8535,528,0.011175000000000001,20.2,Curaçao,Curaçao
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-26,fresh,True,5,4,5,7612,380,0.009512,18.6,90th minute,90th minute
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-27,fresh,True,3,2,3,3485,233,0.00465,12.3,Toronto,Toronto
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-28,fresh,False,3,3,3,3920,404,0.00594,18.1,Curaçao qualified for the FIFA World Cup for the first time,earned a point
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-29,fresh,True,4,5,4,8035,457,0.01032,20.0,Lincoln Financial Field,Lincoln Financial Field
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-30,fresh,True,6,9,6,16002,790,0.019951999999999998,41.6,1994 FIFA World Cup,1994 FIFA World Cup
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-31,fresh,False,9,7,9,17497,770,0.021347,32.6,unknown,"69,285"
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-32,fresh,True,3,4,3,4328,319,0.0059229999999999994,15.0,Sabri Lamouchi,Sabri Lamouchi
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-33,fresh,True,3,4,3,4071,360,0.0058709999999999995,15.2,14,fourteen
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-34,fresh,True,5,4,5,7188,390,0.009138,24.2,"70,137","70,137"
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-35,fresh,True,5,4,5,7561,392,0.009521000000000002,23.1,Ellyes Skhiri,Ellyes Skhiri
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-36,fresh,True,5,4,5,7012,426,0.009142,22.1,Mohamed Hany,Mohamed Hany
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-37,fresh,True,4,3,4,5305,285,0.00673,18.1,"70,108","70,108"
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-38,fresh,True,4,3,4,4909,336,0.006588999999999999,10.6,Nathan Ngoy,Nathan Ngoy
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-39,fresh,True,9,13,9,37167,1280,0.04356700000000001,77.9,44,44 years
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-40,fresh,True,7,6,7,14177,539,0.016872,30.5,107.4 million viewers,107.4 million
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-41,fresh,True,6,5,6,10237,500,0.012737,34.1,"52,497","52,497"
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-42,fresh,True,2,2,2,2253,193,0.003218,11.2,Cape Verde,Cape Verde
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-43,fresh,True,5,4,5,7188,385,0.009113,22.0,"62,764","62,764"
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-44,fresh,False,6,5,6,10799,638,0.013989,33.5,Al-Tambakti,Hassan Al-Tambakti
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-45,fresh,True,4,6,4,8428,538,0.011118,24.6,30 yards,30 yards
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-46,fresh,True,4,5,4,6481,502,0.008990999999999999,23.2,Slovakia,Slovakia
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-47,fresh,True,4,5,4,7200,427,0.009335,22.6,Zapopan,Zapopan
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-48,fresh,True,4,4,4,7211,451,0.009466,17.1,58,58
+"LangGraph на haiku-4.5, поиск и чтение страницы",claude-haiku-4.5,fresh-49,fresh,True,2,2,2,2249,192,0.003209,7.5,1986,1986
